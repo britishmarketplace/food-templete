@@ -1,0 +1,166 @@
+/* == import from google fonts == */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* ./your-css-folder/styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@layer components {
+  .custom-btn {
+    @apply py-3 px-4 text-white bg-indigo-800 rounded-lg;
+  }
+}
+
+/* === custome css === */
+.menuCloseButton {
+  cursor: pointer;
+  display: flex;
+  justify-content: end;
+}
+.menuCloseButton {
+  margin-right: 20px;
+  margin-top: 40px;
+}
+.menuCloseButton:hover,
+.menuCloseButton:focus {
+  text-decoration: underline;
+}
+.menu-hamburger,
+.menu-Close {
+  background: transparent no-repeat right center scroll;
+  display: inline-block;
+  width: 36px;
+  height: 26px;
+  padding-right: 40px;
+  vertical-align: middle;
+}
+
+#side-menu {
+  background: rgba(82, 97, 105, 0.95);
+  position: fixed;
+  top: 0;
+  font-size: 14px;
+  /*overflow-y: auto;
+    overflow-x: hidden;*/
+  z-index: 100;
+  width: 300px;
+}
+#side-menu .mainMenu {
+  margin-top: 15px;
+  display: block;
+  padding: 0 0 0 0;
+  overflow-y: auto;
+  width: 300px;
+  margin-left: -10px;
+}
+.main-side-nav {
+  position: absolute;
+  background-color: #000;
+  width: 300px;
+  left: -300px;
+  height: 100%;
+  z-index: 100000;
+  transition: left 0.4s ease;
+}
+.open-side-nav {
+  left: 0 !important;
+  transition: left 0.5s ease !important;
+}
+#overlay {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  left: 100%;
+  top: 0;
+  transition: left 0.5s ease;
+}
+.overlay {
+  left: 0 !important;
+  transition: left 0.5s ease !important;
+}
+.mainMenu > li {
+  margin-bottom: 10px;
+}
+.mainMenu > li > a {
+  display: flex;
+  font-size: 16px;
+  color: #fff;
+  padding: 10px 25px;
+}
+.mainMenu > li > a:hover,
+.mainMenu > li > a:focus > a {
+  color: #fff;
+  background: #3730a3;
+}
+
+/* Tab content - closed */
+.tab-content {
+  max-height: 0;
+  -webkit-transition: max-height 0.35s;
+  -o-transition: max-height 0.35s;
+  transition: max-height 0.35s;
+}
+/* :checked - resize to full height */
+.tab input:checked ~ .tab-content {
+  max-height: 100vh;
+}
+/* Label formatting when open */
+.tab input:checked + label {
+  /*@apply text-xl p-5 border-l-2 border-indigo-500 bg-gray-100 text-indigo*/
+  font-size: 1.25rem; /*.text-xl*/
+  padding: 1.25rem; /*.p-5*/
+  border-left-width: 2px; /*.border-l-2*/
+  border-color: #6574cd; /*.border-indigo*/
+  background-color: #f8fafc; /*.bg-gray-100 */
+  color: #6574cd; /*.text-indigo*/
+}
+/* Icon */
+.tab label::after {
+  float: right;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5;
+  font-size: 1.25rem;
+  text-align: center;
+  -webkit-transition: all 0.35s;
+  -o-transition: all 0.35s;
+  transition: all 0.35s;
+}
+/* Icon formatting - closed */
+.tab input[type="checkbox"] + label::after {
+  content: "+";
+  font-weight: bold; /*.font-bold*/
+  border-width: 1px; /*.border*/
+  border-radius: 9999px; /*.rounded-full */
+  border-color: #b8c2cc; /*.border-grey*/
+}
+.tab input[type="radio"] + label::after {
+  content: "\25BE";
+  font-weight: bold; /*.font-bold*/
+  border-width: 1px; /*.border*/
+  border-radius: 9999px; /*.rounded-full */
+  border-color: #b8c2cc; /*.border-grey*/
+}
+/* Icon formatting - open */
+.tab input[type="checkbox"]:checked + label::after {
+  transform: rotate(315deg);
+  background-color: #6574cd; /*.bg-indigo*/
+  color: #f8fafc; /*.text-grey-lightest*/
+}
+.tab input[type="radio"]:checked + label::after {
+  transform: rotateX(180deg);
+  background-color: #6574cd; /*.bg-indigo*/
+  color: #f8fafc; /*.text-grey-lightest*/
+}
