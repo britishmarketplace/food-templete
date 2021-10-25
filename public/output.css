@@ -17876,11 +17876,11 @@ video {
 }
 
 .bg-banner-bg{
-  background-image: url('/public/images/banner/bg_banner.jpg');
+  background-image: url('../public/images/banner/bg_banner.jpg');
 }
 
 .bg-login-bg{
-  background-image: url('/public/images/login/login_bg.jpg');
+  background-image: url('../public/images/login/login_bg.jpg');
 }
 
 .from-transparent{
@@ -49852,11 +49852,11 @@ body {
   }
 
   .sm\:bg-banner-bg{
-    background-image: url('/public/images/banner/bg_banner.jpg');
+    background-image: url('../public/images/banner/bg_banner.jpg');
   }
 
   .sm\:bg-login-bg{
-    background-image: url('/public/images/login/login_bg.jpg');
+    background-image: url('../public/images/login/login_bg.jpg');
   }
 
   .sm\:from-transparent{
@@ -81280,11 +81280,11 @@ body {
   }
 
   .md\:bg-banner-bg{
-    background-image: url('/public/images/banner/bg_banner.jpg');
+    background-image: url('../public/images/banner/bg_banner.jpg');
   }
 
   .md\:bg-login-bg{
-    background-image: url('/public/images/login/login_bg.jpg');
+    background-image: url('../public/images/login/login_bg.jpg');
   }
 
   .md\:from-transparent{
@@ -112708,11 +112708,11 @@ body {
   }
 
   .lg\:bg-banner-bg{
-    background-image: url('/public/images/banner/bg_banner.jpg');
+    background-image: url('../public/images/banner/bg_banner.jpg');
   }
 
   .lg\:bg-login-bg{
-    background-image: url('/public/images/login/login_bg.jpg');
+    background-image: url('../public/images/login/login_bg.jpg');
   }
 
   .lg\:from-transparent{
@@ -144136,11 +144136,11 @@ body {
   }
 
   .xl\:bg-banner-bg{
-    background-image: url('/public/images/banner/bg_banner.jpg');
+    background-image: url('../public/images/banner/bg_banner.jpg');
   }
 
   .xl\:bg-login-bg{
-    background-image: url('/public/images/login/login_bg.jpg');
+    background-image: url('../public/images/login/login_bg.jpg');
   }
 
   .xl\:from-transparent{
@@ -175564,11 +175564,11 @@ body {
   }
 
   .\32xl\:bg-banner-bg{
-    background-image: url('/public/images/banner/bg_banner.jpg');
+    background-image: url('../public/images/banner/bg_banner.jpg');
   }
 
   .\32xl\:bg-login-bg{
-    background-image: url('/public/images/login/login_bg.jpg');
+    background-image: url('../public/images/login/login_bg.jpg');
   }
 
   .\32xl\:from-transparent{

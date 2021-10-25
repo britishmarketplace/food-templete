@@ -21,8 +21,8 @@ module.exports = {
         body : ['Poppins']
       },
       backgroundImage: {
-        'banner-bg' : "url('/public/images/banner/bg_banner.jpg')",
-        'login-bg' : "url('/public/images/login/login_bg.jpg')",
+        'banner-bg' : "url('../public/images/banner/bg_banner.jpg')",
+        'login-bg' : "url('../public/images/login/login_bg.jpg')",
       },
       height: {
         'bg-height' : '600px',
