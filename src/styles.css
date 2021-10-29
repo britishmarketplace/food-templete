@@ -164,3 +164,8 @@ body {
   background-color: #6574cd; /*.bg-indigo*/
   color: #f8fafc; /*.text-grey-lightest*/
 }
+
+/* == dropdown css == */
+#drop-box.active {
+  opacity: 1;
+}

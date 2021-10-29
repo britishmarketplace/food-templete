@@ -1,16 +1,20 @@
 // left sidebar menu
-function openSideNav() {
-    jQuery("#side-menu").addClass("open-side-nav");
-    jQuery("#overlay").addClass("overlay");
-}
-function closeSideNav() {
-    jQuery("#side-menu").removeClass("open-side-nav");
-    jQuery("#overlay").removeClass("overlay");
-}
-function overlayHide() {
-    jQuery("#side-menu").removeClass("open-side-nav");
-    jQuery("#overlay").removeClass("overlay");
-}
+let menuButton = document.querySelector("#menuButton");
+let closeButton = document.querySelector("#close-menu");
+let overlayButton = document.querySelector("#overlay");
+let sideMenu = document.querySelector("#side-menu");
+menuButton.addEventListener("click", () => {
+    sideMenu.classList.add("open-side-nav");
+    overlayButton.classList.add("overlay")
+});
+closeButton.addEventListener("click", () => {
+    sideMenu.classList.remove("open-side-nav");
+    overlayButton.classList.remove("overlay")
+});
+overlayButton.addEventListener("click", () => {
+    overlayButton.classList.remove("overlay")
+    sideMenu.classList.remove("open-side-nav");
+})
 
 
 // tab js
@@ -27,3 +31,12 @@ for(x = 0; x < myRadios.length; x++){
         }
     };
 }
+
+
+// dropdown js
+let dropBtn = document.querySelector('#drop-btn');
+let dropBox = document.querySelector('#drop-box');
+
+dropBtn.addEventListener("click", () => {
+    dropBox.classList.toggle("active");
+});

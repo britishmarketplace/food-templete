@@ -13,7 +13,7 @@
 
         <title>BMP-Food</title>
     </head>
-    <body>
+    <body class="font-body">
 
         <!-- header area start -->
         <header class="absolute w-full z-10 bg-gray-500 bg-opacity-10">
@@ -21,16 +21,16 @@
                 <div class="flex justify-between items-center px-5 py-5">
                     <div class="drawer-menu">
                         <div class="toggle-button">
-                            <button type="button" id="menuButton" onclick="openSideNav()">
+                            <button type="button" id="menuButton">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-current text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
                                 </svg>
                             </button>
                         </div>
                     </div>
-                    <div id="overlay" onclick="overlayHide()"></div>
+                    <div id="overlay"></div>
                     <div id="side-menu" class="main-side-nav">
-                        <a id="close-menu" class="menuCloseButton" onclick="closeSideNav()">
+                        <a id="close-menu" class="menuCloseButton">
                             <span>
                                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 stroke-current text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
@@ -71,6 +71,24 @@
                     </div>
                     <div class="header-item">
                         <ul class="m-0 p-0 flex items-center gap-5 text-white">
+                            <li class="relative">
+                                <a href="#0" id="drop-btn" class="flex items-center">
+                                    <h4 class="mr-1 text-md">Sayem</h4>
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </a>
+                                <div id="drop-box" class="absolute top-full mt-3 left-0 w-drop-w bg-white py-5 rounded-md text-gray-800 shadow-md opacity-0 transition-all">
+                                    <ul>
+                                        <li>
+                                            <a href="#0" class="px-4 py-2 block hover:bg-indigo-800 hover:text-white transition-all">Account info</a>
+                                        </li>
+                                        <li>
+                                            <a href="#0" class="px-4 py-2 block hover:bg-indigo-800 hover:text-white transition-all">Log out</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
                             <li class="md:block hidden"><a href="login.html" class="">Login</a></li>
                             <li class="lg:block hidden"><a href="#0">Help</a></li>
                             <li>
@@ -96,7 +114,7 @@
                         <p class="text-lg text-gray-500 font-serif pb-5">Find restaurants delivering right now, near you</p>
                         <div class="relative">
                             <input type="text" name="findRestaurant" class="border rounded-md p-5 w-full placeholder-gray-500 ... text-sm" placeholder="E.g. 21 Stonewall Drive">
-                            <button type="button" class="custom-btn md:absolute md:mt-0 mt-4 top-0 right-0 min-h-full rounded-md md:rounded-l-none md:rounded-r-lg">Find Restaurants</button>
+                            <button type="button" class="custom-btn md:absolute md:mt-0 mt-4 top-0 right-0 h-full min-h-full rounded-md md:rounded-l-none md:rounded-r-lg">Find Restaurants</button>
                         </div>
                     </div>
                 </div>
@@ -105,6 +123,7 @@
         <!-- banner area ends  -->
 
         <!-- download out app s -->
+        9
         <section class="bmp-app py-16">
             <div class="container mx-auto">
                 <div class="grid md:grid-cols-2 grid-cols-1 items-center">
@@ -292,8 +311,11 @@
         
 
         <!-- optional js -->
-        <script src="../src/js/jquery.js"></script>
         <script src="../src/js/function.js"></script>
+
+        <script>
+            
+        </script>
 
     </body>
 </html>

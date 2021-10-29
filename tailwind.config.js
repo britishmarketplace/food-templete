@@ -29,8 +29,15 @@ module.exports = {
       },
       width: {
         'card-width': '740px',
+        'drop-w'    : '200px',
       },
     },
+    maxWidth: {
+      'drop-max': '250px',
+    },
+    minHeight: {
+      'min-h-log-h': '526px'
+    }
   },
   variants: {
     extend: {},
