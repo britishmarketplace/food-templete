@@ -10,6 +10,11 @@
       href="../public/images/logo/fave.png"
       type="image/x-icon"
     />
+    <!-- swiper css -->
+    <link
+      rel="stylesheet"
+      href="../src/css/swiper-bundle.min.css"
+    />
     <!-- custom css -->
     <link rel="stylesheet" href="../public/output.css" />
 
@@ -17,7 +22,7 @@
   </head>
   <body class="font-body">
     <!-- header area start -->
-    <header class="bg-indigo-500">
+    <header class="bg-indigo-700">
       <div class="container mx-auto">
         <div class="flex justify-between items-center px-5 py-5">
           <div class="drawer-menu">
@@ -131,7 +136,7 @@
           </div>
           <div class="header-item">
             <ul class="m-0 p-0 flex items-center gap-5 text-white">
-              <li class="relative">
+              <li class="relative md:block hidden">
                 <a href="#0" id="drop-btn" class="flex items-center">
                   <h4 class="mr-1 text-md">Sayem</h4>
                   <svg
@@ -196,9 +201,6 @@
                   </ul>
                 </div>
               </li>
-              <li class="md:block hidden">
-                <a href="login.html" class="">Login</a>
-              </li>
               <li class="lg:block hidden"><a href="#0">Help</a></li>
               <li>
                 <button type="button" class="rounded-full">
@@ -254,7 +256,7 @@
 
     <!-- restaurant list start -->
     <div class="res-list bg-gray-50 py-14">
-      <div class="container">
+      <div class="w-full lg:px-16 md:px-10 px-5">
         <div class="flex items-baseline py-5">
           <h3 class="font-bold text-2xl mr-2">
             283 takeaways serving Sandford Road, D06 A2P4 country restaurant
@@ -265,9 +267,9 @@
         </div>
         <div class="text-gray-600 overflow-hidden">
           <div class="-my-8 divide-y-2 divide-gray-100">
-            <div class="py-8 flex flex-wrap md:flex-nowrap">
+            <div class="py-8 flex flex-wrap lg:flex-nowrap">
               <div
-                class="md:w-1/5 w-full md:mb-0 mb-6 flex-shrink-0 flex flex-col"
+                class="lg:w-1/5 w-full md:mb-0 mb-6 flex-shrink-0 flex flex-col"
               >
                 <div class="flex">
                   <svg
@@ -286,7 +288,7 @@
                   >
                 </div>
 
-                <div class="bg-white shadow-md p-5 rounded-md mt-5">
+                <div class="bg-white shadow-md lg:p-5 p-2 rounded-md mt-10">
                   <div class="border-b pb-5">
                     <button type="button" class="flex items-besline">
                       <input
@@ -297,55 +299,1243 @@
                       />
                       <label
                         for="allChek"
-                        class="text-black font-semibold text-md cursor-pointer"
+                        class="
+                          text-black
+                          font-semibold
+                          lg:text-md
+                          text-sm
+                          cursor-pointer
+                        "
                         >All (283)</label
                       >
                     </button>
                   </div>
                   <ul class="">
-                    <li>
+                    <li class="mt-4">
                       <a href="#0">
                         <input
                           type="checkbox"
                           name=""
                           id="res1"
-                          class="w-4 h-4 rounded-sm"
+                          class="w-4 h-4 rounded-sm mr-2"
                         />
                         <label
                           for="res1"
-                          class="text-gray-700 text-sm cursor-pointer"
+                          class="
+                            text-gray-700
+                            lg:text-md
+                            text-sm
+                            cursor-pointer
+                          "
                           >Asian fusion (25)</label
+                        >
+                      </a>
+                    </li>
+                    <li class="mt-4">
+                      <a href="#0">
+                        <input
+                          type="checkbox"
+                          name=""
+                          id="res2"
+                          class="w-4 h-4 rounded-sm mr-2"
+                        />
+                        <label
+                          for="res2"
+                          class="
+                            text-gray-700
+                            lg:text-md
+                            text-sm
+                            cursor-pointer
+                          "
+                          >Chinese (31)</label
+                        >
+                      </a>
+                    </li>
+                    <li class="mt-4">
+                      <a href="#0">
+                        <input
+                          type="checkbox"
+                          name=""
+                          id="res3"
+                          class="w-4 h-4 rounded-sm mr-2"
+                        />
+                        <label
+                          for="res3"
+                          class="
+                            text-gray-700
+                            lg:text-md
+                            text-sm
+                            cursor-pointer
+                          "
+                          >Indian (32)</label
+                        >
+                      </a>
+                    </li>
+                    <li class="mt-4">
+                      <a href="#0">
+                        <input
+                          type="checkbox"
+                          name=""
+                          id="res4"
+                          class="w-4 h-4 rounded-sm mr-2"
+                        />
+                        <label
+                          for="res4"
+                          class="
+                            text-gray-700
+                            lg:text-md
+                            text-sm
+                            cursor-pointer
+                          "
+                          >International (7)</label
+                        >
+                      </a>
+                    </li>
+                    <li class="mt-4">
+                      <a href="#0">
+                        <input
+                          type="checkbox"
+                          name=""
+                          id="res5"
+                          class="w-4 h-4 rounded-sm mr-2"
+                        />
+                        <label
+                          for="res5"
+                          class="
+                            text-gray-700
+                            lg:text-md
+                            text-sm
+                            cursor-pointer
+                          "
+                          >Irish (7)</label
+                        >
+                      </a>
+                    </li>
+                    <li class="mt-4">
+                      <a href="#0">
+                        <input
+                          type="checkbox"
+                          name=""
+                          id="res6"
+                          class="w-4 h-4 rounded-sm mr-2"
+                        />
+                        <label
+                          for="res6"
+                          class="
+                            text-gray-700
+                            lg:text-md
+                            text-sm
+                            cursor-pointer
+                          "
+                          >Italian (11)</label
+                        >
+                      </a>
+                    </li>
+                    <li class="mt-4">
+                      <a href="#0">
+                        <input
+                          type="checkbox"
+                          name=""
+                          id="res7"
+                          class="w-4 h-4 rounded-sm mr-2"
+                        />
+                        <label
+                          for="res7"
+                          class="
+                            text-gray-700
+                            lg:text-md
+                            text-sm
+                            cursor-pointer
+                          "
+                          >Pizza (42)</label
+                        >
+                      </a>
+                    </li>
+                    <li class="mt-4">
+                      <a href="#0">
+                        <input
+                          type="checkbox"
+                          name=""
+                          id="res8"
+                          class="w-4 h-4 rounded-sm mr-2"
+                        />
+                        <label
+                          for="res8"
+                          class="
+                            text-gray-700
+                            lg:text-md
+                            text-sm
+                            cursor-pointer
+                          "
+                          >Thai (17)</label
+                        >
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="flex py-4">
+                  <svg
+                    width="23"
+                    height="17"
+                    viewBox="0 0 23 17"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M.88 3.92c-.3 0-.55-.29-.55-.65 0-.36.25-.65.55-.65h4.4c.3 0 .55.29.55.65 0 .36-.24.65-.55.65H.88zm20.9-1.3c.3 0 .55.29.55.65 0 .36-.24.65-.55.65h-11c-.3 0-.55-.29-.55-.65 0-.36.25-.65.55-.65h11zm0 10.46c.3 0 .55.29.55.65 0 .36-.24.65-.55.65h-4.4c-.3 0-.55-.29-.55-.65 0-.36.25-.65.55-.65h4.4zm-20.9 1.3c-.3 0-.55-.29-.55-.65 0-.36.25-.65.55-.65h11c.3 0 .55.29.55.65 0 .36-.24.65-.55.65h-11zm5.5-13.07c-.3 0-.55.29-.55.65v2.62c0 .36.25.65.55.65h3.3c.3 0 .55-.3.55-.65V1.96c0-.36-.24-.65-.55-.65h-3.3zm0-1.31h3.3c.91 0 1.65.88 1.65 1.96v2.62c0 1.08-.74 1.96-1.65 1.96h-3.3c-.9 0-1.65-.88-1.65-1.96V1.96C4.73.88 5.47 0 6.38 0zm6.6 11.77c-.3 0-.55.3-.55.65v2.62c0 .36.25.65.55.65h3.3c.3 0 .55-.29.55-.65v-2.62c0-.36-.24-.65-.55-.65h-3.3zm0-1.3h3.3c.91 0 1.65.87 1.65 1.95v2.62c0 1.08-.74 1.96-1.65 1.96h-3.3c-.9 0-1.65-.88-1.65-1.96v-2.62c0-1.08.74-1.96 1.65-1.96z"
+                      fill="#535353"
+                    ></path>
+                  </svg>
+                  <span class="ml-2 text-sm text-black font-medium"
+                    >Refine</span
+                  >
+                </div>
+                <div class="bg-white shadow-md lg:p-5 p-2 rounded-md">
+                  <ul>
+                    <li class="mt-4">
+                      <a href="#0">
+                        <input
+                          type="checkbox"
+                          name=""
+                          id="ref1"
+                          class="w-4 h-4 rounded-sm mr-2"
+                        />
+                        <label
+                          for="ref1"
+                          class="
+                            text-gray-700
+                            lg:text-md
+                            text-sm
+                            cursor-pointer
+                          "
+                          >Special Offer</label
+                        >
+                      </a>
+                    </li>
+                    <li class="mt-4">
+                      <a href="#0">
+                        <input
+                          type="checkbox"
+                          name=""
+                          id="ref2"
+                          class="w-4 h-4 rounded-sm mr-2"
+                        />
+                        <label
+                          for="ref2"
+                          class="
+                            text-gray-700
+                            lg:text-md
+                            text-sm
+                            cursor-pointer
+                          "
+                          >Free Delivery</label
+                        >
+                      </a>
+                    </li>
+                    <li class="mt-4">
+                      <a href="#0">
+                        <input
+                          type="checkbox"
+                          name=""
+                          id="ref3"
+                          class="w-4 h-4 rounded-sm mr-2"
+                        />
+                        <label
+                          for="ref3"
+                          class="
+                            text-gray-700
+                            lg:text-md
+                            text-sm
+                            cursor-pointer
+                          "
+                          >5 + Stars</label
+                        >
+                      </a>
+                    </li>
+                    <li class="mt-4">
+                      <a href="#0">
+                        <input
+                          type="checkbox"
+                          name=""
+                          id="ref4"
+                          class="w-4 h-4 rounded-sm mr-2"
+                        />
+                        <label
+                          for="ref4"
+                          class="
+                            text-gray-700
+                            lg:text-md
+                            text-sm
+                            cursor-pointer
+                          "
+                          >Open Now</label
+                        >
+                      </a>
+                    </li>
+                    <li class="mt-4">
+                      <a href="#0">
+                        <input
+                          type="checkbox"
+                          name=""
+                          id="ref5"
+                          class="w-4 h-4 rounded-sm mr-2"
+                        />
+                        <label
+                          for="ref5"
+                          class="
+                            text-gray-700
+                            lg:text-md
+                            text-sm
+                            cursor-pointer
+                          "
+                          >Collection</label
+                        >
+                      </a>
+                    </li>
+                    <li class="mt-4">
+                      <a href="#0">
+                        <input
+                          type="checkbox"
+                          name=""
+                          id="ref6"
+                          class="w-4 h-4 rounded-sm mr-2"
+                        />
+                        <label
+                          for="ref6"
+                          class="
+                            text-gray-700
+                            lg:text-md
+                            text-sm
+                            cursor-pointer
+                          "
+                          >New</label
                         >
                       </a>
                     </li>
                   </ul>
                 </div>
               </div>
-              <div class="md:flex-grow md:ml-5">
-                <h2 class="text-2xl font-medium text-gray-900 title-font mb-2">
-                  Bitters hashtag waistcoat fashion axe chia unicorn
-                </h2>
-                <p class="leading-relaxed">
-                  Glossier echo park pug, church-key sartorial biodiesel
-                  vexillologist pop-up snackwave ramps cornhole. Marfa 3 wolf
-                  moon party messenger bag selfies, poke vaporware kombucha
-                  lumbersexual pork belly polaroid hoodie portland craft beer.
-                </p>
-                <a class="text-indigo-500 inline-flex items-center mt-4"
-                  >Learn More
-                  <svg
-                    class="w-4 h-4 ml-2"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                    stroke-width="2"
-                    fill="none"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
+              <div class="lg:flex-grow md:pl-5 lg:w-4/5 w-full">
+                <div class="text-right">
+                  <label for="resFillter"
+                    ><span class="mr-2 text-md">Sort by:</span></label
                   >
-                    <path d="M5 12h14"></path>
-                    <path d="M12 5l7 7-7 7"></path>
-                  </svg>
-                </a>
+                  <select
+                    name=""
+                    id="resFillter"
+                    class="
+                      text-black text-sm
+                      bg-white
+                      p-2
+                      rounded-md
+                      shadow-md
+                      focus:outline-none
+                    "
+                  >
+                    <option value="1">Best match</option>
+                    <option value="2">Quality score</option>
+                    <option value="3">Delivery fee</option>
+                    <option value="4">Minium order price</option>
+                    <option value="5" selected>Offers</option>
+                    <option value="5">Newest first</option>
+                    <option value="5">Restaurants name</option>
+                  </select>
+                </div>
+                <!-- searchable restaurant -->
+                <div class="res-item mt-4">
+                  <div class="offer-item">
+                    <div class="offer-title flex items-baseline">
+                      <h3
+                        class="
+                          md:text-xl
+                          text-md
+                          font-bold
+                          text-black
+                          space-x-1
+                        "
+                      >
+                        Up to 50% off
+                      </h3>
+                      <a
+                        href="#0"
+                        class="view-more text-indigo-800 text-sm ml-3"
+                        >View All(164)</a
+                      >
+                    </div>
+                  </div>
+                  <!-- Swiper -->
+                  <div class="offer-slider overflow-hidden relative py-5">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="res-card">
+                          <!-- This is an example component -->
+                            <div class="max-w-lg mx-auto">
+                              <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm group transform hover:-translate-y-1 transition-transform">
+                                  <a href="#">
+                                    <div class="relative">
+                                      <img class="rounded-t-lg" src="https://flowbite.com/docs/images/blog/image-1.jpg" alt="">
+                                      <div class="arr-min absolute -bottom-4 right-2.5 bg-white shadow-md rounded-2xl text-center leading-3 px-2 pt-2 pb-1">
+                                        <span class="text-md font-semibold">10-20</span>
+                                        <span class="text-xs block">min</span>
+                                      </div>
+                                    </div>
+                                  </a>
+                                  <div class="xl:p-5 p-3">
+                                      <a href="#">
+                                          <h5 class="text-gray-900 font-bold xl:text-lg md:text-md text-sm tracking-tight mb-2 group-hover:text-indigo-800 transition-colors">Full Life fundraising</h5>
+                                      </a>
+                                      <p class="font-normal text-xs text-gray-700 flex flex-wrap">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 currentColor text-indigo-800" viewBox="0 0 20 20" fill="currentColor">
+                                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <span class="text-indigo-800 mr-1">4.8 Excellent</span>(168) . British
+                                      </p>
+                                      <p class="font-normal text-xs text-gray-700">1.3 miles away . £0.01 delivery</p>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="res-card">
+                          <!-- This is an example component -->
+                            <div class="max-w-lg mx-auto">
+                              <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm group transform hover:-translate-y-1 transition-transform">
+                                  <a href="#">
+                                    <div class="relative">
+                                      <img class="rounded-t-lg" src="https://flowbite.com/docs/images/blog/image-1.jpg" alt="">
+                                      <div class="arr-min absolute -bottom-4 right-2.5 bg-white shadow-md rounded-2xl text-center leading-3 px-2 pt-2 pb-1">
+                                        <span class="text-md font-semibold">10-20</span>
+                                        <span class="text-xs block">min</span>
+                                      </div>
+                                    </div>
+                                  </a>
+                                  <div class="xl:p-5 p-3">
+                                      <a href="#">
+                                          <h5 class="text-gray-900 font-bold xl:text-lg md:text-md text-sm tracking-tight mb-2 group-hover:text-indigo-800 transition-colors">Full Life fundraising</h5>
+                                      </a>
+                                      <p class="font-normal text-xs text-gray-700 flex flex-wrap">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 currentColor text-indigo-800" viewBox="0 0 20 20" fill="currentColor">
+                                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <span class="text-indigo-800 mr-1">4.8 Excellent</span>(168) . British
+                                      </p>
+                                      <p class="font-normal text-xs text-gray-700">1.3 miles away . £0.01 delivery</p>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="res-card">
+                          <!-- This is an example component -->
+                            <div class="max-w-lg mx-auto">
+                              <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm group transform hover:-translate-y-1 transition-transform">
+                                  <a href="#">
+                                    <div class="relative">
+                                      <img class="rounded-t-lg" src="https://flowbite.com/docs/images/blog/image-1.jpg" alt="">
+                                      <div class="arr-min absolute -bottom-4 right-2.5 bg-white shadow-md rounded-2xl text-center leading-3 px-2 pt-2 pb-1">
+                                        <span class="text-md font-semibold">10-20</span>
+                                        <span class="text-xs block">min</span>
+                                      </div>
+                                    </div>
+                                  </a>
+                                  <div class="xl:p-5 p-3">
+                                      <a href="#">
+                                          <h5 class="text-gray-900 font-bold xl:text-lg md:text-md text-sm tracking-tight mb-2 group-hover:text-indigo-800 transition-colors">Full Life fundraising</h5>
+                                      </a>
+                                      <p class="font-normal text-xs text-gray-700 flex flex-wrap">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 currentColor text-indigo-800" viewBox="0 0 20 20" fill="currentColor">
+                                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <span class="text-indigo-800 mr-1">4.8 Excellent</span>(168) . British
+                                      </p>
+                                      <p class="font-normal text-xs text-gray-700">1.3 miles away . £0.01 delivery</p>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="res-card">
+                          <!-- This is an example component -->
+                            <div class="max-w-lg mx-auto">
+                              <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm group transform hover:-translate-y-1 transition-transform">
+                                  <a href="#">
+                                    <div class="relative">
+                                      <img class="rounded-t-lg" src="https://flowbite.com/docs/images/blog/image-1.jpg" alt="">
+                                      <div class="arr-min absolute -bottom-4 right-2.5 bg-white shadow-md rounded-2xl text-center leading-3 px-2 pt-2 pb-1">
+                                        <span class="text-md font-semibold">10-20</span>
+                                        <span class="text-xs block">min</span>
+                                      </div>
+                                    </div>
+                                  </a>
+                                  <div class="xl:p-5 p-3">
+                                      <a href="#">
+                                          <h5 class="text-gray-900 font-bold xl:text-lg md:text-md text-sm tracking-tight mb-2 group-hover:text-indigo-800 transition-colors">Full Life fundraising</h5>
+                                      </a>
+                                      <p class="font-normal text-xs text-gray-700 flex flex-wrap">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 currentColor text-indigo-800" viewBox="0 0 20 20" fill="currentColor">
+                                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <span class="text-indigo-800 mr-1">4.8 Excellent</span>(168) . British
+                                      </p>
+                                      <p class="font-normal text-xs text-gray-700">1.3 miles away . £0.01 delivery</p>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="res-card">
+                          <!-- This is an example component -->
+                            <div class="max-w-lg mx-auto">
+                              <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm group transform hover:-translate-y-1 transition-transform">
+                                  <a href="#">
+                                    <div class="relative">
+                                      <img class="rounded-t-lg" src="https://flowbite.com/docs/images/blog/image-1.jpg" alt="">
+                                      <div class="arr-min absolute -bottom-4 right-2.5 bg-white shadow-md rounded-2xl text-center leading-3 px-2 pt-2 pb-1">
+                                        <span class="text-md font-semibold">10-20</span>
+                                        <span class="text-xs block">min</span>
+                                      </div>
+                                    </div>
+                                  </a>
+                                  <div class="xl:p-5 p-3">
+                                      <a href="#">
+                                          <h5 class="text-gray-900 font-bold xl:text-lg md:text-md text-sm tracking-tight mb-2 group-hover:text-indigo-800 transition-colors">Full Life fundraising</h5>
+                                      </a>
+                                      <p class="font-normal text-xs text-gray-700 flex flex-wrap">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 currentColor text-indigo-800" viewBox="0 0 20 20" fill="currentColor">
+                                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <span class="text-indigo-800 mr-1">4.8 Excellent</span>(168) . British
+                                      </p>
+                                      <p class="font-normal text-xs text-gray-700">1.3 miles away . £0.01 delivery</p>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="res-card">
+                          <!-- This is an example component -->
+                            <div class="max-w-lg mx-auto">
+                              <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm group transform hover:-translate-y-1 transition-transform">
+                                  <a href="#">
+                                    <div class="relative">
+                                      <img class="rounded-t-lg" src="https://flowbite.com/docs/images/blog/image-1.jpg" alt="">
+                                      <div class="arr-min absolute -bottom-4 right-2.5 bg-white shadow-md rounded-2xl text-center leading-3 px-2 pt-2 pb-1">
+                                        <span class="text-md font-semibold">10-20</span>
+                                        <span class="text-xs block">min</span>
+                                      </div>
+                                    </div>
+                                  </a>
+                                  <div class="xl:p-5 p-3">
+                                      <a href="#">
+                                          <h5 class="text-gray-900 font-bold xl:text-lg md:text-md text-sm tracking-tight mb-2 group-hover:text-indigo-800 transition-colors">Full Life fundraising</h5>
+                                      </a>
+                                      <p class="font-normal text-xs text-gray-700 flex flex-wrap">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 currentColor text-indigo-800" viewBox="0 0 20 20" fill="currentColor">
+                                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <span class="text-indigo-800 mr-1">4.8 Excellent</span>(168) . British
+                                      </p>
+                                      <p class="font-normal text-xs text-gray-700">1.3 miles away . £0.01 delivery</p>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="res-card">
+                          <!-- This is an example component -->
+                            <div class="max-w-lg mx-auto">
+                              <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm group transform hover:-translate-y-1 transition-transform">
+                                  <a href="#">
+                                    <div class="relative">
+                                      <img class="rounded-t-lg" src="https://flowbite.com/docs/images/blog/image-1.jpg" alt="">
+                                      <div class="arr-min absolute -bottom-4 right-2.5 bg-white shadow-md rounded-2xl text-center leading-3 px-2 pt-2 pb-1">
+                                        <span class="text-md font-semibold">10-20</span>
+                                        <span class="text-xs block">min</span>
+                                      </div>
+                                    </div>
+                                  </a>
+                                  <div class="xl:p-5 p-3">
+                                      <a href="#">
+                                          <h5 class="text-gray-900 font-bold xl:text-lg md:text-md text-sm tracking-tight mb-2 group-hover:text-indigo-800 transition-colors">Full Life fundraising</h5>
+                                      </a>
+                                      <p class="font-normal text-xs text-gray-700 flex flex-wrap">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 currentColor text-indigo-800" viewBox="0 0 20 20" fill="currentColor">
+                                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <span class="text-indigo-800 mr-1">4.8 Excellent</span>(168) . British
+                                      </p>
+                                      <p class="font-normal text-xs text-gray-700">1.3 miles away . £0.01 delivery</p>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="res-card">
+                          <!-- This is an example component -->
+                            <div class="max-w-lg mx-auto">
+                              <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm group transform hover:-translate-y-1 transition-transform">
+                                  <a href="#">
+                                    <div class="relative">
+                                      <img class="rounded-t-lg" src="https://flowbite.com/docs/images/blog/image-1.jpg" alt="">
+                                      <div class="arr-min absolute -bottom-4 right-2.5 bg-white shadow-md rounded-2xl text-center leading-3 px-2 pt-2 pb-1">
+                                        <span class="text-md font-semibold">10-20</span>
+                                        <span class="text-xs block">min</span>
+                                      </div>
+                                    </div>
+                                  </a>
+                                  <div class="xl:p-5 p-3">
+                                      <a href="#">
+                                          <h5 class="text-gray-900 font-bold xl:text-lg md:text-md text-sm tracking-tight mb-2 group-hover:text-indigo-800 transition-colors">Full Life fundraising</h5>
+                                      </a>
+                                      <p class="font-normal text-xs text-gray-700 flex flex-wrap">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 currentColor text-indigo-800" viewBox="0 0 20 20" fill="currentColor">
+                                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <span class="text-indigo-800 mr-1">4.8 Excellent</span>(168) . British
+                                      </p>
+                                      <p class="font-normal text-xs text-gray-700">1.3 miles away . £0.01 delivery</p>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next bg-white shadow-lg rounded-full h-12 w-12">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 currentColor text-indigo-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                      </svg>
+                    </div>
+                    <div class="swiper-button-prev bg-white shadow-lg rounded-full h-12 w-12">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 currentColor text-indigo-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="res-item mt-4">
+                  <div class="offer-item">
+                    <div class="offer-title flex items-baseline">
+                      <h3
+                        class="
+                          md:text-xl
+                          text-md
+                          font-bold
+                          text-black
+                          space-x-1
+                        "
+                      >
+                      Meal deals
+                      </h3>
+                      <a
+                        href="#0"
+                        class="view-more text-indigo-800 text-sm ml-3"
+                        >View All(164)</a
+                      >
+                    </div>
+                  </div>
+                  <!-- Swiper -->
+                  <div class="meal-slider overflow-hidden relative py-5">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="res-card">
+                          <!-- This is an example component -->
+                            <div class="max-w-lg mx-auto">
+                              <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm">
+                                  <a href="#">
+                                    <div class="relative">
+                                      <img class="rounded-t-lg" src="../public/images/res-list/01.jpg" alt="">
+                                      <div class="arr-min absolute -bottom-4 right-2.5 bg-white shadow-md rounded-2xl text-center leading-3 px-2 pt-2 pb-1">
+                                        <span class="text-md font-semibold">10-20</span>
+                                        <span class="text-xs block">min</span>
+                                      </div>
+                                    </div>
+                                  </a>
+                                  <div class="p-5">
+                                      <a href="#">
+                                          <h5 class="text-gray-900 font-bold xl:text-lg lg:text-md text-sm tracking-tight mb-2">VQ - Aldgate</h5>
+                                      </a>
+                                      <p class="font-normal text-xs text-gray-700 flex flex-wrap">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 currentColor text-indigo-800" viewBox="0 0 20 20" fill="currentColor">
+                                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <span class="text-indigo-800 mr-1">4.8 Excellent</span>(168) . British
+                                      </p>
+                                      <p class="font-normal text-xs text-gray-700">1.3 miles away . £0.01 delivery</p>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="res-card">
+                          <!-- This is an example component -->
+                            <div class="max-w-lg mx-auto">
+                              <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm">
+                                  <a href="#">
+                                    <div class="relative">
+                                      <img class="rounded-t-lg" src="../public/images/res-list/02.jpg" alt="">
+                                      <div class="arr-min absolute -bottom-4 right-2.5 bg-white shadow-md rounded-2xl text-center leading-3 px-2 pt-2 pb-1">
+                                        <span class="text-md font-semibold">10-20</span>
+                                        <span class="text-xs block">min</span>
+                                      </div>
+                                    </div>
+                                  </a>
+                                  <div class="p-5">
+                                      <a href="#">
+                                          <h5 class="text-gray-900 font-bold xl:text-lg lg:text-md text-sm tracking-tight mb-2">VQ - Aldgate</h5>
+                                      </a>
+                                      <p class="font-normal text-xs text-gray-700 flex flex-wrap">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 currentColor text-indigo-800" viewBox="0 0 20 20" fill="currentColor">
+                                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <span class="text-indigo-800 mr-1">4.8 Excellent</span>(168) . British
+                                      </p>
+                                      <p class="font-normal text-xs text-gray-700">1.3 miles away . £0.01 delivery</p>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="res-card">
+                          <!-- This is an example component -->
+                            <div class="max-w-lg mx-auto">
+                              <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm">
+                                  <a href="#">
+                                    <div class="relative">
+                                      <img class="rounded-t-lg" src="../public/images/res-list/03.jpg" alt="">
+                                      <div class="arr-min absolute -bottom-4 right-2.5 bg-white shadow-md rounded-2xl text-center leading-3 px-2 pt-2 pb-1">
+                                        <span class="text-md font-semibold">10-20</span>
+                                        <span class="text-xs block">min</span>
+                                      </div>
+                                    </div>
+                                  </a>
+                                  <div class="p-5">
+                                      <a href="#">
+                                          <h5 class="text-gray-900 font-bold xl:text-lg lg:text-md text-sm tracking-tight mb-2">VQ - Aldgate</h5>
+                                      </a>
+                                      <p class="font-normal text-xs text-gray-700 flex flex-wrap">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 currentColor text-indigo-800" viewBox="0 0 20 20" fill="currentColor">
+                                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <span class="text-indigo-800 mr-1">4.8 Excellent</span>(168) . British
+                                      </p>
+                                      <p class="font-normal text-xs text-gray-700">1.3 miles away . £0.01 delivery</p>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="res-card">
+                          <!-- This is an example component -->
+                            <div class="max-w-lg mx-auto">
+                              <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm">
+                                  <a href="#">
+                                    <div class="relative">
+                                      <img class="rounded-t-lg" src="../public/images/res-list/04.jpg" alt="">
+                                      <div class="arr-min absolute -bottom-4 right-2.5 bg-white shadow-md rounded-2xl text-center leading-3 px-2 pt-2 pb-1">
+                                        <span class="text-md font-semibold">10-20</span>
+                                        <span class="text-xs block">min</span>
+                                      </div>
+                                    </div>
+                                  </a>
+                                  <div class="p-5">
+                                      <a href="#">
+                                          <h5 class="text-gray-900 font-bold xl:text-lg lg:text-md text-sm tracking-tight mb-2">VQ - Aldgate</h5>
+                                      </a>
+                                      <p class="font-normal text-xs text-gray-700 flex flex-wrap">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 currentColor text-indigo-800" viewBox="0 0 20 20" fill="currentColor">
+                                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <span class="text-indigo-800 mr-1">4.8 Excellent</span>(168) . British
+                                      </p>
+                                      <p class="font-normal text-xs text-gray-700">1.3 miles away . £0.01 delivery</p>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="res-card">
+                          <!-- This is an example component -->
+                            <div class="max-w-lg mx-auto">
+                              <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm">
+                                  <a href="#">
+                                    <div class="relative">
+                                      <img class="rounded-t-lg" src="../public/images/res-list/01.jpg" alt="">
+                                      <div class="arr-min absolute -bottom-4 right-2.5 bg-white shadow-md rounded-2xl text-center leading-3 px-2 pt-2 pb-1">
+                                        <span class="text-md font-semibold">10-20</span>
+                                        <span class="text-xs block">min</span>
+                                      </div>
+                                    </div>
+                                  </a>
+                                  <div class="p-5">
+                                      <a href="#">
+                                          <h5 class="text-gray-900 font-bold xl:text-lg lg:text-md text-sm tracking-tight mb-2">VQ - Aldgate</h5>
+                                      </a>
+                                      <p class="font-normal text-xs text-gray-700 flex flex-wrap">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 currentColor text-indigo-800" viewBox="0 0 20 20" fill="currentColor">
+                                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <span class="text-indigo-800 mr-1">4.8 Excellent</span>(168) . British
+                                      </p>
+                                      <p class="font-normal text-xs text-gray-700">1.3 miles away . £0.01 delivery</p>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="res-card">
+                          <!-- This is an example component -->
+                            <div class="max-w-lg mx-auto">
+                              <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm">
+                                  <a href="#">
+                                    <div class="relative">
+                                      <img class="rounded-t-lg" src="../public/images/res-list/06.jpg" alt="">
+                                      <div class="arr-min absolute -bottom-4 right-2.5 bg-white shadow-md rounded-2xl text-center leading-3 px-2 pt-2 pb-1">
+                                        <span class="text-md font-semibold">10-20</span>
+                                        <span class="text-xs block">min</span>
+                                      </div>
+                                    </div>
+                                  </a>
+                                  <div class="p-5">
+                                      <a href="#">
+                                          <h5 class="text-gray-900 font-bold xl:text-lg lg:text-md text-sm tracking-tight mb-2">VQ - Aldgate</h5>
+                                      </a>
+                                      <p class="font-normal text-xs text-gray-700 flex flex-wrap">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 currentColor text-indigo-800" viewBox="0 0 20 20" fill="currentColor">
+                                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <span class="text-indigo-800 mr-1">4.8 Excellent</span>(168) . British
+                                      </p>
+                                      <p class="font-normal text-xs text-gray-700">1.3 miles away . £0.01 delivery</p>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="res-card">
+                          <!-- This is an example component -->
+                            <div class="max-w-lg mx-auto">
+                              <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm">
+                                  <a href="#">
+                                    <div class="relative">
+                                      <img class="rounded-t-lg" src="../public/images/res-list/07.jpg" alt="">
+                                      <div class="arr-min absolute -bottom-4 right-2.5 bg-white shadow-md rounded-2xl text-center leading-3 px-2 pt-2 pb-1">
+                                        <span class="text-md font-semibold">10-20</span>
+                                        <span class="text-xs block">min</span>
+                                      </div>
+                                    </div>
+                                  </a>
+                                  <div class="p-5">
+                                      <a href="#">
+                                          <h5 class="text-gray-900 font-bold xl:text-lg lg:text-md text-sm tracking-tight mb-2">VQ - Aldgate</h5>
+                                      </a>
+                                      <p class="font-normal text-xs text-gray-700 flex flex-wrap">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 currentColor text-indigo-800" viewBox="0 0 20 20" fill="currentColor">
+                                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <span class="text-indigo-800 mr-1">4.8 Excellent</span>(168) . British
+                                      </p>
+                                      <p class="font-normal text-xs text-gray-700">1.3 miles away . £0.01 delivery</p>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="res-card">
+                          <!-- This is an example component -->
+                            <div class="max-w-lg mx-auto">
+                              <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm">
+                                  <a href="#">
+                                    <div class="relative">
+                                      <img class="rounded-t-lg" src="../public/images/res-list/08.jpg" alt="">
+                                      <div class="arr-min absolute -bottom-4 right-2.5 bg-white shadow-md rounded-2xl text-center leading-3 px-2 pt-2 pb-1">
+                                        <span class="text-md font-semibold">10-20</span>
+                                        <span class="text-xs block">min</span>
+                                      </div>
+                                    </div>
+                                  </a>
+                                  <div class="p-5">
+                                      <a href="#">
+                                          <h5 class="text-gray-900 font-bold xl:text-lg lg:text-md text-sm tracking-tight mb-2">VQ - Aldgate</h5>
+                                      </a>
+                                      <p class="font-normal text-xs text-gray-700 flex flex-wrap">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 currentColor text-indigo-800" viewBox="0 0 20 20" fill="currentColor">
+                                          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                        </svg>
+                                        <span class="text-indigo-800 mr-1">4.8 Excellent</span>(168) . British
+                                      </p>
+                                      <p class="font-normal text-xs text-gray-700">1.3 miles away . £0.01 delivery</p>
+                                  </div>
+                              </div>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-next bg-white shadow-lg rounded-full h-12 w-12">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 currentColor text-indigo-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                      </svg>
+                    </div>
+                    <div class="swiper-button-prev bg-white shadow-lg rounded-full h-12 w-12">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 currentColor text-indigo-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <!-- all type of restaurant -->
+                <div class="all-categori">
+                  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+                      <div class="res-card w-full">
+                        <!-- This is an example component -->
+                          <div class="max-w-lg mx-auto">
+                            <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm group transform hover:-translate-y-1 transition-transform">
+                                <a href="#">
+                                  <div class="relative">
+                                    <img class="rounded-t-lg w-full" src="../public/images/res-list/01.jpg" alt="">
+                                    <div class="arr-min absolute -bottom-4 right-2.5 bg-white shadow-md rounded-2xl text-center leading-3 px-2 pt-2 pb-1">
+                                      <span class="text-md font-semibold">10-20</span>
+                                      <span class="text-xs block">min</span>
+                                    </div>
+                                  </div>
+                                </a>
+                                <div class="p-5">
+                                    <a href="#">
+                                        <h5 class="text-gray-900 font-bold xl:text-lg md:text-md text-sm tracking-tight mb-2 group-hover:text-indigo-800 transition-colors">Morning Birds</h5>
+                                    </a>
+                                    <p class="font-normal text-xs text-gray-700 flex flex-wrap">
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 currentColor text-indigo-800" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                      </svg>
+                                      <span class="text-indigo-800 mr-1">4.8 Excellent</span>(168) . British
+                                    </p>
+                                    <p class="font-normal text-xs text-gray-700">1.3 miles away . £0.01 delivery</p>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="res-card w-full">
+                        <!-- This is an example component -->
+                          <div class="max-w-lg mx-auto">
+                            <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm group transform hover:-translate-y-1 transition-transform">
+                                <a href="#">
+                                  <div class="relative">
+                                    <img class="rounded-t-lg w-full" src="../public/images/res-list/02.jpg" alt="">
+                                    <div class="arr-min absolute -bottom-4 right-2.5 bg-white shadow-md rounded-2xl text-center leading-3 px-2 pt-2 pb-1">
+                                      <span class="text-md font-semibold">10-20</span>
+                                      <span class="text-xs block">min</span>
+                                    </div>
+                                  </div>
+                                </a>
+                                <div class="p-5">
+                                    <a href="#">
+                                        <h5 class="text-gray-900 font-bold xl:text-lg md:text-md text-sm tracking-tight mb-2 group-hover:text-indigo-800 transition-colors">Morning Birds</h5>
+                                    </a>
+                                    <p class="font-normal text-xs text-gray-700 flex flex-wrap">
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 currentColor text-indigo-800" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                      </svg>
+                                      <span class="text-indigo-800 mr-1">4.8 Excellent</span>(168) . British
+                                    </p>
+                                    <p class="font-normal text-xs text-gray-700">1.3 miles away . £0.01 delivery</p>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="res-card w-full">
+                        <!-- This is an example component -->
+                          <div class="max-w-lg mx-auto">
+                            <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm group transform hover:-translate-y-1 transition-transform">
+                                <a href="#">
+                                  <div class="relative">
+                                    <img class="rounded-t-lg w-full" src="../public/images/res-list/03.jpg" alt="">
+                                    <div class="arr-min absolute -bottom-4 right-2.5 bg-white shadow-md rounded-2xl text-center leading-3 px-2 pt-2 pb-1">
+                                      <span class="text-md font-semibold">10-20</span>
+                                      <span class="text-xs block">min</span>
+                                    </div>
+                                  </div>
+                                </a>
+                                <div class="p-5">
+                                    <a href="#">
+                                        <h5 class="text-gray-900 font-bold xl:text-lg md:text-md text-sm tracking-tight mb-2 group-hover:text-indigo-800 transition-colors">Morning Birds</h5>
+                                    </a>
+                                    <p class="font-normal text-xs text-gray-700 flex flex-wrap">
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 currentColor text-indigo-800" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                      </svg>
+                                      <span class="text-indigo-800 mr-1">4.8 Excellent</span>(168) . British
+                                    </p>
+                                    <p class="font-normal text-xs text-gray-700">1.3 miles away . £0.01 delivery</p>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="res-card w-full">
+                        <!-- This is an example component -->
+                          <div class="max-w-lg mx-auto">
+                            <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm group transform hover:-translate-y-1 transition-transform">
+                                <a href="#">
+                                  <div class="relative">
+                                    <img class="rounded-t-lg w-full" src="../public/images/res-list/04.jpg" alt="">
+                                    <div class="arr-min absolute -bottom-4 right-2.5 bg-white shadow-md rounded-2xl text-center leading-3 px-2 pt-2 pb-1">
+                                      <span class="text-md font-semibold">10-20</span>
+                                      <span class="text-xs block">min</span>
+                                    </div>
+                                  </div>
+                                </a>
+                                <div class="p-5">
+                                    <a href="#">
+                                        <h5 class="text-gray-900 font-bold xl:text-lg md:text-md text-sm tracking-tight mb-2 group-hover:text-indigo-800 transition-colors">Morning Birds</h5>
+                                    </a>
+                                    <p class="font-normal text-xs text-gray-700 flex flex-wrap">
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 currentColor text-indigo-800" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                      </svg>
+                                      <span class="text-indigo-800 mr-1">4.8 Excellent</span>(168) . British
+                                    </p>
+                                    <p class="font-normal text-xs text-gray-700">1.3 miles away . £0.01 delivery</p>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="res-card w-full">
+                        <!-- This is an example component -->
+                          <div class="max-w-lg mx-auto">
+                            <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm group transform hover:-translate-y-1 transition-transform">
+                                <a href="#">
+                                  <div class="relative">
+                                    <img class="rounded-t-lg w-full" src="../public/images/res-list/06.jpg" alt="">
+                                    <div class="arr-min absolute -bottom-4 right-2.5 bg-white shadow-md rounded-2xl text-center leading-3 px-2 pt-2 pb-1">
+                                      <span class="text-md font-semibold">10-20</span>
+                                      <span class="text-xs block">min</span>
+                                    </div>
+                                  </div>
+                                </a>
+                                <div class="p-5">
+                                    <a href="#">
+                                        <h5 class="text-gray-900 font-bold xl:text-lg md:text-md text-sm tracking-tight mb-2 group-hover:text-indigo-800 transition-colors">Morning Birds</h5>
+                                    </a>
+                                    <p class="font-normal text-xs text-gray-700 flex flex-wrap">
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 currentColor text-indigo-800" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                      </svg>
+                                      <span class="text-indigo-800 mr-1">4.8 Excellent</span>(168) . British
+                                    </p>
+                                    <p class="font-normal text-xs text-gray-700">1.3 miles away . £0.01 delivery</p>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="res-card w-full">
+                        <!-- This is an example component -->
+                          <div class="max-w-lg mx-auto">
+                            <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm group transform hover:-translate-y-1 transition-transform">
+                                <a href="#">
+                                  <div class="relative">
+                                    <img class="rounded-t-lg w-full" src="../public/images/res-list/07.jpg" alt="">
+                                    <div class="arr-min absolute -bottom-4 right-2.5 bg-white shadow-md rounded-2xl text-center leading-3 px-2 pt-2 pb-1">
+                                      <span class="text-md font-semibold">10-20</span>
+                                      <span class="text-xs block">min</span>
+                                    </div>
+                                  </div>
+                                </a>
+                                <div class="p-5">
+                                    <a href="#">
+                                        <h5 class="text-gray-900 font-bold xl:text-lg md:text-md text-sm tracking-tight mb-2 group-hover:text-indigo-800 transition-colors">Morning Birds</h5>
+                                    </a>
+                                    <p class="font-normal text-xs text-gray-700 flex flex-wrap">
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 currentColor text-indigo-800" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                      </svg>
+                                      <span class="text-indigo-800 mr-1">4.8 Excellent</span>(168) . British
+                                    </p>
+                                    <p class="font-normal text-xs text-gray-700">1.3 miles away . £0.01 delivery</p>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="res-card w-full">
+                        <!-- This is an example component -->
+                          <div class="max-w-lg mx-auto">
+                            <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm group transform hover:-translate-y-1 transition-transform">
+                                <a href="#">
+                                  <div class="relative">
+                                    <img class="rounded-t-lg w-full" src="../public/images/res-list/08.jpg" alt="">
+                                    <div class="arr-min absolute -bottom-4 right-2.5 bg-white shadow-md rounded-2xl text-center leading-3 px-2 pt-2 pb-1">
+                                      <span class="text-md font-semibold">10-20</span>
+                                      <span class="text-xs block">min</span>
+                                    </div>
+                                  </div>
+                                </a>
+                                <div class="p-5">
+                                    <a href="#">
+                                        <h5 class="text-gray-900 font-bold xl:text-lg md:text-md text-sm tracking-tight mb-2 group-hover:text-indigo-800 transition-colors">Morning Birds</h5>
+                                    </a>
+                                    <p class="font-normal text-xs text-gray-700 flex flex-wrap">
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 currentColor text-indigo-800" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                      </svg>
+                                      <span class="text-indigo-800 mr-1">4.8 Excellent</span>(168) . British
+                                    </p>
+                                    <p class="font-normal text-xs text-gray-700">1.3 miles away . £0.01 delivery</p>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="res-card w-full">
+                        <!-- This is an example component -->
+                          <div class="max-w-lg mx-auto">
+                            <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm group transform hover:-translate-y-1 transition-transform">
+                                <a href="#">
+                                  <div class="relative">
+                                    <img class="rounded-t-lg w-full" src="../public/images/res-list/02.jpg" alt="">
+                                    <div class="arr-min absolute -bottom-4 right-2.5 bg-white shadow-md rounded-2xl text-center leading-3 px-2 pt-2 pb-1">
+                                      <span class="text-md font-semibold">10-20</span>
+                                      <span class="text-xs block">min</span>
+                                    </div>
+                                  </div>
+                                </a>
+                                <div class="p-5">
+                                    <a href="#">
+                                        <h5 class="text-gray-900 font-bold xl:text-lg md:text-md text-sm tracking-tight mb-2 group-hover:text-indigo-800 transition-colors">Morning Birds</h5>
+                                    </a>
+                                    <p class="font-normal text-xs text-gray-700 flex flex-wrap">
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 currentColor text-indigo-800" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                      </svg>
+                                      <span class="text-indigo-800 mr-1">4.8 Excellent</span>(168) . British
+                                    </p>
+                                    <p class="font-normal text-xs text-gray-700">1.3 miles away . £0.01 delivery</p>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="res-card w-full">
+                        <!-- This is an example component -->
+                          <div class="max-w-lg mx-auto">
+                            <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm group transform hover:-translate-y-1 transition-transform">
+                                <a href="#">
+                                  <div class="relative">
+                                    <img class="rounded-t-lg w-full" src="../public/images/res-list/03.jpg" alt="">
+                                    <div class="arr-min absolute -bottom-4 right-2.5 bg-white shadow-md rounded-2xl text-center leading-3 px-2 pt-2 pb-1">
+                                      <span class="text-md font-semibold">10-20</span>
+                                      <span class="text-xs block">min</span>
+                                    </div>
+                                  </div>
+                                </a>
+                                <div class="p-5">
+                                    <a href="#">
+                                        <h5 class="text-gray-900 font-bold xl:text-lg md:text-md text-sm tracking-tight mb-2 group-hover:text-indigo-800 transition-colors">Morning Birds</h5>
+                                    </a>
+                                    <p class="font-normal text-xs text-gray-700 flex flex-wrap">
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 currentColor text-indigo-800" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                      </svg>
+                                      <span class="text-indigo-800 mr-1">4.8 Excellent</span>(168) . British
+                                    </p>
+                                    <p class="font-normal text-xs text-gray-700">1.3 miles away . £0.01 delivery</p>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="res-card w-full">
+                        <!-- This is an example component -->
+                          <div class="max-w-lg mx-auto">
+                            <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm group transform hover:-translate-y-1 transition-transform">
+                                <a href="#">
+                                  <div class="relative">
+                                    <img class="rounded-t-lg w-full" src="../public/images/res-list/01.jpg" alt="">
+                                    <div class="arr-min absolute -bottom-4 right-2.5 bg-white shadow-md rounded-2xl text-center leading-3 px-2 pt-2 pb-1">
+                                      <span class="text-md font-semibold">10-20</span>
+                                      <span class="text-xs block">min</span>
+                                    </div>
+                                  </div>
+                                </a>
+                                <div class="p-5">
+                                    <a href="#">
+                                        <h5 class="text-gray-900 font-bold xl:text-lg md:text-md text-sm tracking-tight mb-2 group-hover:text-indigo-800 transition-colors">Morning Birds</h5>
+                                    </a>
+                                    <p class="font-normal text-xs text-gray-700 flex flex-wrap">
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 currentColor text-indigo-800" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                      </svg>
+                                      <span class="text-indigo-800 mr-1">4.8 Excellent</span>(168) . British
+                                    </p>
+                                    <p class="font-normal text-xs text-gray-700">1.3 miles away . £0.01 delivery</p>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="res-card w-full">
+                        <!-- This is an example component -->
+                          <div class="max-w-lg mx-auto">
+                            <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm group transform hover:-translate-y-1 transition-transform">
+                                <a href="#">
+                                  <div class="relative">
+                                    <img class="rounded-t-lg w-full" src="../public/images/res-list/03.jpg" alt="">
+                                    <div class="arr-min absolute -bottom-4 right-2.5 bg-white shadow-md rounded-2xl text-center leading-3 px-2 pt-2 pb-1">
+                                      <span class="text-md font-semibold">10-20</span>
+                                      <span class="text-xs block">min</span>
+                                    </div>
+                                  </div>
+                                </a>
+                                <div class="p-5">
+                                    <a href="#">
+                                        <h5 class="text-gray-900 font-bold xl:text-lg md:text-md text-sm tracking-tight mb-2 group-hover:text-indigo-800 transition-colors">Morning Birds</h5>
+                                    </a>
+                                    <p class="font-normal text-xs text-gray-700 flex flex-wrap">
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 currentColor text-indigo-800" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                      </svg>
+                                      <span class="text-indigo-800 mr-1">4.8 Excellent</span>(168) . British
+                                    </p>
+                                    <p class="font-normal text-xs text-gray-700">1.3 miles away . £0.01 delivery</p>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                      <div class="res-card w-full">
+                        <!-- This is an example component -->
+                          <div class="max-w-lg mx-auto">
+                            <div class="bg-white shadow-md border border-gray-200 rounded-lg max-w-sm group transform hover:-translate-y-1 transition-transform">
+                                <a href="#">
+                                  <div class="relative">
+                                    <img class="rounded-t-lg w-full" src="../public/images/res-list/08.jpg" alt="">
+                                    <div class="arr-min absolute -bottom-4 right-2.5 bg-white shadow-md rounded-2xl text-center leading-3 px-2 pt-2 pb-1">
+                                      <span class="text-md font-semibold">10-20</span>
+                                      <span class="text-xs block">min</span>
+                                    </div>
+                                  </div>
+                                </a>
+                                <div class="p-5">
+                                    <a href="#">
+                                        <h5 class="text-gray-900 font-bold xl:text-lg md:text-md text-sm tracking-tight mb-2 group-hover:text-indigo-800 transition-colors">Morning Birds</h5>
+                                    </a>
+                                    <p class="font-normal text-xs text-gray-700 flex flex-wrap">
+                                      <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 currentColor text-indigo-800" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                      </svg>
+                                      <span class="text-indigo-800 mr-1">4.8 Excellent</span>(168) . British
+                                    </p>
+                                    <p class="font-normal text-xs text-gray-700">1.3 miles away . £0.01 delivery</p>
+                                </div>
+                            </div>
+                          </div>
+                      </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -355,6 +1545,8 @@
     <!-- restaurant list ends  -->
 
     <!-- optional js -->
+    <script src="../src/js/swiper-bundle.min.js"></script>
     <script src="../src/js/function.js"></script>
+
   </body>
 </html>

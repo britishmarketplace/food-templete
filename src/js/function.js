@@ -40,3 +40,59 @@ let dropBox = document.querySelector('#drop-box');
 dropBtn.addEventListener("click", () => {
     dropBox.classList.toggle("active");
 });
+
+// offer slider js
+var swiper = new Swiper(".offer-slider", {
+    slidesPerView: 1,
+    spaceBetween: 15,
+    loop: false,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        425: {
+            slidesPerView: 1.5,
+        },
+        576: {
+            slidesPerView: 2.5,
+        },
+        768: {
+            slidesPerView: 3.5,
+        },
+        1024: {
+            slidesPerView: 4.5,
+        },
+        1200: {
+            slidesPerView: 5.5
+        },
+    },
+});
+
+// offer slider js
+var swiper = new Swiper(".meal-slider", {
+    slidesPerView: 1,
+    spaceBetween: 15,
+    loop: false,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        425: {
+            slidesPerView: 1.5,
+        },
+        576: {
+            slidesPerView: 2.5,
+        },
+        768: {
+            slidesPerView: 3.5,
+        },
+        1024: {
+            slidesPerView: 4.5,
+        },
+        1200: {
+            slidesPerView: 5.5
+        },
+    },
+});

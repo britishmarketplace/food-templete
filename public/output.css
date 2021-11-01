@@ -6601,6 +6601,10 @@ video {
   min-height: 526px;
 }
 
+.min-h-restItem-h{
+  min-height: 125px;
+}
+
 .w-0{
   width: 0px;
 }
@@ -6875,6 +6879,10 @@ video {
 
 .w-drop-w{
   width: 200px;
+}
+
+.w-list-img{
+  width: 160px;
 }
 
 .min-w-0{
@@ -32573,6 +32581,24 @@ body {
   opacity: 1;
 }
 
+/* === swiper custom arrow === */
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  display: none;
+}
+
+/* === resturant list css === */
+
+/* .arr-min {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 100px;
+  background: #fff;
+  border-radius: 25px;
+} */
+
 @media (min-width: 576px){
   .sm\:container{
     width: 100%;
@@ -38557,6 +38583,10 @@ body {
     min-height: 526px;
   }
 
+  .sm\:min-h-restItem-h{
+    min-height: 125px;
+  }
+
   .sm\:w-0{
     width: 0px;
   }
@@ -38831,6 +38861,10 @@ body {
 
   .sm\:w-drop-w{
     width: 200px;
+  }
+
+  .sm\:w-list-img{
+    width: 160px;
   }
 
   .sm\:min-w-0{
@@ -69893,6 +69927,10 @@ body {
     min-height: 526px;
   }
 
+  .md\:min-h-restItem-h{
+    min-height: 125px;
+  }
+
   .md\:w-0{
     width: 0px;
   }
@@ -70167,6 +70205,10 @@ body {
 
   .md\:w-drop-w{
     width: 200px;
+  }
+
+  .md\:w-list-img{
+    width: 160px;
   }
 
   .md\:min-w-0{
@@ -101229,6 +101271,10 @@ body {
     min-height: 526px;
   }
 
+  .lg\:min-h-restItem-h{
+    min-height: 125px;
+  }
+
   .lg\:w-0{
     width: 0px;
   }
@@ -101503,6 +101549,10 @@ body {
 
   .lg\:w-drop-w{
     width: 200px;
+  }
+
+  .lg\:w-list-img{
+    width: 160px;
   }
 
   .lg\:min-w-0{
@@ -132565,6 +132615,10 @@ body {
     min-height: 526px;
   }
 
+  .xl\:min-h-restItem-h{
+    min-height: 125px;
+  }
+
   .xl\:w-0{
     width: 0px;
   }
@@ -132839,6 +132893,10 @@ body {
 
   .xl\:w-drop-w{
     width: 200px;
+  }
+
+  .xl\:w-list-img{
+    width: 160px;
   }
 
   .xl\:min-w-0{
@@ -163901,6 +163959,10 @@ body {
     min-height: 526px;
   }
 
+  .\32xl\:min-h-restItem-h{
+    min-height: 125px;
+  }
+
   .\32xl\:w-0{
     width: 0px;
   }
@@ -164175,6 +164237,10 @@ body {
 
   .\32xl\:w-drop-w{
     width: 200px;
+  }
+
+  .\32xl\:w-list-img{
+    width: 160px;
   }
 
   .\32xl\:min-w-0{

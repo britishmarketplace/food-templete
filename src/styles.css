@@ -169,3 +169,19 @@ body {
 #drop-box.active {
   opacity: 1;
 }
+
+/* === swiper custom arrow === */
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  display: none;
+}
+
+/* === resturant list css === */
+/* .arr-min {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 100px;
+  background: #fff;
+  border-radius: 25px;
+} */
