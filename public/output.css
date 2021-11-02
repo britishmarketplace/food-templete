@@ -6605,6 +6605,10 @@ video {
   min-height: 125px;
 }
 
+.min-h-details-h{
+  min-height: 150px;
+}
+
 .w-0{
   width: 0px;
 }
@@ -17797,6 +17801,10 @@ video {
 
 .bg-login-bg{
   background-image: url('../public/images/login/login_bg.jpg');
+}
+
+.bg-details-bg{
+  background-image: url('../public/images/details/01.jpg');
 }
 
 .from-transparent{
@@ -32599,6 +32607,14 @@ body {
   border-radius: 25px;
 } */
 
+.food-menu.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 111;
+  width: 100%;
+}
+
 @media (min-width: 576px){
   .sm\:container{
     width: 100%;
@@ -38585,6 +38601,10 @@ body {
 
   .sm\:min-h-restItem-h{
     min-height: 125px;
+  }
+
+  .sm\:min-h-details-h{
+    min-height: 150px;
   }
 
   .sm\:w-0{
@@ -49713,6 +49733,10 @@ body {
 
   .sm\:bg-login-bg{
     background-image: url('../public/images/login/login_bg.jpg');
+  }
+
+  .sm\:bg-details-bg{
+    background-image: url('../public/images/details/01.jpg');
   }
 
   .sm\:from-transparent{
@@ -69931,6 +69955,10 @@ body {
     min-height: 125px;
   }
 
+  .md\:min-h-details-h{
+    min-height: 150px;
+  }
+
   .md\:w-0{
     width: 0px;
   }
@@ -81057,6 +81085,10 @@ body {
 
   .md\:bg-login-bg{
     background-image: url('../public/images/login/login_bg.jpg');
+  }
+
+  .md\:bg-details-bg{
+    background-image: url('../public/images/details/01.jpg');
   }
 
   .md\:from-transparent{
@@ -101275,6 +101307,10 @@ body {
     min-height: 125px;
   }
 
+  .lg\:min-h-details-h{
+    min-height: 150px;
+  }
+
   .lg\:w-0{
     width: 0px;
   }
@@ -112401,6 +112437,10 @@ body {
 
   .lg\:bg-login-bg{
     background-image: url('../public/images/login/login_bg.jpg');
+  }
+
+  .lg\:bg-details-bg{
+    background-image: url('../public/images/details/01.jpg');
   }
 
   .lg\:from-transparent{
@@ -132619,6 +132659,10 @@ body {
     min-height: 125px;
   }
 
+  .xl\:min-h-details-h{
+    min-height: 150px;
+  }
+
   .xl\:w-0{
     width: 0px;
   }
@@ -143745,6 +143789,10 @@ body {
 
   .xl\:bg-login-bg{
     background-image: url('../public/images/login/login_bg.jpg');
+  }
+
+  .xl\:bg-details-bg{
+    background-image: url('../public/images/details/01.jpg');
   }
 
   .xl\:from-transparent{
@@ -163963,6 +164011,10 @@ body {
     min-height: 125px;
   }
 
+  .\32xl\:min-h-details-h{
+    min-height: 150px;
+  }
+
   .\32xl\:w-0{
     width: 0px;
   }
@@ -175089,6 +175141,10 @@ body {
 
   .\32xl\:bg-login-bg{
     background-image: url('../public/images/login/login_bg.jpg');
+  }
+
+  .\32xl\:bg-details-bg{
+    background-image: url('../public/images/details/01.jpg');
   }
 
   .\32xl\:from-transparent{

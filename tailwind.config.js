@@ -23,6 +23,7 @@ module.exports = {
       backgroundImage: {
         'banner-bg' : "url('../public/images/banner/bg_banner.jpg')",
         'login-bg' : "url('../public/images/login/login_bg.jpg')",
+        'details-bg' : "url('../public/images/details/01.jpg')",
       },
       height: {
         'bg-height' : '600px',
@@ -38,7 +39,8 @@ module.exports = {
     },
     minHeight: {
       'min-h-log-h': '526px',
-      'restItem-h' : '125px'
+      'restItem-h' : '125px',
+      'details-h' : '150px',
     }
   },
   variants: {

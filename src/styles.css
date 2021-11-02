@@ -185,3 +185,11 @@ body {
   background: #fff;
   border-radius: 25px;
 } */
+
+.food-menu.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 111;
+  width: 100%;
+}

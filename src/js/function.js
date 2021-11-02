@@ -32,6 +32,19 @@ for(x = 0; x < myRadios.length; x++){
     };
 }
 
+// food menu onScrool js
+var navbar = document.getElementById("foodNavbar");
+var sticky = navbar.offsetTop;
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
 
 // dropdown js
 let dropBtn = document.querySelector('#drop-btn');
@@ -93,6 +106,34 @@ var swiper = new Swiper(".meal-slider", {
         },
         1200: {
             slidesPerView: 5.5
+        },
+    },
+});
+
+// food menu slier
+
+var swiper = new Swiper(".foodMenu-slider", {
+    slidesPerView: 2,
+    spaceBetween: 10,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        425: {
+            slidesPerView: 3,
+        },
+        576: {
+            slidesPerView: 4.5,
+        },
+        768: {
+            slidesPerView: 6.5,
+        },
+        1024: {
+            slidesPerView: 8,
+        },
+        1200: {
+            slidesPerView: 10
         },
     },
 });
