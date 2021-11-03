@@ -32,18 +32,6 @@ for(x = 0; x < myRadios.length; x++){
     };
 }
 
-// food menu onScrool js
-var navbar = document.getElementById("foodNavbar");
-var sticky = navbar.offsetTop;
-window.onscroll = function() {myFunction()};
-
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
 
 
 // dropdown js
@@ -137,3 +125,16 @@ var swiper = new Swiper(".foodMenu-slider", {
         },
     },
 });
+
+// food menu onScrool js
+var navbar = document.getElementById("foodNavbar");
+var sticky = navbar.offsetTop;
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
