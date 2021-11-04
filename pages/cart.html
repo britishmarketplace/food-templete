@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="../public/images/logo/fave.png"
+      type="image/x-icon"
+    />
+    <!-- swiper css -->
+    <link rel="stylesheet" href="../src/css/swiper-bundle.min.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="../public/output.css" />
+
+    <title>BMP-Food</title>
+  </head>
+  <body class="font-body">
+    <!-- header area start -->
+    <header class="bg-indigo-700">
+      <div class="container mx-auto">
+        <div class="flex justify-between items-center px-5 py-5">
+          <div class="drawer-menu">
+            <div class="toggle-button">
+              <button type="button" id="menuButton">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 stroke-current text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div id="overlay"></div>
+          <div id="side-menu" class="main-side-nav">
+            <a id="close-menu" class="menuCloseButton">
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 stroke-current text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </span>
+            </a>
+            <ul class="mainMenu nav">
+              <li class="active">
+                <a href="#0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 mr-3"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                    />
+                  </svg>
+                  <span>Home</span>
+                </a>
+              </li>
+              <li>
+                <a href="#0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 mr-3"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  <span>Help</span>
+                </a>
+              </li>
+              <li>
+                <a href="#0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 mr-3"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"
+                    />
+                  </svg>
+                  <span>Contact us</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="header-logo">
+            <a href="#0">
+              <img
+                class="h-10 w-10"
+                src="../public/images/logo/logo.png"
+                alt="BMP Logo"
+              />
+            </a>
+          </div>
+          <div class="header-item">
+            <ul class="m-0 p-0 flex items-center gap-5 text-white">
+              <li class="relative md:block hidden">
+                <a href="#0" id="drop-btn" class="flex items-center">
+                  <h4 class="mr-1 text-md">Sayem</h4>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </a>
+                <div
+                  id="drop-box"
+                  class="
+                    absolute
+                    top-full
+                    mt-3
+                    left-0
+                    w-drop-w
+                    bg-white
+                    py-5
+                    z-10
+                    rounded-md
+                    text-gray-800
+                    shadow-md
+                    opacity-0
+                    transition-all
+                  "
+                >
+                  <ul>
+                    <li>
+                      <a
+                        href="#0"
+                        class="
+                          px-4
+                          py-2
+                          block
+                          hover:bg-indigo-800 hover:text-white
+                          transition-all
+                        "
+                        >Account info</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#0"
+                        class="
+                          px-4
+                          py-2
+                          block
+                          hover:bg-indigo-800 hover:text-white
+                          transition-all
+                        "
+                        >Log out</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="lg:block hidden"><a href="#0">Help</a></li>
+              <li>
+                <button type="button" class="rounded-full">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header area ends  -->
+
+    <!-- page header start -->
+    <div class="page-header flex items-center bg-cart-bg relative bg-cover bg-center object-cover min-h-cart-h">
+      <!-- <div
+        class="absolute top-0 right-0 bottom-0 left-0 bg-gray-900 bg-opacity-50"
+      ></div> -->
+      <div class="container">
+        <div class="flex items-center gap-2 relative flex-wrap">
+          <a href="index.html" class="font-semibold text-white">Home</a>
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 currentColor text-white"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </span>
+          <p class="text-md text-white">
+            Checkout <span class=""></span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- page header ends  -->
+
+    <!-- checkout area start -->
+    <section class="checkout-area py-10">
+      <div class="container">
+        <div class="section-wrapper bg-white p-5 shadow-md rounded-md max-w-cart-max m-auto">
+          <div class="section-header">
+            <h3 class="text-lg font-bold text-black uppercase">Deliver To</h3>
+          </div>
+          <div class="flex justify-end">
+            <button type="button" class="text-red-400 capitalize flex items-center">
+              Edit Address
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 currentColor text-red-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+          <div class="flex items-start border rounded-md py-6 px-2 mt-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 currentColor text-red-600" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
+            </svg>
+            <div class="ml-3">
+              <h6 class="text-lg font-semibold text-black">Current Location</h6>
+              <p class="text-gray-500 text-sm">440, Road 4, Mohakhali Dohs, Niketan</p>
+            </div>
+          </div>
+          <form action="" class="relative mt-6">
+            <div class="absolute left-3 top-2/4 transform -translate-y-1/2">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 currentColor text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 15v-1a4 4 0 00-4-4H8m0 0l3 3m-3-3l3-3m9 14V5a2 2 0 00-2-2H6a2 2 0 00-2 2v16l4-2 4 2 4-2 4 2z" />
+              </svg>
+            </div>
+            <input type="text" class="border rounded-md p-4 pl-12 w-full" placeholder="Add Direction (road, landmark,house number...">
+          </form>
+
+          <!-- cart list -->
+          <div class="cart-list mt-5">
+            <h4 class="text-md text-black font-semibold uppercase">Your Cart</h4>
+            <div class="flex pt-6">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 currentColor text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3M3 17V7a2 2 0 012-2h6l2 2h6a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2z" />
+              </svg>
+              <span class="text-md ml-1 text-gray-400">Spicy Fast Food Restaurent</span>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+                <div class="cart-item sm:flex mt-8">
+                  <div class="item-thumb">
+                    <img src="../public/images/cart/01.png" class="h-24 w-24 object-scale-down" alt="">
+                  </div>
+                  <div class="item-text sm:pl-12 mt-4 sm:mt-0">
+                    <h4 class="text-md font-semibold text-black">Thai soup</h4>
+                    <p class="text-xs">yummy soup with corn</p>
+                    <div class="flex flex-wrap mt-4 sm:mt-8">
+                      <div class="price">
+                        <p class="text-md text-black font-medium">$20.00</p>
+                      </div>
+                      <div class="item-crount xl:ml-12 ml-6 bg-white shadow-sm" id="counter-cart">
+                        <button id="decrease" class="text-black bg-gray-300 h-5 w-6 leading-5 rounded-sm">-</button>
+                          <span id="counter" class="counter-text bg-white text-black h-5 w-6 text-center inline-block">0</span>
+                        <button id="increase" class="text-black bg-gray-300 h-5 w-6 leading-5 rounded-sm">+</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart-item sm:flex mt-8">
+                  <div class="item-thumb">
+                    <img src="../public/images/cart/02.png" class="h-24 w-24 object-scale-down" alt="">
+                  </div>
+                  <div class="item-text sm:pl-12 mt-4 sm:mt-0">
+                    <h4 class="text-md font-semibold text-black">Pasta</h4>
+                    <p class="text-xs">yummy pasta with chess</p>
+                    <div class="flex flex-wrap mt-4 sm:mt-8">
+                      <div class="price">
+                        <p class="text-md text-black font-medium">$20.00</p>
+                      </div>
+                      <div class="item-crount xl:ml-12 ml-6 bg-white shadow-sm" id="counter-cart">
+                        <button id="decrease" class="text-black bg-gray-300 h-5 w-6 leading-5 rounded-sm">-</button>
+                          <span id="counter" class="counter-text bg-white text-black h-5 w-6 text-center inline-block">0</span>
+                        <button id="increase" class="text-black bg-gray-300 h-5 w-6 leading-5 rounded-sm">+</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart-item sm:flex mt-8">
+                  <div class="item-thumb">
+                    <img src="../public/images/cart/01.png" class="h-24 w-24 object-scale-down" alt="">
+                  </div>
+                  <div class="item-text sm:pl-12 mt-4 sm:mt-0">
+                    <h4 class="text-md font-semibold text-black">Pasta</h4>
+                    <p class="text-xs">yummy pasta with chess</p>
+                    <div class="flex flex-wrap mt-4 sm:mt-8">
+                      <div class="price">
+                        <p class="text-md text-black font-medium">$20.00</p>
+                      </div>
+                      <div class="item-crount xl:ml-12 ml-6 bg-white shadow-sm" id="counter-cart">
+                        <button id="decrease" class="text-black bg-gray-300 h-5 w-6 leading-5 rounded-sm">-</button>
+                          <span id="counter" class="counter-text bg-white text-black h-5 w-6 text-center inline-block">0</span>
+                        <button id="increase" class="text-black bg-gray-300 h-5 w-6 leading-5 rounded-sm">+</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart-item sm:flex mt-8">
+                  <div class="item-thumb">
+                    <img src="../public/images/cart/02.png" class="h-24 w-24 object-scale-down" alt="">
+                  </div>
+                  <div class="item-text sm:pl-12 mt-4 sm:mt-0">
+                    <h4 class="text-md font-semibold text-black">Pasta</h4>
+                    <p class="text-xs">yummy pasta with chess</p>
+                    <div class="flex flex-wrap mt-4 sm:mt-8">
+                      <div class="price">
+                        <p class="text-md text-black font-medium">$20.00</p>
+                      </div>
+                      <div class="item-crount xl:ml-12 ml-6 bg-white shadow-sm" id="counter-cart">
+                        <button id="decrease" class="text-black bg-gray-300 h-5 w-6 leading-5 rounded-sm">-</button>
+                          <span id="counter" class="counter-text bg-white text-black h-5 w-6 text-center inline-block">0</span>
+                        <button id="increase" class="text-black bg-gray-300 h-5 w-6 leading-5 rounded-sm">+</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart-item sm:flex mt-8">
+                  <div class="item-thumb">
+                    <img src="../public/images/cart/01.png" class="h-24 w-24 object-scale-down" alt="">
+                  </div>
+                  <div class="item-text sm:pl-12 mt-4 sm:mt-0">
+                    <h4 class="text-md font-semibold text-black">Pasta</h4>
+                    <p class="text-xs">yummy pasta with chess</p>
+                    <div class="flex flex-wrap mt-4 sm:mt-8">
+                      <div class="price">
+                        <p class="text-md text-black font-medium">$20.00</p>
+                      </div>
+                      <div class="item-crount xl:ml-12 ml-6 bg-white shadow-sm" id="counter-cart">
+                        <button id="decrease" class="text-black bg-gray-300 h-5 w-6 leading-5 rounded-sm">-</button>
+                          <span id="counter" class="counter-text bg-white text-black h-5 w-6 text-center inline-block">0</span>
+                        <button id="increase" class="text-black bg-gray-300 h-5 w-6 leading-5 rounded-sm">+</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart-item sm:flex mt-8">
+                  <div class="item-thumb">
+                    <img src="../public/images/cart/01.png" class="h-24 w-24 object-scale-down" alt="">
+                  </div>
+                  <div class="item-text sm:pl-12 mt-4 sm:mt-0">
+                    <h4 class="text-md font-semibold text-black">Thai soup</h4>
+                    <p class="text-xs">yummy soup with corn</p>
+                    <div class="flex flex-wrap mt-4 sm:mt-8">
+                      <div class="price">
+                        <p class="text-md text-black font-medium">$20.00</p>
+                      </div>
+                      <div class="item-crount xl:ml-12 ml-6 bg-white shadow-sm" id="counter-cart">
+                        <button id="decrease" class="text-black bg-gray-300 h-5 w-6 leading-5 rounded-sm">-</button>
+                          <span id="counter" class="counter-text bg-white text-black h-5 w-6 text-center inline-block">0</span>
+                        <button id="increase" class="text-black bg-gray-300 h-5 w-6 leading-5 rounded-sm">+</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart-item sm:flex mt-8">
+                  <div class="item-thumb">
+                    <img src="../public/images/cart/02.png" class="h-24 w-24 object-scale-down" alt="">
+                  </div>
+                  <div class="item-text sm:pl-12 mt-4 sm:mt-0">
+                    <h4 class="text-md font-semibold text-black">Pasta</h4>
+                    <p class="text-xs">yummy pasta with chess</p>
+                    <div class="flex flex-wrap mt-4 sm:mt-8">
+                      <div class="price">
+                        <p class="text-md text-black font-medium">$20.00</p>
+                      </div>
+                      <div class="item-crount xl:ml-12 ml-6 bg-white shadow-sm" id="counter-cart">
+                        <button id="decrease" class="text-black bg-gray-300 h-5 w-6 leading-5 rounded-sm">-</button>
+                          <span id="counter" class="counter-text bg-white text-black h-5 w-6 text-center inline-block">0</span>
+                        <button id="increase" class="text-black bg-gray-300 h-5 w-6 leading-5 rounded-sm">+</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart-item sm:flex mt-8">
+                  <div class="item-thumb">
+                    <img src="../public/images/cart/01.png" class="h-24 w-24 object-scale-down" alt="">
+                  </div>
+                  <div class="item-text sm:pl-12 mt-4 sm:mt-0">
+                    <h4 class="text-md font-semibold text-black">Pasta</h4>
+                    <p class="text-xs">yummy pasta with chess</p>
+                    <div class="flex flex-wrap mt-4 sm:mt-8">
+                      <div class="price">
+                        <p class="text-md text-black font-medium">$20.00</p>
+                      </div>
+                      <div class="item-crount xl:ml-12 ml-6 bg-white shadow-sm" id="counter-cart">
+                        <button id="decrease" class="text-black bg-gray-300 h-5 w-6 leading-5 rounded-sm">-</button>
+                          <span id="counter" class="counter-text bg-white text-black h-5 w-6 text-center inline-block">0</span>
+                        <button id="increase" class="text-black bg-gray-300 h-5 w-6 leading-5 rounded-sm">+</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart-item sm:flex mt-8">
+                  <div class="item-thumb">
+                    <img src="../public/images/cart/01.png" class="h-24 w-24 object-scale-down" alt="">
+                  </div>
+                  <div class="item-text sm:pl-12 mt-4 sm:mt-0">
+                    <h4 class="text-md font-semibold text-black">Pasta</h4>
+                    <p class="text-xs">yummy pasta with chess</p>
+                    <div class="flex flex-wrap mt-4 sm:mt-8">
+                      <div class="price">
+                        <p class="text-md text-black font-medium">$20.00</p>
+                      </div>
+                      <div class="item-crount xl:ml-12 ml-6 bg-white shadow-sm" id="counter-cart">
+                        <button id="decrease" class="text-black bg-gray-300 h-5 w-6 leading-5 rounded-sm">-</button>
+                          <span id="counter" class="counter-text bg-white text-black h-5 w-6 text-center inline-block">0</span>
+                        <button id="increase" class="text-black bg-gray-300 h-5 w-6 leading-5 rounded-sm">+</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart-item sm:flex mt-8">
+                  <div class="item-thumb">
+                    <img src="../public/images/cart/02.png" class="h-24 w-24 object-scale-down" alt="">
+                  </div>
+                  <div class="item-text sm:pl-12 mt-4 sm:mt-0">
+                    <h4 class="text-md font-semibold text-black">Pasta</h4>
+                    <p class="text-xs">yummy pasta with chess</p>
+                    <div class="flex flex-wrap mt-4 sm:mt-8">
+                      <div class="price">
+                        <p class="text-md text-black font-medium">$20.00</p>
+                      </div>
+                      <div class="item-crount xl:ml-12 ml-6 bg-white shadow-sm" id="counter-cart">
+                        <button id="decrease" class="text-black bg-gray-300 h-5 w-6 leading-5 rounded-sm">-</button>
+                          <span id="counter" class="counter-text bg-white text-black h-5 w-6 text-center inline-block">0</span>
+                        <button id="increase" class="text-black bg-gray-300 h-5 w-6 leading-5 rounded-sm">+</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart-item sm:flex mt-8">
+                  <div class="item-thumb">
+                    <img src="../public/images/cart/01.png" class="h-24 w-24 object-scale-down" alt="">
+                  </div>
+                  <div class="item-text sm:pl-12 mt-4 sm:mt-0">
+                    <h4 class="text-md font-semibold text-black">Pasta</h4>
+                    <p class="text-xs">yummy pasta with chess</p>
+                    <div class="flex flex-wrap mt-4 sm:mt-8">
+                      <div class="price">
+                        <p class="text-md text-black font-medium">$20.00</p>
+                      </div>
+                      <div class="item-crount xl:ml-12 ml-6 bg-white shadow-sm" id="counter-cart">
+                        <button id="decrease" class="text-black bg-gray-300 h-5 w-6 leading-5 rounded-sm">-</button>
+                          <span id="counter" class="counter-text bg-white text-black h-5 w-6 text-center inline-block">0</span>
+                        <button id="increase" class="text-black bg-gray-300 h-5 w-6 leading-5 rounded-sm">+</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="cart-item sm:flex mt-8">
+                  <div class="item-thumb">
+                    <img src="../public/images/cart/01.png" class="h-24 w-24 object-scale-down" alt="">
+                  </div>
+                  <div class="item-text sm:pl-12 mt-4 sm:mt-0">
+                    <h4 class="text-md font-semibold text-black">Pasta</h4>
+                    <p class="text-xs">yummy pasta with chess</p>
+                    <div class="flex flex-wrap mt-4 sm:mt-8">
+                      <div class="price">
+                        <p class="text-md text-black font-medium">$20.00</p>
+                      </div>
+                      <div class="item-crount xl:ml-12 ml-6 bg-white shadow-sm" id="counter-cart">
+                        <button id="decrease" class="text-black bg-gray-300 h-5 w-6 leading-5 rounded-sm">-</button>
+                          <span id="counter" class="counter-text bg-white text-black h-5 w-6 text-center inline-block">0</span>
+                        <button id="increase" class="text-black bg-gray-300 h-5 w-6 leading-5 rounded-sm">+</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!-- additional info-->
+            <form action="" class="mt-8">
+              <div class="relative">
+                <input type="text" class="border p-3 pl-12 shadow-sm w-full rounded-md" placeholder="Additional Instruction">
+                <div class="absolute left-3 top-2/4 transform -translate-y-2/4">
+                  <svg width="16" height="21" viewBox="0 0 16 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.1914 8.0424H4.36748C4.12871 8.0424 3.93335 7.84322 3.93335 7.59978C3.93335 7.35634 4.12654 7.15717 4.36748 7.15717H10.1914C10.4302 7.15717 10.6255 7.35634 10.6255 7.59978C10.6255 7.84322 10.4323 8.0424 10.1914 8.0424Z" fill="#333333"/>
+                    <path d="M6.47493 6.02629H4.36504C4.12627 6.02629 3.93091 5.82711 3.93091 5.58367C3.93091 5.34023 4.1241 5.14105 4.36504 5.14105H6.47493C6.71371 5.14105 6.90907 5.34023 6.90907 5.58367C6.90907 5.82711 6.71588 6.02629 6.47493 6.02629Z" fill="#333333"/>
+                    <path d="M6.47493 15.7572H4.36504C4.12627 15.7572 3.93091 15.5581 3.93091 15.3146C3.93091 15.0712 4.1241 14.872 4.36504 14.872H6.47493C6.71371 14.872 6.90907 15.0712 6.90907 15.3146C6.90907 15.5603 6.71588 15.7572 6.47493 15.7572Z" fill="#333333"/>
+                    <path d="M9.35134 9.98546H4.36748C4.12871 9.98546 3.93335 9.78628 3.93335 9.54284C3.93335 9.2994 4.12654 9.10022 4.36748 9.10022H9.35134C9.59011 9.10022 9.78547 9.2994 9.78547 9.54284C9.7833 9.78628 9.59011 9.98546 9.35134 9.98546Z" fill="#333333"/>
+                    <path d="M10.1914 11.902H4.36748C4.12871 11.902 3.93335 11.7028 3.93335 11.4593C3.93335 11.2159 4.12654 11.0167 4.36748 11.0167H10.1914C10.4302 11.0167 10.6255 11.2159 10.6255 11.4593C10.6255 11.7028 10.4323 11.902 10.1914 11.902Z" fill="#333333"/>
+                    <path d="M16 5.68321C16 5.53936 15.9327 5.411 15.8285 5.33133L10.7274 0.130572C10.6992 0.101802 10.6688 0.0796712 10.6363 0.0597534C10.6276 0.0553272 10.6189 0.050901 10.6102 0.0464749C10.5777 0.0309832 10.5429 0.0154916 10.5082 0.00885236C10.506 0.00885236 10.5039 0.00885236 10.5039 0.00885236C10.4756 0.00221309 10.4474 0 10.4192 0H0.434134C0.19536 0 0 0.199178 0 0.442618V20.5574C0 20.8008 0.19319 21 0.434134 21H15.5594C15.7981 21 15.9935 20.8008 15.9935 20.5574V5.74075C15.9957 5.72083 16 5.70313 16 5.68321ZM14.5131 5.24059H10.8533V1.50933L10.8707 1.52703L14.5131 5.24059ZM0.868268 20.1148V0.885236H9.98725V5.68321C9.98725 5.92665 10.1804 6.12583 10.4214 6.12583H15.1274V20.117H0.868268V20.1148Z" fill="#333333"/>
+                  </svg>
+                </div>
+              </div>
+            </form>
+            <div class="price-list">
+              <ul>
+                <li class="flex">
+                  <h6 class="text">Subtotal (includes VAT, SD)</h6>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- checkout area ends  -->
+
+    <!-- optional js -->
+    <script src="../src/js/swiper-bundle.min.js"></script>
+    <script src="../src/js/function.js"></script>
+  </body>
+</html>
