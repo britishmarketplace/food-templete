@@ -138,3 +138,18 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
+
+
+// checkout item.
+document.querySelector('.mb-checkout-btn').addEventListener('click', function(e) {
+    [].map.call(document.querySelectorAll('.order-history'), function(el) {
+      el.classList.toggle('active');
+    });
+});
+
+document.querySelector('#closeOrder').addEventListener('click', function(e) {
+    [].map.call(document.querySelectorAll('.order-history'), function(el) {
+      el.classList.remove('active');
+    });
+});
+
