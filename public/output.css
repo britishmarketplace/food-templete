@@ -33057,6 +33057,12 @@ input[type="radio"]:checked + label {
   display: block;
 }
 
+#address-modal .pr-item {
+  max-height: 200px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
 #close-btn,
 #close-btn1 {
   align-self: flex-end;
@@ -33097,6 +33103,10 @@ input[type="radio"]:checked + label {
 }
 
 /* animation part end */
+
+.checkout-area .order-summery {
+  box-shadow: 0px 1px 11px rgba(51, 73, 167, 0.13);
+}
 
 /* === checkout page css ends  === */
 
