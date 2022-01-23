@@ -34,7 +34,7 @@ module.exports = {
         'card-width': '740px',
         'drop-w'    : '200px',
         'list-img'  : '160px',
-      },
+      }
     },
     maxWidth: {
       'drop-max': '250px',
@@ -42,6 +42,7 @@ module.exports = {
       'card-text' : '430px',
       'delivery-des' : '580px',
       'step-text': '300px',
+      'max-car' : '250px',
     },
     minHeight: {
       'min-h-log-h': '526px',

@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="../public/images/logo/fave.png"
+      type="image/x-icon"
+    />
+    <!-- swiper css -->
+    <link rel="stylesheet" href="../src/css/swiper-bundle.min.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="../public/output.css" />
+
+    <title>BMP-Food</title>
+  </head>
+  <body class="font-body">
+    <!-- header area start -->
+    <header class="bg-indigo-700">
+      <div class="container mx-auto">
+        <div class="flex justify-between items-center px-5 py-5">
+          <div class="drawer-menu">
+            <div class="toggle-button">
+              <button type="button" id="menuButton">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 stroke-current text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div id="overlay"></div>
+          <div id="side-menu" class="main-side-nav">
+            <a id="close-menu" class="menuCloseButton">
+              <span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6 stroke-current text-white"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M6 18L18 6M6 6l12 12"
+                  />
+                </svg>
+              </span>
+            </a>
+            <ul class="mainMenu nav">
+              <li class="active">
+                <a href="#0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 mr-3"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                    />
+                  </svg>
+                  <span>Home</span>
+                </a>
+              </li>
+              <li>
+                <a href="#0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 mr-3"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                  <span>Help</span>
+                </a>
+              </li>
+              <li>
+                <a href="#0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 mr-3"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"
+                    />
+                  </svg>
+                  <span>Contact us</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="header-logo">
+            <a href="#0">
+              <img
+                class="h-10 w-10"
+                src="../public/images/logo/logo.png"
+                alt="BMP Logo"
+              />
+            </a>
+          </div>
+          <div class="header-item">
+            <ul class="m-0 p-0 flex items-center gap-5 text-white">
+              <li class="relative md:block hidden">
+                <a href="#0" id="drop-btn" class="flex items-center">
+                  <h4 class="mr-1 text-md">Sayem</h4>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </a>
+                <div
+                  id="drop-box"
+                  class="absolute top-full mt-3 left-0 w-drop-w bg-white py-5 z-10 rounded-md text-gray-800 shadow-md opacity-0 transition-all"
+                >
+                  <ul>
+                    <li>
+                      <a
+                        href="#0"
+                        class="px-4 py-2 block hover:bg-indigo-800 hover:text-white transition-all"
+                        >Account info</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#0"
+                        class="px-4 py-2 block hover:bg-indigo-800 hover:text-white transition-all"
+                        >Log out</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="lg:block hidden"><a href="#0">Help</a></li>
+              <li>
+                <button type="button" class="rounded-full">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header area ends  -->
+
+    <!-- page header start -->
+    <div
+      class="page-header flex items-center bg-cart-bg relative bg-cover bg-center object-cover min-h-cart-h"
+    >
+      <!-- <div
+        class="absolute top-0 right-0 bottom-0 left-0 bg-gray-900 bg-opacity-50"
+      ></div> -->
+      <div class="container">
+        <div class="flex items-center gap-2 relative flex-wrap">
+          <a href="index.html" class="font-semibold text-white">Home</a>
+          <span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 currentColor text-white"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 5l7 7-7 7"
+              />
+            </svg>
+          </span>
+          <p class="text-md text-white">Checkout <span class=""></span></p>
+        </div>
+      </div>
+    </div>
+    <!-- page header ends  -->
+
+    <!-- checkout area start -->
+    <section class="checkout-area py-10">
+      <div class="container">
+        <div class="flex flex-col md:flex-row">
+          <div class="md:w-9/12">
+            <div class="section-header">
+              <h4 class="text-2xl font-medium">
+                Review your order from Five Guys - Canary Wharf Breakfast
+              </h4>
+              <h5 class="text-lg font-semibold pt-5 pb-3">Delivery estimate</h5>
+            </div>
+            <div class="section-wrapper">
+              <div class="max-w-max-car">
+                <div class="flex shadow-lg px-5 py-6 rounded-md">
+                  <img
+                    src="../public/images/checkout/01.png"
+                    class="mr-2"
+                    alt=""
+                  />
+                  <span class="text-base text-gray-500"
+                    >Deliver in 25-40 min</span
+                  >
+                </div>
+              </div>
+              <div class="flex justify-start py-6">
+                <div>
+                  <div class="flex items-center mr-4 mb-4">
+                    <input
+                      id="radio1"
+                      type="radio"
+                      name="radio"
+                      class="hidden"
+                      checked
+                    />
+                    <label
+                      for="radio1"
+                      class="flex items-center cursor-pointer text-xl"
+                    >
+                      <span
+                        class="w-6 h-6 inline-block mr-2 rounded-sm border border-grey flex-no-shrink"
+                      ></span>
+                      Standard</label
+                    >
+                  </div>
+
+                  <div class="flex items-center mr-4 mb-4" id="timeBtn">
+                    <input
+                      id="radio2"
+                      type="radio"
+                      name="radio"
+                      class="hidden"
+                    />
+                    <label
+                      for="radio2"
+                      class="flex items-center cursor-pointer text-xl"
+                    >
+                      <span
+                        class="w-6 h-6 inline-block mr-2 rounded-sm border border-grey flex-no-shrink"
+                      ></span>
+                      Schedule</label
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="">
+                <h4 class="text-gray-800 text-lg font-semibold pb-5">
+                  Delivery Address
+                </h4>
+                <div
+                  class="flex items-center justify-between p-5 bg-white shadow-md"
+                >
+                  <div class="lc-left flex items-start">
+                    <div class="lc-icon pr-3">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6 currentColor text-red-600"
+                        viewBox="0 0 20 20"
+                        fill="currentColor"
+                      >
+                        <path
+                          fill-rule="evenodd"
+                          d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                          clip-rule="evenodd"
+                        />
+                      </svg>
+                    </div>
+                    <div class="lc-details">
+                      <p>First floor, 43a</p>
+                      <p>Landon, 13AQ</p>
+                      <p>+4477983456</p>
+                    </div>
+                  </div>
+                  <div class="lc-right">
+                    <button
+                      type="button"
+                      id="addChange"
+                      class="flex items-center px-6 py-2 border-2 border-blue-500 text-blue-500 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
+                        />
+                      </svg>
+                      Change
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="flex pt-8">
+                <div class="icon">
+                  <svg
+                    width="17"
+                    height="17"
+                    viewBox="0 0 17 17"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M7.13623 17C6.83333 16.9029 6.51801 16.8328 6.23063 16.7024C5.73836 16.4785 5.37426 16.1024 5.1126 15.6296C5.0106 15.4456 5.03765 15.2944 5.18267 15.2128C5.32769 15.1312 5.46783 15.187 5.5756 15.3702C6.27764 16.5574 7.77973 16.8337 8.81084 15.9605C9.27739 15.5649 9.52042 15.0509 9.5559 14.4415C9.5732 14.1488 9.64238 14.0787 9.94306 14.0787H14.8707V13.8889C14.8707 10.1716 14.8707 6.45416 14.8707 2.73656C14.8707 1.45887 13.9504 0.535093 12.6776 0.53465C9.9339 0.53465 7.19019 0.53465 4.44648 0.53465H4.25445C4.32497 0.597625 4.3702 0.637549 4.415 0.67835C4.99463 1.20388 5.30197 1.85936 5.30729 2.64078C5.3166 4.13445 5.30951 5.62811 5.31128 7.12C5.31128 7.27345 5.27004 7.39629 5.10772 7.43798C4.92013 7.48588 4.77999 7.35415 4.77954 7.13152C4.77954 6.35158 4.77954 5.57164 4.77954 4.79169V2.92327H0.384584C0.0714817 2.92327 -0.0101204 2.83902 0.000966795 2.52902C0.0488634 1.15421 1.221 0.0104506 2.60823 0.00512871C4.80438 -0.00418452 6.99875 0.0020321 9.19668 0.0020321C10.3583 0.0020321 11.52 0.0020321 12.6816 0.0020321C14.2378 0.0020321 15.4011 1.16351 15.4015 2.71705C15.4015 6.42342 15.4015 10.1298 15.4015 13.8362V14.0774H15.6632C15.9785 14.0774 16.2938 14.0845 16.6087 14.0743C16.7714 14.069 16.9 14.108 16.9936 14.2433V14.6424C16.9809 14.6718 16.9708 14.7022 16.9635 14.7333C16.8856 15.2546 16.6547 15.7411 16.3001 16.1309C15.9454 16.5208 15.4829 16.7966 14.9713 16.9233C14.86 16.9508 14.7496 16.9743 14.6369 16.9996L7.13623 17ZM10.1338 14.618C10.0007 14.9768 9.91202 15.3276 9.74438 15.6287C9.57674 15.9299 9.32085 16.1929 9.10886 16.4652C9.12053 16.4675 9.13244 16.4686 9.14434 16.4682C10.8887 16.4682 12.6315 16.4682 14.3726 16.4682C14.8077 16.469 15.2313 16.329 15.5802 16.0691C16.0681 15.7143 16.3537 15.2327 16.4437 14.622L10.1338 14.618ZM0.566857 2.38443H4.74051C4.75825 1.45311 3.72449 0.532886 2.66322 0.534217C1.32744 0.535991 0.591692 1.64337 0.566857 2.38443Z"
+                      fill="#C8102E"
+                    />
+                    <path
+                      d="M10.0805 5.2472H7.55799C7.50816 5.2495 7.45823 5.24847 7.40853 5.2441C7.34152 5.23811 7.27943 5.20641 7.23528 5.15564C7.19113 5.10488 7.16835 5.03899 7.17171 4.97179C7.1828 4.82589 7.26662 4.73985 7.41164 4.71945C7.46117 4.71486 7.51097 4.71381 7.56065 4.71633C9.24797 4.71633 10.9354 4.71633 12.6231 4.71633C12.6727 4.71359 12.7225 4.71464 12.7721 4.71945C12.8365 4.72405 12.8969 4.75292 12.9409 4.80024C12.9849 4.84757 13.0094 4.90982 13.0093 4.97446C13.0117 5.04176 12.9881 5.10739 12.9433 5.1577C12.8985 5.208 12.8361 5.2391 12.769 5.24453C12.7194 5.24831 12.6696 5.2492 12.62 5.2472H10.0805Z"
+                      fill="#C8102E"
+                    />
+                    <path
+                      d="M10.0751 3.47609C9.23456 3.47609 8.39385 3.47609 7.553 3.47609C7.48692 3.47902 7.42075 3.47245 7.35654 3.45658C7.30081 3.4398 7.2524 3.40468 7.21914 3.35693C7.18589 3.30917 7.16975 3.25156 7.17334 3.19348C7.17694 3.13539 7.20006 3.08023 7.23895 3.03694C7.27784 2.99364 7.33021 2.96478 7.38758 2.955C7.44781 2.94669 7.50866 2.94372 7.56941 2.94612H12.6123C12.8833 2.94612 13.0114 3.03082 13.0114 3.21221C13.0114 3.3936 12.8784 3.4783 12.6123 3.4783L10.0751 3.47609Z"
+                      fill="#C8102E"
+                    />
+                    <path
+                      d="M10.0799 7.01322H7.55779C7.5026 7.01583 7.4473 7.01421 7.39237 7.00835C7.33364 7.00249 7.27903 6.97553 7.23866 6.93247C7.19829 6.88942 7.17491 6.83319 7.17284 6.7742C7.16401 6.71855 7.17538 6.66156 7.20491 6.61357C7.23444 6.56557 7.28017 6.52973 7.33383 6.51253C7.40747 6.49001 7.48439 6.48013 7.56133 6.48327C9.24836 6.48327 10.9354 6.48327 12.6224 6.48327C12.6777 6.4807 12.7332 6.48396 12.7878 6.49302C12.9293 6.52406 13.0096 6.61453 13.0096 6.76177C13.0093 6.79513 13.0025 6.82812 12.9894 6.85881C12.9763 6.88949 12.9572 6.91727 12.9333 6.94051C12.9093 6.96375 12.881 6.98199 12.8499 6.99417C12.8189 7.00635 12.7857 7.01221 12.7524 7.01145C12.5036 7.01721 12.2543 7.01368 12.0055 7.01368L10.0799 7.01322Z"
+                      fill="#C8102E"
+                    />
+                    <path
+                      d="M10.4745 8.78664C9.76669 8.78664 9.05873 8.78664 8.35063 8.78664C8.28457 8.78971 8.21841 8.78328 8.15417 8.76756C8.09856 8.75057 8.05031 8.71532 8.0172 8.66752C7.98409 8.61972 7.96806 8.56215 7.9717 8.50411C7.97534 8.44608 7.99843 8.39097 8.03726 8.34768C8.07608 8.30439 8.12836 8.27546 8.18566 8.26554C8.24589 8.25724 8.30673 8.25426 8.36749 8.25666H12.6152C12.8862 8.25666 13.0143 8.34137 13.0143 8.52276C13.0143 8.70414 12.8813 8.78885 12.6152 8.78885L10.4745 8.78664Z"
+                      fill="#C8102E"
+                    />
+                    <path
+                      d="M11.0201 10.0259C11.5789 10.0259 12.1377 10.0259 12.6965 10.0259C12.8792 10.0259 12.9897 10.1115 13.0069 10.2579C13.0287 10.4224 12.9027 10.5541 12.7107 10.5555C12.2628 10.5586 11.8144 10.5555 11.3665 10.5555C10.6915 10.5555 10.0165 10.5555 9.34153 10.5555C9.15349 10.5555 9.03774 10.4601 9.02798 10.3067C9.01734 10.1404 9.14107 10.0264 9.34197 10.0255C9.90298 10.0251 10.4613 10.0259 11.0201 10.0259Z"
+                      fill="#C8102E"
+                    />
+                    <path
+                      d="M11.0034 12.3246C10.4556 12.3246 9.90862 12.3246 9.36254 12.3246C9.15099 12.3246 9.03081 12.2279 9.03125 12.063C9.03169 11.898 9.15498 11.7969 9.36254 11.7969C10.4686 11.7969 11.5747 11.7969 12.6807 11.7969C12.8102 11.7969 12.9401 11.8226 12.9787 11.9565C13.0027 12.0394 12.9929 12.1658 12.9424 12.227C12.8918 12.2882 12.7712 12.3224 12.6807 12.3242C12.1206 12.3286 11.5618 12.3246 11.0034 12.3246Z"
+                      fill="#C8102E"
+                    />
+                    <path
+                      d="M5.27185 11.6658C5.27185 12.282 5.27185 12.898 5.27185 13.5138C5.27185 13.752 5.17472 13.8868 5.00974 13.8863C4.84477 13.8859 4.74365 13.7471 4.74365 13.5138C4.74365 12.2694 4.74365 11.025 4.74365 9.78056C4.74365 9.6351 4.76937 9.48873 4.90331 9.44571C4.98624 9.41866 5.11308 9.42974 5.17384 9.48651C5.23459 9.54328 5.26963 9.679 5.27096 9.78056C5.27628 10.409 5.27185 11.0374 5.27185 11.6658Z"
+                      fill="#C8102E"
+                    />
+                  </svg>
+                </div>
+                <div class="details ml-3">
+                  <h4 class="text-gray-800 font-semibold">
+                    Instructions for you rider
+                  </h4>
+                  <p class="text-sm pt-2">
+                    Call when you arrive . You will find a metal gate with the
+                    property number 43a . Double yellow line road close to . My
+                    wife will receive delivery.
+                  </p>
+                  <button
+                    type="button"
+                    class="mt-5 flex items-center px-6 py-2 border-2 border-blue-400 text-blue-400 font-medium text-xs leading-tight uppercase rounded hover:bg-black hover:bg-opacity-5 focus:outline-none focus:ring-0 transition duration-150 ease-in-out"
+                  >
+                    <svg
+                      width="14"
+                      height="14"
+                      viewBox="0 0 9 9"
+                      fill="none"
+                      class="mr-2"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <g clip-path="url(#clip0_1001_587)">
+                        <path
+                          d="M0.00227436 8.99814C-0.0423458 7.52708 0.452095 6.31044 1.59051 5.38078C2.03651 5.01998 2.53618 4.73113 3.07142 4.52467C3.11785 4.50602 3.16969 4.50602 3.21613 4.52467C3.61041 4.73722 4.05133 4.8485 4.49926 4.8485C4.9472 4.8485 5.38811 4.73722 5.78239 4.52467C5.82084 4.50298 5.86603 4.49653 5.90902 4.50658C6.30073 4.63957 6.67025 4.83061 7.00522 5.0733C7.05029 5.09888 7.08505 5.13934 7.10354 5.18774C7.12202 5.23615 7.12308 5.28948 7.10652 5.33858C7.09432 5.37127 7.07429 5.40047 7.04818 5.42363C7.02207 5.44679 6.99068 5.46319 6.95676 5.4714C6.92284 5.47961 6.88743 5.47938 6.85362 5.47073C6.81981 5.46208 6.78863 5.44527 6.76283 5.42178C6.52271 5.24711 6.26184 5.10292 5.9862 4.99252C5.95332 4.97729 5.91751 4.9694 5.88128 4.9694C5.84504 4.9694 5.80924 4.97729 5.77636 4.99252C5.37212 5.1749 4.9337 5.26922 4.49022 5.26922C4.04673 5.26922 3.60831 5.1749 3.20407 4.99252C3.16498 4.9726 3.12002 4.96746 3.07745 4.97805C2.28755 5.3217 1.60136 5.79919 1.09969 6.51181C0.691737 7.10273 0.459664 7.79718 0.430385 8.51462C0.430385 8.52909 0.430385 8.54235 0.430385 8.57129H4.7718C4.93461 8.57129 5.02385 8.63399 5.03832 8.75457C5.04291 8.78282 5.04163 8.81171 5.03457 8.83944C5.02751 8.86717 5.01482 8.89316 4.99729 8.91578C4.97976 8.9384 4.95776 8.95717 4.93266 8.97092C4.90756 8.98468 4.8799 8.99312 4.8514 8.99573C4.82331 8.99813 4.79507 8.99813 4.76698 8.99573H0.00227436V8.99814Z"
+                          fill="#076FAF"
+                        />
+                        <path
+                          d="M4.50669 4.24724C4.2275 4.24772 3.95096 4.19315 3.69289 4.08665C3.43481 3.98015 3.20027 3.82382 3.00269 3.6266C2.8051 3.42937 2.64835 3.19513 2.5414 2.93728C2.43445 2.67942 2.3794 2.403 2.3794 2.12385C2.37908 1.8446 2.43385 1.56802 2.54059 1.30997C2.64732 1.05191 2.80392 0.817436 3.0014 0.619974C3.19889 0.422512 3.4334 0.265939 3.69149 0.15922C3.94958 0.0525003 4.22619 -0.00226909 4.50548 -0.00195175C4.78472 -0.00195288 5.06121 0.0531386 5.31911 0.160165C5.57702 0.267192 5.81127 0.42405 6.00844 0.621752C6.2056 0.819455 6.36182 1.05411 6.46813 1.31229C6.57443 1.57046 6.62875 1.84707 6.62796 2.12626C6.627 2.68849 6.4032 3.22741 6.00559 3.62497C5.60799 4.02252 5.06899 4.24629 4.50669 4.24724ZM2.80389 2.12265C2.80373 2.34586 2.84756 2.56691 2.93289 2.77318C3.01821 2.97944 3.14334 3.16688 3.30114 3.32477C3.45894 3.48266 3.64631 3.60791 3.85255 3.69337C4.05878 3.77882 4.27983 3.82281 4.50307 3.82281C4.72621 3.82297 4.9472 3.77918 5.15341 3.69394C5.35963 3.60871 5.54704 3.4837 5.70493 3.32605C5.86283 3.1684 5.98812 2.98119 6.07366 2.77513C6.15919 2.56906 6.20331 2.34817 6.20346 2.12506C6.20378 1.9018 6.16005 1.68068 6.07479 1.47434C5.98953 1.268 5.8644 1.0805 5.70657 0.922582C5.54873 0.76466 5.3613 0.639414 5.155 0.554014C4.94869 0.468614 4.72756 0.424738 4.50428 0.424897C4.28114 0.424739 4.06015 0.468527 3.85394 0.553761C3.64772 0.638995 3.46032 0.764006 3.30242 0.921656C3.14453 1.07931 3.01923 1.26651 2.9337 1.47258C2.84816 1.67864 2.80405 1.89954 2.80389 2.12265Z"
+                          fill="#076FAF"
+                        />
+                        <path
+                          d="M5.56767 8.99663C5.56767 8.60234 5.56043 8.22131 5.56767 7.84028C5.57834 7.7458 5.62087 7.65777 5.68826 7.59069C6.29687 6.97493 6.90989 6.36279 7.52734 5.75427C7.58592 5.69477 7.65575 5.64752 7.73277 5.61527C7.80978 5.58302 7.89245 5.56641 7.97595 5.56641C8.05945 5.56641 8.14212 5.58302 8.21913 5.61527C8.29615 5.64752 8.36599 5.69477 8.42457 5.75427C8.5536 5.87485 8.68264 6.00749 8.80685 6.13771C8.86537 6.19493 8.91197 6.26317 8.94397 6.3385C8.97597 6.41382 8.99273 6.49473 8.99329 6.57657C8.99385 6.6584 8.9782 6.73954 8.94724 6.81529C8.91627 6.89105 8.87061 6.95992 8.81288 7.01794C8.20428 7.64253 7.58844 8.2611 6.96536 8.87364C6.89794 8.94193 6.80881 8.98457 6.71332 8.99422C6.33586 9.00387 5.95719 8.99663 5.56767 8.99663ZM5.98975 8.5734C6.21285 8.5734 6.4251 8.5734 6.63614 8.5734C6.66665 8.56947 6.69482 8.55496 6.71573 8.53241C7.30906 7.93916 7.90118 7.34471 8.4921 6.74905C8.51742 6.72919 8.5379 6.70384 8.55198 6.67491C8.56606 6.64598 8.57338 6.61422 8.57338 6.58205C8.57338 6.54987 8.56606 6.51811 8.55198 6.48918C8.5379 6.46025 8.51742 6.4349 8.4921 6.41504C8.38115 6.30049 8.26899 6.18836 8.15563 6.07742C8.13534 6.05137 8.10936 6.03029 8.07969 6.0158C8.05001 6.0013 8.01742 5.99376 7.98439 5.99376C7.95136 5.99376 7.91877 6.0013 7.8891 6.0158C7.85942 6.03029 7.83345 6.05137 7.81315 6.07742C7.21982 6.66585 6.62609 7.25467 6.03196 7.8439C6.0057 7.87044 5.98987 7.90553 5.98734 7.94278C5.98734 8.14776 5.98975 8.35274 5.98975 8.5734Z"
+                          fill="#076FAF"
+                        />
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1001_587">
+                          <rect width="9" height="9" fill="white" />
+                        </clipPath>
+                      </defs>
+                    </svg>
+                    Change
+                  </button>
+                </div>
+              </div>
+              <div class="py-5">
+                <h4 class="text-base font-semibold pb-4">Delivery Options</h4>
+                <div
+                  class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5"
+                >
+                  <div
+                    class="op-item bg-white p-4 shadow-md rounded-md text-center"
+                  >
+                    <img
+                      src="../public/images/checkout/op1.png"
+                      class="mx-auto"
+                      alt=""
+                    />
+                    <h6>Meet at door</h6>
+                  </div>
+                  <div
+                    class="op-item bg-white p-4 shadow-md rounded-md text-center"
+                  >
+                    <img
+                      src="../public/images/checkout/op2.png"
+                      class="mx-auto"
+                      alt=""
+                    />
+                    <h6>Meet outside</h6>
+                  </div>
+                  <div
+                    class="op-item bg-white p-4 shadow-md rounded-md text-center"
+                  >
+                    <img
+                      src="../public/images/checkout/op3.png"
+                      class="mx-auto"
+                      alt=""
+                    />
+                    <h6>Leave at door</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="md:w-3/12">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error,
+              impedit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- checkout area ends  -->
+
+    <!-- Time and date modal -->
+    <div id="modal-background">
+      <div id="modal">
+        <button id="close-btn">&times;</button>
+        <p class="text-base font-semibold pb-5">Pick Your delivery Time</p>
+        <form action="" class="mb-5">
+          <input
+            type="datetime-local"
+            class="border border-gray-600 text-sm h-12 rounded-md px-6 focus:border-blue-500"
+          />
+          <button
+            type="button"
+            class="text-white bg-blue-500 hover:bg-blue-700 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-3.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          >
+            Save
+          </button>
+        </form>
+      </div>
+    </div>
+    <!-- Time and date modal -->
+
+    <!-- address modal start -->
+    <div id="address-modal">
+      <div id="modal2">
+        <div class="modal-content flex flex-col">
+          <button id="close-btn1">&times;</button>
+          <div class="address-content">
+            <ul
+              class="nav nav-tabs flex flex-wrap justify-start text-base gap-4 divide-x-2"
+            >
+              <li class="active">
+                <a href="#tab-1">Shipping address</a>
+              </li>
+              <li class="pl-4">
+                <a href="#tab-2">Add New Address</a>
+              </li>
+            </ul>
+            <div class="tab-content">
+              <div id="tab-1" class="tab-pane active">
+                <div class="order-content">
+                  <ul class="order-list list-none">
+                    <li class="">
+                      <div
+                        class="grid-cols-6 gap-6 text-base p-4 bg-gray-100 mt-6 hidden md:grid"
+                      >
+                        <div class="pr-name">
+                          <p>Name</p>
+                        </div>
+                        <div class="pr-address">
+                          <p>Address</p>
+                        </div>
+                        <div class="pr-region">
+                          <p>Region</p>
+                        </div>
+                        <div class="pr-number">
+                          <p>Phone number</p>
+                        </div>
+                        <div class="pr-status">
+                          <p></p>
+                        </div>
+                        <div class="pr-select">
+                          <p></p>
+                        </div>
+                      </div>
+                      <div
+                        class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-6 text-sm p-4 align-middle"
+                      >
+                        <div class="item-content">
+                          <p class="text-sm">Md Sayem</p>
+                        </div>
+                        <div class="item-content">
+                          <p class="text-sm">Modhubag</p>
+                        </div>
+                        <div class="item-content">
+                          <p class="text-sm">Uttara, Dhaka</p>
+                        </div>
+                        <div class="item-content">
+                          <p>0154653876545</p>
+                        </div>
+                        <div class="item-content">
+                          <p class="text-sm">Default Shipping address</p>
+                        </div>
+                        <div class="item-content">
+                          <div class="flex items-center mr-4 mb-4">
+                            <input
+                              id="pr1"
+                              type="radio"
+                              name="radio3"
+                              class="hidden"
+                            />
+                            <label
+                              for="pr1"
+                              class="flex items-center cursor-pointer text-xl"
+                            >
+                              <span
+                                class="w-6 h-6 inline-block mr-2 rounded-sm border border-grey flex-no-shrink"
+                              ></span>
+                            </label>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div id="tab-2" class="tab-pane">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Error, earum?.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- address modal ends  -->
+
+    <!-- optional js -->
+    <script src="../src/js/swiper-bundle.min.js"></script>
+    <script src="../src/js/function.js"></script>
+    <script>
+      // select radio
+      let openBtn = document.getElementById("timeBtn");
+      let modalBackground = document.getElementById("modal-background");
+      let closeBtn = document.getElementById("close-btn");
+
+      openBtn.addEventListener("click", function () {
+        modalBackground.style.display = "block";
+      });
+
+      closeBtn.addEventListener("click", function () {
+        modalBackground.style.display = "none";
+      });
+
+      window.addEventListener("click", function (event) {
+        if (event.target === modalBackground) {
+          modalBackground.style.display = "none";
+        }
+      });
+
+      // select address
+      let addBtn = document.getElementById("addChange");
+      let closeBtn1 = document.getElementById("close-btn1");
+      let addressModal = document.getElementById("address-modal");
+
+      addBtn.addEventListener("click", function () {
+        addressModal.style.display = "block";
+      });
+
+      closeBtn1.addEventListener("click", function () {
+        addressModal.style.display = "none";
+      });
+
+      window.addEventListener("click", function (event) {
+        if (event.target === addressModal) {
+          addressModal.style.display = "none";
+        }
+      });
+
+      // address tabs
+      window.addEventListener("load", function () {
+        // store tabs variable
+        let theTabs = document.querySelectorAll("ul.nav-tabs > li");
+
+        function theTabClicks(tabClickEvent) {
+          let clickedTab = tabClickEvent.currentTarget;
+          let tabParent =
+            tabClickEvent.currentTarget.parentNode.parentNode.parentNode;
+          let theTabs = tabParent.querySelectorAll("ul.nav-tabs > li");
+          for (let i = 0; i < theTabs.length; i++) {
+            theTabs[i].classList.remove("active");
+          }
+
+          clickedTab.classList.add("active");
+          tabClickEvent.preventDefault();
+          let contentPanes = tabParent.querySelectorAll(".tab-pane");
+          for (i = 0; i < contentPanes.length; i++) {
+            contentPanes[i].classList.remove("active");
+          }
+          let anchorReference = tabClickEvent.target;
+          let activePaneId = anchorReference.getAttribute("href");
+          let activePane = tabParent.querySelector(activePaneId);
+          activePane.classList.add("active");
+        }
+        for (i = 0; i < theTabs.length; i++) {
+          theTabs[i].addEventListener("click", theTabClicks);
+        }
+      });
+    </script>
+  </body>
+</html>

@@ -301,3 +301,131 @@ body {
     transition: all 0.3s ease-in-out;
   }
 }
+
+/* === checkout page css start === */
+input[type="radio"] + label span {
+  transition: background 0.2s, transform 0.2s;
+}
+
+input[type="radio"] + label span:hover,
+input[type="radio"] + label:hover span {
+  transform: scale(1.2);
+}
+
+input[type="radio"]:checked + label span {
+  background-color: #076faf;
+  box-shadow: 0px 0px 0px 2px white inset;
+}
+
+input[type="radio"]:checked + label {
+  color: #076faf;
+}
+
+/* == time modal == */
+/* modal part */
+#modal-background,
+#address-modal {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+#modal,
+#modal2 {
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 400px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  font-size: 1.5rem;
+  animation-name: animatemodal;
+  animation-duration: 0.4s;
+}
+
+#modal2 {
+  max-width: 100%;
+}
+
+.modal-content {
+  width: 250px;
+}
+@media (min-width: 400px) {
+  .modal-content {
+    width: 300px;
+  }
+}
+
+@media (min-width: 576px) {
+  .modal-content {
+    width: 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  .modal-content {
+    width: 650px;
+  }
+}
+
+@media (min-width: 992px) {
+  .modal-content {
+    width: 900px;
+  }
+}
+
+.address-content ul.nav li.active a {
+  color: #076faf;
+}
+
+.address-content .tab-content {
+  max-height: 100%;
+}
+.address-content .tab-content .tab-pane {
+  opacity: 0;
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+.address-content .tab-content .tab-pane.active {
+  opacity: 1;
+  display: block;
+}
+
+#close-btn,
+#close-btn1 {
+  align-self: flex-end;
+}
+
+#close-btn:hover,
+#close-btn1:hover {
+  cursor: pointer;
+  color: #ff0000;
+}
+
+/* modal part end */
+
+/* animation part */
+@keyframes animatemodal {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 50%;
+    opacity: 1;
+  }
+}
+/* animation part end */
+
+/* === checkout page css ends  === */
