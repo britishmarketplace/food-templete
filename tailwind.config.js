@@ -1,6 +1,4 @@
 module.exports = {
-  purge: [],
-  darkMode: false, // or 'media' or 'class'
   theme: {
     screens: {
       sm: '576px',
@@ -52,6 +50,10 @@ module.exports = {
       'food-app' : '600px',
     }
   },
+  content: [
+    './pages/**/*.{html,js}',
+    './components/**/*.{html,js}',
+  ],
   variants: {
     extend: {},
   },
