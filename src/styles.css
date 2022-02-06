@@ -453,3 +453,33 @@ input[type="radio"]:checked + label {
 }
 
 /* === checkout page css ends  === */
+
+/* === payment page  css start  === */
+.card-list {
+  max-width: 900px;
+  overflow-x: auto;
+}
+
+.card-list button {
+  min-width: 120px;
+}
+.payment-wrapper .card-content {
+  position: relative;
+}
+.payment-wrapper .card-content::after {
+  position: absolute;
+  content: "";
+  top: -5px;
+  left: 50px;
+  z-index: 1;
+  transition: all 0.2s ease-out;
+  transform: translateY(-50%) rotate(-90deg);
+  border-left: 10px solid #32323229;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+.payment-wrapper .card-content.style-one::after {
+  left: auto;
+  right: 50px;
+}
+/* === payment page  css ends   === */
