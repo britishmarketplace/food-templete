@@ -13,6 +13,7 @@ module.exports = {
     },
     extend: {
       colors: {
+        btnBg: '#2FA2E9',
         primaryColor: '#C8102E',
         themeColor: '#253477',
       },
@@ -24,6 +25,7 @@ module.exports = {
         'login-bg' : "url('../public/images/login/login_bg.jpg')",
         'details-bg' : "url('../public/images/details/01.jpg')",
         'cart-bg' : "url('../public/images/banner/cart_bg.png')",
+        'order-bg' : "url('../public/images/history/bg.jpg')"
       },
       height: {
         'bg-height' : '550px',
@@ -32,6 +34,9 @@ module.exports = {
         'card-width': '740px',
         'drop-w'    : '200px',
         'list-img'  : '160px',
+      },
+      boxShadow: {
+        ' ': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
       }
     },
     maxWidth: {

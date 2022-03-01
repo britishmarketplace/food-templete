@@ -452,6 +452,22 @@ input[type="radio"]:checked + label {
   box-shadow: 0px 1px 11px rgba(51, 73, 167, 0.13);
 }
 
+@media (max-width: 991px) {
+  .checkout-area .order-summery {
+    position: fixed;
+    top: 50%;
+    right: -300px;
+    width: 300px;
+    z-index: 1;
+    transform: translateY(-50%);
+    transition: all 0.3s ease-in-out;
+  }
+}
+
+.checkout-area .order-summery.active {
+  right: 0;
+}
+
 /* === checkout page css ends  === */
 
 /* === payment page  css start  === */
@@ -483,3 +499,73 @@ input[type="radio"]:checked + label {
   right: 50px;
 }
 /* === payment page  css ends   === */
+
+/* === resturant details modal css === */
+.main-modal .modal-container .res-content {
+  min-height: 300px;
+  overflow-y: auto;
+}
+:root {
+  --shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  --ring-offset-shadow: 0 0 #0000;
+  --ring-shadow: 0 0 #0000;
+}
+
+.card_open {
+  animation-duration: 0.2s;
+  animation-name: card_open;
+}
+
+@keyframes card_open {
+  from {
+    height: 1%;
+    box-shadow: var(--shadow);
+  }
+
+  to {
+    height: 100%;
+    box-shadow: var(--ring-offset-shadow, 0 0 #0000),
+      var(--ring-shadow, 0 0 #0000), var(--shadow);
+  }
+}
+/* === resturant details modal css === */
+
+/* === my order css ends === */
+.my-order .section-wrapper .history-content ul.nav li a {
+  padding: 8px 32px;
+}
+
+@media (max-width: 575px) {
+  .my-order .section-wrapper .history-content ul.nav li a {
+    padding: 8px 12px;
+  }
+}
+
+.my-order .section-wrapper .history-content ul.nav li.active a {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 15px;
+  color: #000000;
+  background: #ffffff;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 11px rgba(51, 73, 167, 0.13);
+  border-radius: 3px;
+  border: 0.25px solid #076faf;
+}
+.my-order .section-wrapper .history-content .tab-content .tab-pane {
+  opacity: 0;
+  display: none;
+}
+
+.my-order .section-wrapper .history-content .tab-content .tab-pane.active {
+  opacity: 1;
+  display: block;
+}
+/* === my order css ends  === */
+
+/* === order delete modal css === */
+.order-delete-modal {
+  margin: 0 auto;
+  max-width: 550px;
+}
