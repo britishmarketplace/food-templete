@@ -155,7 +155,6 @@ body {
 
 /* Tab content - closed */
 .tab-content {
-  max-height: 0;
   -webkit-transition: max-height 0.35s;
   -o-transition: max-height 0.35s;
   transition: max-height 0.35s;
@@ -563,6 +562,63 @@ input[type="radio"]:checked + label {
   display: block;
 }
 /* === my order css ends  === */
+
+/* === traking order css satart === */
+.traker-area .traking-content ul.traking-list {
+  margin: 0 auto;
+  max-width: 600px;
+}
+.traker-area .traking-content ul.traking-list li {
+  position: relative;
+}
+.traker-area .traking-content ul.traking-list li:nth-child(1) img {
+  margin-right: 0;
+  margin-left: auto;
+}
+.traker-area .traking-content ul.traking-list li:nth-child(1) .progress1 {
+  position: absolute;
+  top: 50%;
+  right: -10px;
+  z-index: -1;
+  transform: rotate(-4deg);
+}
+.traker-area .traking-content ul.traking-list li:nth-child(2) .progress1 {
+  position: absolute;
+  top: 50%;
+  left: -12%;
+  z-index: -1;
+}
+.traker-area .traking-content ul.traking-list li:nth-child(3) img {
+  padding-top: 40px;
+  margin-right: 0;
+  margin-left: auto;
+}
+
+.traker-area .traking-content ul.traking-list li:nth-child(3) .progress1 {
+  position: absolute;
+  top: 50%;
+  right: -12%;
+  z-index: -1;
+}
+
+.traker-area .traking-content ul.traking-list li:nth-child(4) img {
+  padding-top: 30px;
+  padding-left: 150px;
+}
+
+@media (max-width: 678px) {
+  .traker-area .traking-content ul.traking-list {
+    max-width: 400px;
+  }
+  .traker-area .traking-content ul.traking-list li:nth-child(1) .progress1 {
+    position: absolute;
+    top: 62%;
+    right: -58px;
+    z-index: -1;
+    transform: rotate(-8deg);
+  }
+}
+/* === traking order css ends   === */
 
 /* === order delete modal css === */
 .order-delete-modal {

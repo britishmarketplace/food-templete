@@ -201,9 +201,6 @@
     <div
       class="page-header flex items-center bg-order-bg relative bg-cover bg-center object-cover min-h-cart-h"
     >
-      <!-- <div
-        class="absolute top-0 right-0 bottom-0 left-0 bg-gray-900 bg-opacity-50"
-      ></div> -->
       <div class="container">
         <div class="flex items-center gap-2 relative flex-wrap">
           <a href="index.html" class="font-semibold text-white">Home</a>
@@ -249,7 +246,7 @@
                 </li>
               </ul>
             </div>
-            <div class="tab-content mt-8">
+            <div class="tab-content mt-8 max-h-full">
               <div class="tab-pane active" id="tab-1">
                 <div
                   class="order-item bg-white drop-shadow-md rounded-md px-6 py-8 mt-4"
@@ -261,6 +258,7 @@
                           Order ID#
                           <span class="text-primaryColor">1876254</span>
                         </h5>
+                        <h6 class="text-btnBg text-base">Madchef - Banani</h6>
                         <p class="text-gray-500 text-base font-normal pt-1">
                           12 February 2022
                         </p>
@@ -275,25 +273,35 @@
                       </div>
                     </div>
                   </div>
-                  <div class="md:flex justify-between mt-4">
-                    <div class="md:flex items-start w-10/12 md:w-full">
-                      <div class="thumb">
-                        <img src="../public/images/history/01.png" alt="" />
+                  <div class="md:flex justify-between">
+                    <div class="mt-4">
+                      <div class="md:flex items-start md:w-full">
+                        <div class="thumb">
+                          <img src="../public/images/history/01.png" alt="" />
+                        </div>
+                        <div class="text md:pl-3">
+                          <h4 class="text-black text-base">
+                            Basmati Kacchi - Half
+                          </h4>
+                          <h6 class="text-black text-sm">QTY: 02</h6>
+                          <span class="text-black text-base"
+                            >Price: <strong>£400</strong></span
+                          >
+                        </div>
                       </div>
-                      <div class="text md:pl-3">
-                        <h6 class="text-btnBg text-base">Madchef - Banani</h6>
-                        <h4 class="text-black text-base">
-                          Basmati Kacchi - Half
-                        </h4>
-                        <p class="text-gray-500 text-sm">
-                          <span class="text-black">Delivery by</span> 218-220
-                          Whitechapel Road, Post Code: E1 1BJ, London, United
-                          Kingdom
-                        </p>
-                        <h6 class="text-black text-sm">QTY: 02</h6>
-                        <span class="text-black text-base"
-                          >Price: <strong>£400</strong></span
-                        >
+                      <div class="md:flex items-start md:w-full mt-6">
+                        <div class="thumb">
+                          <img src="../public/images/history/01.png" alt="" />
+                        </div>
+                        <div class="text md:pl-3">
+                          <h4 class="text-black text-base">
+                            Basmati Kacchi - Half
+                          </h4>
+                          <h6 class="text-black text-sm">QTY: 02</h6>
+                          <span class="text-black text-base"
+                            >Price: <strong>£400</strong></span
+                          >
+                        </div>
                       </div>
                     </div>
                     <div class="order-status pt-5 md:pt-0 md:text-right">
@@ -306,30 +314,29 @@
                       >
                         Preparing Your Meal
                       </p>
-                      <button type="button" class="text-gray-500 text-sm">
+                      <button
+                        type="button"
+                        class="text-primaryColor block md:mr-0 md:ml-auto text-sm"
+                      >
                         Cancel Order
                       </button>
                     </div>
                   </div>
-                  <div class="md:flex items-start w-10/12 md:w-full mt-6">
-                    <div class="thumb">
-                      <img src="../public/images/history/01.png" alt="" />
-                    </div>
-                    <div class="text md:pl-3">
-                      <h6 class="text-btnBg text-base">Madchef - Banani</h6>
-                      <h4 class="text-black text-base">
-                        Basmati Kacchi - Half
-                      </h4>
-                      <p class="text-gray-500 text-sm">
-                        <span class="text-black">Delivery by</span> 218-220
-                        Whitechapel Road, Post Code: E1 1BJ, London, United
-                        Kingdom
-                      </p>
-                      <h6 class="text-black text-sm">QTY: 02</h6>
-                      <span class="text-black text-base"
-                        >Price: <strong>£400</strong></span
+                  <div class="border-t border-dashed md:ml-20 mt-4 pt-4">
+                    <p class="text-black text-xs">
+                      Delivery Fee: <strong class="font-semibold">£8</strong>
+                    </p>
+                    <p class="text-primaryColor text-xs">
+                      Voucher Discount:
+                      <strong class="font-semibold">£100</strong>
+                    </p>
+                    <p class="text-xs">
+                      <strong class="text-black font-semibold"
+                        >Delivery by</strong
                       >
-                    </div>
+                      : 218-220 Whitechapel Road, Post Code: E1 1BJ, <br />
+                      London, United Kingdom
+                    </p>
                   </div>
                 </div>
                 <div class="order-total py-4 text-right">
@@ -347,6 +354,7 @@
                           Order ID#
                           <span class="text-primaryColor">1876254</span>
                         </h5>
+                        <h6 class="text-btnBg text-base">Madchef - Banani</h6>
                         <p class="text-gray-500 text-base font-normal pt-1">
                           12 February 2022
                         </p>
@@ -361,25 +369,35 @@
                       </div>
                     </div>
                   </div>
-                  <div class="md:flex justify-between mt-4">
-                    <div class="md:flex items-start w-10/12 md:w-full">
-                      <div class="thumb">
-                        <img src="../public/images/history/01.png" alt="" />
+                  <div class="md:flex justify-between">
+                    <div class="mt-4">
+                      <div class="md:flex items-start md:w-full">
+                        <div class="thumb">
+                          <img src="../public/images/history/01.png" alt="" />
+                        </div>
+                        <div class="text md:pl-3">
+                          <h4 class="text-black text-base">
+                            Basmati Kacchi - Half
+                          </h4>
+                          <h6 class="text-black text-sm">QTY: 02</h6>
+                          <span class="text-black text-base"
+                            >Price: <strong>£400</strong></span
+                          >
+                        </div>
                       </div>
-                      <div class="text md:pl-3">
-                        <h6 class="text-btnBg text-base">Madchef - Banani</h6>
-                        <h4 class="text-black text-base">
-                          Basmati Kacchi - Half
-                        </h4>
-                        <p class="text-gray-500 text-sm">
-                          <span class="text-black">Delivery by</span> 218-220
-                          Whitechapel Road, Post Code: E1 1BJ, London, United
-                          Kingdom
-                        </p>
-                        <h6 class="text-black text-sm">QTY: 02</h6>
-                        <span class="text-black text-base"
-                          >Price: <strong>£400</strong></span
-                        >
+                      <div class="md:flex items-start md:w-full mt-6">
+                        <div class="thumb">
+                          <img src="../public/images/history/01.png" alt="" />
+                        </div>
+                        <div class="text md:pl-3">
+                          <h4 class="text-black text-base">
+                            Basmati Kacchi - Half
+                          </h4>
+                          <h6 class="text-black text-sm">QTY: 02</h6>
+                          <span class="text-black text-base"
+                            >Price: <strong>£400</strong></span
+                          >
+                        </div>
                       </div>
                     </div>
                     <div class="order-status pt-5 md:pt-0 md:text-right">
@@ -392,30 +410,29 @@
                       >
                         Preparing Your Meal
                       </p>
-                      <button type="button" class="text-gray-500 text-sm">
+                      <button
+                        type="button"
+                        class="text-primaryColor block md:mr-0 md:ml-auto text-sm"
+                      >
                         Cancel Order
                       </button>
                     </div>
                   </div>
-                  <div class="md:flex items-start w-10/12 md:w-full mt-6">
-                    <div class="thumb">
-                      <img src="../public/images/history/01.png" alt="" />
-                    </div>
-                    <div class="text md:pl-3">
-                      <h6 class="text-btnBg text-base">Madchef - Banani</h6>
-                      <h4 class="text-black text-base">
-                        Basmati Kacchi - Half
-                      </h4>
-                      <p class="text-gray-500 text-sm">
-                        <span class="text-black">Delivery by</span> 218-220
-                        Whitechapel Road, Post Code: E1 1BJ, London, United
-                        Kingdom
-                      </p>
-                      <h6 class="text-black text-sm">QTY: 02</h6>
-                      <span class="text-black text-base"
-                        >Price: <strong>£400</strong></span
+                  <div class="border-t border-dashed md:ml-20 mt-4 pt-4">
+                    <p class="text-black text-xs">
+                      Delivery Fee: <strong class="font-semibold">£8</strong>
+                    </p>
+                    <p class="text-primaryColor text-xs">
+                      Voucher Discount:
+                      <strong class="font-semibold">£100</strong>
+                    </p>
+                    <p class="text-xs">
+                      <strong class="text-black font-semibold"
+                        >Delivery by</strong
                       >
-                    </div>
+                      : 218-220 Whitechapel Road, Post Code: E1 1BJ, <br />
+                      London, United Kingdom
+                    </p>
                   </div>
                 </div>
                 <div class="order-total py-4 text-right">
@@ -519,75 +536,43 @@
                     </div>
                   </div>
                   <div class="md:flex justify-between mt-4">
-                    <div class="md:flex items-start w-10/12 md:w-full">
+                    <div class="md:flex items-start">
                       <div class="thumb">
-                        <img src="../public/images/history/01.png" alt="" />
+                        <img src="../public/images/history/01.webp" alt="" />
                       </div>
                       <div class="text md:pl-3">
-                        <h6 class="text-btnBg text-base">Madchef - Banani</h6>
                         <h4 class="text-black text-base">
                           Basmati Kacchi - Half
                         </h4>
-                        <p class="text-gray-500 text-sm">
-                          <span class="text-black">Delivery by</span> 218-220
-                          Whitechapel Road, Post Code: E1 1BJ, London, United
-                          Kingdom
+                        <p class="text-green-400 text-base font-normal">
+                          Delivered
                         </p>
-                        <h6 class="text-black text-sm">QTY: 02</h6>
                         <span class="text-black text-base"
                           >Price: <strong>£400</strong></span
                         >
                       </div>
                     </div>
                     <div class="order-status pt-5 md:pt-0 md:text-right">
-                      <p class="text-green-400 text-base font-normal">
-                        Delivered
-                      </p>
-                    </div>
-                  </div>
-                  <div class="md:flex items-start w-10/12 md:w-full mt-6">
-                    <div class="thumb">
-                      <img src="../public/images/history/01.png" alt="" />
-                    </div>
-                    <div class="text md:pl-3">
-                      <h6 class="text-btnBg text-base">Madchef - Banani</h6>
-                      <h4 class="text-black text-base">
-                        Basmati Kacchi - Half
-                      </h4>
-                      <p class="text-gray-500 text-sm">
-                        <span class="text-black">Delivery by</span> 218-220
-                        Whitechapel Road, Post Code: E1 1BJ, London, United
-                        Kingdom
-                      </p>
-                      <h6 class="text-black text-sm">QTY: 02</h6>
-                      <span class="text-black text-base"
-                        >Price: <strong>£400</strong></span
+                      <button
+                        type="button"
+                        class="bg-white border border-black px-8 py-2 rounded-md focus:outline-none text-black hover:bg-themeColor hover:text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..."
                       >
+                        View Details
+                      </button>
                     </div>
                   </div>
-                </div>
-                <div class="order-total py-4 text-right">
-                  <span class="text-lg font-medium text-black"
-                    >Total (ind. all):
-                    <strong class="font-semibold">£800</strong></span
-                  >
                 </div>
                 <div
                   class="order-item bg-white drop-shadow-md rounded-md px-6 py-8 mt-4"
                 >
-                  <div class="flex items-center justify-between">
+                  <div class="flex items-start justify-between">
                     <div class="order-id">
-                      <div class="sm:flex">
-                        <div class="id-info">
-                          <h5 class="text-black font-medium text-lg">
-                            Order ID#
-                            <span class="text-primaryColor">1876254</span>
-                          </h5>
-                          <p class="text-gray-500 text-base font-normal pt-1">
-                            12 February 2022
-                          </p>
-                        </div>
-                      </div>
+                      <h5 class="text-black font-medium text-lg">
+                        Order ID# <span class="text-primaryColor">1876254</span>
+                      </h5>
+                      <p class="text-gray-500 text-base font-normal pt-1">
+                        12 February 2022
+                      </p>
                     </div>
                     <div class="delete-icon">
                       <svg
@@ -663,58 +648,479 @@
                     </div>
                   </div>
                   <div class="md:flex justify-between mt-4">
-                    <div class="md:flex items-start w-10/12 md:w-full">
+                    <div class="md:flex items-start">
                       <div class="thumb">
-                        <img src="../public/images/history/01.png" alt="" />
+                        <img src="../public/images/history/01.webp" alt="" />
                       </div>
                       <div class="text md:pl-3">
-                        <h6 class="text-btnBg text-base">Madchef - Banani</h6>
                         <h4 class="text-black text-base">
                           Basmati Kacchi - Half
                         </h4>
-                        <p class="text-gray-500 text-sm">
-                          <span class="text-black">Delivery by</span> 218-220
-                          Whitechapel Road, Post Code: E1 1BJ, London, United
-                          Kingdom
+                        <p class="text-green-400 text-base font-normal">
+                          Delivered
                         </p>
-                        <h6 class="text-black text-sm">QTY: 02</h6>
                         <span class="text-black text-base"
                           >Price: <strong>£400</strong></span
                         >
                       </div>
                     </div>
                     <div class="order-status pt-5 md:pt-0 md:text-right">
-                      <p class="text-green-400 text-base font-normal">
-                        Delivered
-                      </p>
-                    </div>
-                  </div>
-                  <div class="md:flex items-start w-10/12 md:w-full mt-6">
-                    <div class="thumb">
-                      <img src="../public/images/history/01.png" alt="" />
-                    </div>
-                    <div class="text md:pl-3">
-                      <h6 class="text-btnBg text-base">Madchef - Banani</h6>
-                      <h4 class="text-black text-base">
-                        Basmati Kacchi - Half
-                      </h4>
-                      <p class="text-gray-500 text-sm">
-                        <span class="text-black">Delivery by</span> 218-220
-                        Whitechapel Road, Post Code: E1 1BJ, London, United
-                        Kingdom
-                      </p>
-                      <h6 class="text-black text-sm">QTY: 02</h6>
-                      <span class="text-black text-base"
-                        >Price: <strong>£400</strong></span
+                      <button
+                        type="button"
+                        class="bg-white border border-black px-8 py-2 rounded-md focus:outline-none text-black hover:bg-themeColor hover:text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..."
                       >
+                        View Details
+                      </button>
                     </div>
                   </div>
                 </div>
-                <div class="order-total py-4 text-right">
-                  <span class="text-lg font-medium text-black"
-                    >Total (ind. all):
-                    <strong class="font-semibold">£800</strong></span
-                  >
+                <div
+                  class="order-item bg-white drop-shadow-md rounded-md px-6 py-8 mt-4"
+                >
+                  <div class="flex items-start justify-between">
+                    <div class="order-id">
+                      <h5 class="text-black font-medium text-lg">
+                        Order ID# <span class="text-primaryColor">1876254</span>
+                      </h5>
+                      <p class="text-gray-500 text-base font-normal pt-1">
+                        12 February 2022
+                      </p>
+                    </div>
+                    <div class="delete-icon">
+                      <svg
+                        width="15"
+                        height="18"
+                        viewBox="0 0 15 18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1.04586 5.16004C0.817466 5.15792 0.596053 5.08142 0.415049 4.94211C0.234045 4.8028 0.103234 4.60829 0.042716 4.38805C0.0130616 4.29832 -0.000929221 4.2042 0.000918319 4.10971C0.000918319 3.7421 0.000918319 3.37974 0.000918319 3.01212C-0.00502678 2.8726 0.0179349 2.73337 0.0686152 2.60325C0.119296 2.47312 0.196554 2.35495 0.295297 2.2562C0.39404 2.15746 0.512121 2.0803 0.642244 2.02962C0.772367 1.97894 0.911729 1.95585 1.05125 1.96179H3.7504C3.7504 1.70446 3.7504 1.46813 3.7504 1.23181C3.73879 1.06789 3.76259 0.903396 3.8199 0.749387C3.87721 0.595377 3.96679 0.455435 4.08274 0.33899C4.19868 0.222545 4.33823 0.132294 4.49199 0.0743245C4.64576 0.0163547 4.81011 -0.00799076 4.97408 0.00292539C6.35001 0.0344352 7.73638 0.00292539 9.11231 0.00292539C9.26401 -0.00825308 9.41646 0.0126841 9.55952 0.0643719C9.70258 0.11606 9.8331 0.197339 9.94262 0.302898C10.0521 0.408456 10.1383 0.535919 10.1952 0.676978C10.2521 0.818036 10.2785 0.969518 10.2729 1.12153C10.2729 1.38411 10.2729 1.64668 10.2729 1.95128H12.8987C13.0478 1.93894 13.1978 1.95959 13.338 2.01175C13.4782 2.06391 13.6053 2.1463 13.7101 2.25308C13.8148 2.35985 13.8947 2.48839 13.9442 2.62956C13.9937 2.77073 14.0116 2.92106 13.9965 3.06988V3.99943C14.0204 4.26997 13.9384 4.53925 13.768 4.75075C13.5976 4.96225 13.352 5.09953 13.0826 5.13379L12.9513 5.16004V16.3513C12.9607 16.6868 12.8517 17.0149 12.6433 17.278C12.4349 17.5412 12.1405 17.7225 11.8117 17.7902C11.7184 17.8094 11.6233 17.8182 11.5281 17.8165H2.47955C2.29074 17.82 2.10317 17.7855 1.92797 17.7151C1.75277 17.6446 1.59351 17.5396 1.45974 17.4063C1.32596 17.2731 1.22031 17.1142 1.1492 16.9393C1.07809 16.7643 1.04301 16.5769 1.04586 16.3881C1.04586 12.7434 1.04586 9.10052 1.04586 5.45939V5.16004ZM1.71283 5.16004V16.2515C1.6953 16.3749 1.70671 16.5007 1.74617 16.6189C1.78562 16.7371 1.85215 16.8446 1.94028 16.9327C2.02841 17.0208 2.13567 17.0872 2.25389 17.1267C2.37212 17.1661 2.49796 17.1776 2.62135 17.16H11.3812C11.5041 17.1774 11.6293 17.166 11.7471 17.1268C11.8649 17.0877 11.9719 17.0217 12.0599 16.9342C12.148 16.8467 12.2145 16.74 12.2543 16.6225C12.2942 16.5049 12.3063 16.3798 12.2897 16.2568V5.16004H1.71283ZM7.01165 2.634H1.151C0.793885 2.634 0.66763 2.76003 0.66763 3.11714V3.83138C0.66763 4.3933 0.736127 4.46682 1.2928 4.46682H12.8882C13.2033 4.46682 13.3346 4.33028 13.3346 4.01519C13.3346 3.70009 13.3346 3.44275 13.3346 3.15917C13.3346 2.74954 13.2191 2.634 12.8095 2.634H7.01165ZM9.57978 1.95128V1.12153C9.58531 1.0599 9.57737 0.997818 9.55644 0.939592C9.53551 0.881366 9.50224 0.828405 9.45874 0.784405C9.41524 0.740405 9.36261 0.706423 9.30463 0.684831C9.24665 0.663239 9.18451 0.654549 9.12282 0.65938H4.95305C4.65371 0.65938 4.42789 0.780165 4.42789 1.00073C4.42789 1.30533 4.42789 1.61519 4.42789 1.93028L9.57978 1.95128Z"
+                          fill="url(#paint0_linear_1244_930)"
+                        />
+                        <path
+                          d="M3.74 11.1574V7.94866C3.74 7.86463 3.74 7.78586 3.74 7.70709C3.74068 7.66502 3.74967 7.62349 3.76641 7.58489C3.78314 7.54628 3.80746 7.51135 3.83769 7.48209C3.86793 7.45283 3.90344 7.4298 3.94257 7.41434C3.98171 7.39889 4.02359 7.39129 4.06566 7.39199C4.10981 7.38987 4.15408 7.39648 4.19567 7.41144C4.23726 7.42641 4.2753 7.44942 4.30798 7.47917C4.34067 7.50893 4.36715 7.54484 4.38594 7.58485C4.40472 7.62486 4.41546 7.66818 4.41748 7.71233C4.42011 7.75956 4.42011 7.80691 4.41748 7.85413C4.41748 10.0668 4.41748 12.2795 4.41748 14.4922C4.41748 14.697 4.38084 14.8756 4.14977 14.9386C4.09984 14.9529 4.0471 14.9551 3.99617 14.9449C3.94524 14.9348 3.89753 14.9126 3.85693 14.8802C3.81632 14.8478 3.78406 14.8062 3.76282 14.7588C3.74158 14.7114 3.73202 14.6596 3.73487 14.6077C3.73487 14.3452 3.73487 14.0826 3.73487 13.8252L3.74 11.1574Z"
+                          fill="url(#paint1_linear_1244_930)"
+                        />
+                        <path
+                          d="M10.2623 11.1514V14.3654C10.2675 14.4528 10.2675 14.5405 10.2623 14.6279C10.2582 14.7078 10.223 14.7829 10.1641 14.8369C10.1051 14.891 10.0273 14.9196 9.94741 14.9168C9.90559 14.9211 9.86327 14.917 9.82304 14.9048C9.78282 14.8925 9.74534 14.8723 9.71304 14.8454C9.68074 14.8185 9.65413 14.7854 9.63483 14.7481C9.61552 14.7107 9.604 14.6699 9.60072 14.6279C9.59012 14.5495 9.59012 14.47 9.60072 14.3916V7.89534C9.59547 7.82542 9.59547 7.7552 9.60072 7.68528C9.60134 7.64114 9.61095 7.59758 9.62893 7.55726C9.64691 7.51694 9.67292 7.48071 9.70534 7.45075C9.73776 7.42078 9.77579 7.39772 9.8174 7.38297C9.85901 7.36822 9.90336 7.36209 9.94741 7.36494C9.98948 7.36424 10.0311 7.37184 10.0702 7.3873C10.1094 7.40276 10.1451 7.42578 10.1754 7.45504C10.2056 7.4843 10.2299 7.51923 10.2467 7.55784C10.2634 7.59644 10.2721 7.63795 10.2728 7.68002C10.2728 7.7588 10.2728 7.83758 10.2728 7.91635L10.2623 11.1514Z"
+                          fill="url(#paint2_linear_1244_930)"
+                        />
+                        <path
+                          d="M7.33787 11.1364V14.4187C7.33787 14.781 7.24865 14.9176 7.00708 14.9176C6.7655 14.9176 6.6709 14.781 6.6709 14.4344V7.84361C6.6709 7.52326 6.77599 7.36572 6.99656 7.36047C7.21713 7.35522 7.33787 7.52327 7.33787 7.85413V11.1364Z"
+                          fill="url(#paint3_linear_1244_930)"
+                        />
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_1244_930"
+                            x1="7.00085"
+                            y1="0"
+                            x2="7.00085"
+                            y2="17.8167"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#253477" />
+                            <stop offset="1" stop-color="#C8102E" />
+                          </linearGradient>
+                          <linearGradient
+                            id="paint1_linear_1244_930"
+                            x1="4.07691"
+                            y1="7.3916"
+                            x2="4.07691"
+                            y2="14.9512"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#253477" />
+                            <stop offset="1" stop-color="#C8102E" />
+                          </linearGradient>
+                          <linearGradient
+                            id="paint2_linear_1244_930"
+                            x1="9.9328"
+                            y1="7.36426"
+                            x2="9.9328"
+                            y2="14.9185"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#253477" />
+                            <stop offset="1" stop-color="#C8102E" />
+                          </linearGradient>
+                          <linearGradient
+                            id="paint3_linear_1244_930"
+                            x1="7.00438"
+                            y1="7.36035"
+                            x2="7.00438"
+                            y2="14.9176"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#253477" />
+                            <stop offset="1" stop-color="#C8102E" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="md:flex justify-between mt-4">
+                    <div class="md:flex items-start">
+                      <div class="thumb">
+                        <img src="../public/images/history/01.webp" alt="" />
+                      </div>
+                      <div class="text md:pl-3">
+                        <h4 class="text-black text-base">
+                          Basmati Kacchi - Half
+                        </h4>
+                        <p class="text-green-400 text-base font-normal">
+                          Delivered
+                        </p>
+                        <span class="text-black text-base"
+                          >Price: <strong>£400</strong></span
+                        >
+                      </div>
+                    </div>
+                    <div class="order-status pt-5 md:pt-0 md:text-right">
+                      <button
+                        type="button"
+                        class="bg-white border border-black px-8 py-2 rounded-md focus:outline-none text-black hover:bg-themeColor hover:text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..."
+                      >
+                        View Details
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="order-item bg-white drop-shadow-md rounded-md px-6 py-8 mt-4"
+                >
+                  <div class="flex items-start justify-between">
+                    <div class="order-id">
+                      <h5 class="text-black font-medium text-lg">
+                        Order ID# <span class="text-primaryColor">1876254</span>
+                      </h5>
+                      <p class="text-gray-500 text-base font-normal pt-1">
+                        12 February 2022
+                      </p>
+                    </div>
+                    <div class="delete-icon">
+                      <svg
+                        width="15"
+                        height="18"
+                        viewBox="0 0 15 18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1.04586 5.16004C0.817466 5.15792 0.596053 5.08142 0.415049 4.94211C0.234045 4.8028 0.103234 4.60829 0.042716 4.38805C0.0130616 4.29832 -0.000929221 4.2042 0.000918319 4.10971C0.000918319 3.7421 0.000918319 3.37974 0.000918319 3.01212C-0.00502678 2.8726 0.0179349 2.73337 0.0686152 2.60325C0.119296 2.47312 0.196554 2.35495 0.295297 2.2562C0.39404 2.15746 0.512121 2.0803 0.642244 2.02962C0.772367 1.97894 0.911729 1.95585 1.05125 1.96179H3.7504C3.7504 1.70446 3.7504 1.46813 3.7504 1.23181C3.73879 1.06789 3.76259 0.903396 3.8199 0.749387C3.87721 0.595377 3.96679 0.455435 4.08274 0.33899C4.19868 0.222545 4.33823 0.132294 4.49199 0.0743245C4.64576 0.0163547 4.81011 -0.00799076 4.97408 0.00292539C6.35001 0.0344352 7.73638 0.00292539 9.11231 0.00292539C9.26401 -0.00825308 9.41646 0.0126841 9.55952 0.0643719C9.70258 0.11606 9.8331 0.197339 9.94262 0.302898C10.0521 0.408456 10.1383 0.535919 10.1952 0.676978C10.2521 0.818036 10.2785 0.969518 10.2729 1.12153C10.2729 1.38411 10.2729 1.64668 10.2729 1.95128H12.8987C13.0478 1.93894 13.1978 1.95959 13.338 2.01175C13.4782 2.06391 13.6053 2.1463 13.7101 2.25308C13.8148 2.35985 13.8947 2.48839 13.9442 2.62956C13.9937 2.77073 14.0116 2.92106 13.9965 3.06988V3.99943C14.0204 4.26997 13.9384 4.53925 13.768 4.75075C13.5976 4.96225 13.352 5.09953 13.0826 5.13379L12.9513 5.16004V16.3513C12.9607 16.6868 12.8517 17.0149 12.6433 17.278C12.4349 17.5412 12.1405 17.7225 11.8117 17.7902C11.7184 17.8094 11.6233 17.8182 11.5281 17.8165H2.47955C2.29074 17.82 2.10317 17.7855 1.92797 17.7151C1.75277 17.6446 1.59351 17.5396 1.45974 17.4063C1.32596 17.2731 1.22031 17.1142 1.1492 16.9393C1.07809 16.7643 1.04301 16.5769 1.04586 16.3881C1.04586 12.7434 1.04586 9.10052 1.04586 5.45939V5.16004ZM1.71283 5.16004V16.2515C1.6953 16.3749 1.70671 16.5007 1.74617 16.6189C1.78562 16.7371 1.85215 16.8446 1.94028 16.9327C2.02841 17.0208 2.13567 17.0872 2.25389 17.1267C2.37212 17.1661 2.49796 17.1776 2.62135 17.16H11.3812C11.5041 17.1774 11.6293 17.166 11.7471 17.1268C11.8649 17.0877 11.9719 17.0217 12.0599 16.9342C12.148 16.8467 12.2145 16.74 12.2543 16.6225C12.2942 16.5049 12.3063 16.3798 12.2897 16.2568V5.16004H1.71283ZM7.01165 2.634H1.151C0.793885 2.634 0.66763 2.76003 0.66763 3.11714V3.83138C0.66763 4.3933 0.736127 4.46682 1.2928 4.46682H12.8882C13.2033 4.46682 13.3346 4.33028 13.3346 4.01519C13.3346 3.70009 13.3346 3.44275 13.3346 3.15917C13.3346 2.74954 13.2191 2.634 12.8095 2.634H7.01165ZM9.57978 1.95128V1.12153C9.58531 1.0599 9.57737 0.997818 9.55644 0.939592C9.53551 0.881366 9.50224 0.828405 9.45874 0.784405C9.41524 0.740405 9.36261 0.706423 9.30463 0.684831C9.24665 0.663239 9.18451 0.654549 9.12282 0.65938H4.95305C4.65371 0.65938 4.42789 0.780165 4.42789 1.00073C4.42789 1.30533 4.42789 1.61519 4.42789 1.93028L9.57978 1.95128Z"
+                          fill="url(#paint0_linear_1244_930)"
+                        />
+                        <path
+                          d="M3.74 11.1574V7.94866C3.74 7.86463 3.74 7.78586 3.74 7.70709C3.74068 7.66502 3.74967 7.62349 3.76641 7.58489C3.78314 7.54628 3.80746 7.51135 3.83769 7.48209C3.86793 7.45283 3.90344 7.4298 3.94257 7.41434C3.98171 7.39889 4.02359 7.39129 4.06566 7.39199C4.10981 7.38987 4.15408 7.39648 4.19567 7.41144C4.23726 7.42641 4.2753 7.44942 4.30798 7.47917C4.34067 7.50893 4.36715 7.54484 4.38594 7.58485C4.40472 7.62486 4.41546 7.66818 4.41748 7.71233C4.42011 7.75956 4.42011 7.80691 4.41748 7.85413C4.41748 10.0668 4.41748 12.2795 4.41748 14.4922C4.41748 14.697 4.38084 14.8756 4.14977 14.9386C4.09984 14.9529 4.0471 14.9551 3.99617 14.9449C3.94524 14.9348 3.89753 14.9126 3.85693 14.8802C3.81632 14.8478 3.78406 14.8062 3.76282 14.7588C3.74158 14.7114 3.73202 14.6596 3.73487 14.6077C3.73487 14.3452 3.73487 14.0826 3.73487 13.8252L3.74 11.1574Z"
+                          fill="url(#paint1_linear_1244_930)"
+                        />
+                        <path
+                          d="M10.2623 11.1514V14.3654C10.2675 14.4528 10.2675 14.5405 10.2623 14.6279C10.2582 14.7078 10.223 14.7829 10.1641 14.8369C10.1051 14.891 10.0273 14.9196 9.94741 14.9168C9.90559 14.9211 9.86327 14.917 9.82304 14.9048C9.78282 14.8925 9.74534 14.8723 9.71304 14.8454C9.68074 14.8185 9.65413 14.7854 9.63483 14.7481C9.61552 14.7107 9.604 14.6699 9.60072 14.6279C9.59012 14.5495 9.59012 14.47 9.60072 14.3916V7.89534C9.59547 7.82542 9.59547 7.7552 9.60072 7.68528C9.60134 7.64114 9.61095 7.59758 9.62893 7.55726C9.64691 7.51694 9.67292 7.48071 9.70534 7.45075C9.73776 7.42078 9.77579 7.39772 9.8174 7.38297C9.85901 7.36822 9.90336 7.36209 9.94741 7.36494C9.98948 7.36424 10.0311 7.37184 10.0702 7.3873C10.1094 7.40276 10.1451 7.42578 10.1754 7.45504C10.2056 7.4843 10.2299 7.51923 10.2467 7.55784C10.2634 7.59644 10.2721 7.63795 10.2728 7.68002C10.2728 7.7588 10.2728 7.83758 10.2728 7.91635L10.2623 11.1514Z"
+                          fill="url(#paint2_linear_1244_930)"
+                        />
+                        <path
+                          d="M7.33787 11.1364V14.4187C7.33787 14.781 7.24865 14.9176 7.00708 14.9176C6.7655 14.9176 6.6709 14.781 6.6709 14.4344V7.84361C6.6709 7.52326 6.77599 7.36572 6.99656 7.36047C7.21713 7.35522 7.33787 7.52327 7.33787 7.85413V11.1364Z"
+                          fill="url(#paint3_linear_1244_930)"
+                        />
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_1244_930"
+                            x1="7.00085"
+                            y1="0"
+                            x2="7.00085"
+                            y2="17.8167"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#253477" />
+                            <stop offset="1" stop-color="#C8102E" />
+                          </linearGradient>
+                          <linearGradient
+                            id="paint1_linear_1244_930"
+                            x1="4.07691"
+                            y1="7.3916"
+                            x2="4.07691"
+                            y2="14.9512"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#253477" />
+                            <stop offset="1" stop-color="#C8102E" />
+                          </linearGradient>
+                          <linearGradient
+                            id="paint2_linear_1244_930"
+                            x1="9.9328"
+                            y1="7.36426"
+                            x2="9.9328"
+                            y2="14.9185"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#253477" />
+                            <stop offset="1" stop-color="#C8102E" />
+                          </linearGradient>
+                          <linearGradient
+                            id="paint3_linear_1244_930"
+                            x1="7.00438"
+                            y1="7.36035"
+                            x2="7.00438"
+                            y2="14.9176"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#253477" />
+                            <stop offset="1" stop-color="#C8102E" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="md:flex justify-between mt-4">
+                    <div class="md:flex items-start">
+                      <div class="thumb">
+                        <img src="../public/images/history/01.webp" alt="" />
+                      </div>
+                      <div class="text md:pl-3">
+                        <h4 class="text-black text-base">
+                          Basmati Kacchi - Half
+                        </h4>
+                        <p class="text-green-400 text-base font-normal">
+                          Delivered
+                        </p>
+                        <span class="text-black text-base"
+                          >Price: <strong>£400</strong></span
+                        >
+                      </div>
+                    </div>
+                    <div class="order-status pt-5 md:pt-0 md:text-right">
+                      <button
+                        type="button"
+                        class="bg-white border border-black px-8 py-2 rounded-md focus:outline-none text-black hover:bg-themeColor hover:text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..."
+                      >
+                        View Details
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="order-item bg-white drop-shadow-md rounded-md px-6 py-8 mt-4"
+                >
+                  <div class="flex items-start justify-between">
+                    <div class="order-id">
+                      <h5 class="text-black font-medium text-lg">
+                        Order ID# <span class="text-primaryColor">1876254</span>
+                      </h5>
+                      <p class="text-gray-500 text-base font-normal pt-1">
+                        12 February 2022
+                      </p>
+                    </div>
+                    <div class="delete-icon">
+                      <svg
+                        width="15"
+                        height="18"
+                        viewBox="0 0 15 18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1.04586 5.16004C0.817466 5.15792 0.596053 5.08142 0.415049 4.94211C0.234045 4.8028 0.103234 4.60829 0.042716 4.38805C0.0130616 4.29832 -0.000929221 4.2042 0.000918319 4.10971C0.000918319 3.7421 0.000918319 3.37974 0.000918319 3.01212C-0.00502678 2.8726 0.0179349 2.73337 0.0686152 2.60325C0.119296 2.47312 0.196554 2.35495 0.295297 2.2562C0.39404 2.15746 0.512121 2.0803 0.642244 2.02962C0.772367 1.97894 0.911729 1.95585 1.05125 1.96179H3.7504C3.7504 1.70446 3.7504 1.46813 3.7504 1.23181C3.73879 1.06789 3.76259 0.903396 3.8199 0.749387C3.87721 0.595377 3.96679 0.455435 4.08274 0.33899C4.19868 0.222545 4.33823 0.132294 4.49199 0.0743245C4.64576 0.0163547 4.81011 -0.00799076 4.97408 0.00292539C6.35001 0.0344352 7.73638 0.00292539 9.11231 0.00292539C9.26401 -0.00825308 9.41646 0.0126841 9.55952 0.0643719C9.70258 0.11606 9.8331 0.197339 9.94262 0.302898C10.0521 0.408456 10.1383 0.535919 10.1952 0.676978C10.2521 0.818036 10.2785 0.969518 10.2729 1.12153C10.2729 1.38411 10.2729 1.64668 10.2729 1.95128H12.8987C13.0478 1.93894 13.1978 1.95959 13.338 2.01175C13.4782 2.06391 13.6053 2.1463 13.7101 2.25308C13.8148 2.35985 13.8947 2.48839 13.9442 2.62956C13.9937 2.77073 14.0116 2.92106 13.9965 3.06988V3.99943C14.0204 4.26997 13.9384 4.53925 13.768 4.75075C13.5976 4.96225 13.352 5.09953 13.0826 5.13379L12.9513 5.16004V16.3513C12.9607 16.6868 12.8517 17.0149 12.6433 17.278C12.4349 17.5412 12.1405 17.7225 11.8117 17.7902C11.7184 17.8094 11.6233 17.8182 11.5281 17.8165H2.47955C2.29074 17.82 2.10317 17.7855 1.92797 17.7151C1.75277 17.6446 1.59351 17.5396 1.45974 17.4063C1.32596 17.2731 1.22031 17.1142 1.1492 16.9393C1.07809 16.7643 1.04301 16.5769 1.04586 16.3881C1.04586 12.7434 1.04586 9.10052 1.04586 5.45939V5.16004ZM1.71283 5.16004V16.2515C1.6953 16.3749 1.70671 16.5007 1.74617 16.6189C1.78562 16.7371 1.85215 16.8446 1.94028 16.9327C2.02841 17.0208 2.13567 17.0872 2.25389 17.1267C2.37212 17.1661 2.49796 17.1776 2.62135 17.16H11.3812C11.5041 17.1774 11.6293 17.166 11.7471 17.1268C11.8649 17.0877 11.9719 17.0217 12.0599 16.9342C12.148 16.8467 12.2145 16.74 12.2543 16.6225C12.2942 16.5049 12.3063 16.3798 12.2897 16.2568V5.16004H1.71283ZM7.01165 2.634H1.151C0.793885 2.634 0.66763 2.76003 0.66763 3.11714V3.83138C0.66763 4.3933 0.736127 4.46682 1.2928 4.46682H12.8882C13.2033 4.46682 13.3346 4.33028 13.3346 4.01519C13.3346 3.70009 13.3346 3.44275 13.3346 3.15917C13.3346 2.74954 13.2191 2.634 12.8095 2.634H7.01165ZM9.57978 1.95128V1.12153C9.58531 1.0599 9.57737 0.997818 9.55644 0.939592C9.53551 0.881366 9.50224 0.828405 9.45874 0.784405C9.41524 0.740405 9.36261 0.706423 9.30463 0.684831C9.24665 0.663239 9.18451 0.654549 9.12282 0.65938H4.95305C4.65371 0.65938 4.42789 0.780165 4.42789 1.00073C4.42789 1.30533 4.42789 1.61519 4.42789 1.93028L9.57978 1.95128Z"
+                          fill="url(#paint0_linear_1244_930)"
+                        />
+                        <path
+                          d="M3.74 11.1574V7.94866C3.74 7.86463 3.74 7.78586 3.74 7.70709C3.74068 7.66502 3.74967 7.62349 3.76641 7.58489C3.78314 7.54628 3.80746 7.51135 3.83769 7.48209C3.86793 7.45283 3.90344 7.4298 3.94257 7.41434C3.98171 7.39889 4.02359 7.39129 4.06566 7.39199C4.10981 7.38987 4.15408 7.39648 4.19567 7.41144C4.23726 7.42641 4.2753 7.44942 4.30798 7.47917C4.34067 7.50893 4.36715 7.54484 4.38594 7.58485C4.40472 7.62486 4.41546 7.66818 4.41748 7.71233C4.42011 7.75956 4.42011 7.80691 4.41748 7.85413C4.41748 10.0668 4.41748 12.2795 4.41748 14.4922C4.41748 14.697 4.38084 14.8756 4.14977 14.9386C4.09984 14.9529 4.0471 14.9551 3.99617 14.9449C3.94524 14.9348 3.89753 14.9126 3.85693 14.8802C3.81632 14.8478 3.78406 14.8062 3.76282 14.7588C3.74158 14.7114 3.73202 14.6596 3.73487 14.6077C3.73487 14.3452 3.73487 14.0826 3.73487 13.8252L3.74 11.1574Z"
+                          fill="url(#paint1_linear_1244_930)"
+                        />
+                        <path
+                          d="M10.2623 11.1514V14.3654C10.2675 14.4528 10.2675 14.5405 10.2623 14.6279C10.2582 14.7078 10.223 14.7829 10.1641 14.8369C10.1051 14.891 10.0273 14.9196 9.94741 14.9168C9.90559 14.9211 9.86327 14.917 9.82304 14.9048C9.78282 14.8925 9.74534 14.8723 9.71304 14.8454C9.68074 14.8185 9.65413 14.7854 9.63483 14.7481C9.61552 14.7107 9.604 14.6699 9.60072 14.6279C9.59012 14.5495 9.59012 14.47 9.60072 14.3916V7.89534C9.59547 7.82542 9.59547 7.7552 9.60072 7.68528C9.60134 7.64114 9.61095 7.59758 9.62893 7.55726C9.64691 7.51694 9.67292 7.48071 9.70534 7.45075C9.73776 7.42078 9.77579 7.39772 9.8174 7.38297C9.85901 7.36822 9.90336 7.36209 9.94741 7.36494C9.98948 7.36424 10.0311 7.37184 10.0702 7.3873C10.1094 7.40276 10.1451 7.42578 10.1754 7.45504C10.2056 7.4843 10.2299 7.51923 10.2467 7.55784C10.2634 7.59644 10.2721 7.63795 10.2728 7.68002C10.2728 7.7588 10.2728 7.83758 10.2728 7.91635L10.2623 11.1514Z"
+                          fill="url(#paint2_linear_1244_930)"
+                        />
+                        <path
+                          d="M7.33787 11.1364V14.4187C7.33787 14.781 7.24865 14.9176 7.00708 14.9176C6.7655 14.9176 6.6709 14.781 6.6709 14.4344V7.84361C6.6709 7.52326 6.77599 7.36572 6.99656 7.36047C7.21713 7.35522 7.33787 7.52327 7.33787 7.85413V11.1364Z"
+                          fill="url(#paint3_linear_1244_930)"
+                        />
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_1244_930"
+                            x1="7.00085"
+                            y1="0"
+                            x2="7.00085"
+                            y2="17.8167"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#253477" />
+                            <stop offset="1" stop-color="#C8102E" />
+                          </linearGradient>
+                          <linearGradient
+                            id="paint1_linear_1244_930"
+                            x1="4.07691"
+                            y1="7.3916"
+                            x2="4.07691"
+                            y2="14.9512"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#253477" />
+                            <stop offset="1" stop-color="#C8102E" />
+                          </linearGradient>
+                          <linearGradient
+                            id="paint2_linear_1244_930"
+                            x1="9.9328"
+                            y1="7.36426"
+                            x2="9.9328"
+                            y2="14.9185"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#253477" />
+                            <stop offset="1" stop-color="#C8102E" />
+                          </linearGradient>
+                          <linearGradient
+                            id="paint3_linear_1244_930"
+                            x1="7.00438"
+                            y1="7.36035"
+                            x2="7.00438"
+                            y2="14.9176"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#253477" />
+                            <stop offset="1" stop-color="#C8102E" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="md:flex justify-between mt-4">
+                    <div class="md:flex items-start">
+                      <div class="thumb">
+                        <img src="../public/images/history/01.webp" alt="" />
+                      </div>
+                      <div class="text md:pl-3">
+                        <h4 class="text-black text-base">
+                          Basmati Kacchi - Half
+                        </h4>
+                        <p class="text-green-400 text-base font-normal">
+                          Delivered
+                        </p>
+                        <span class="text-black text-base"
+                          >Price: <strong>£400</strong></span
+                        >
+                      </div>
+                    </div>
+                    <div class="order-status pt-5 md:pt-0 md:text-right">
+                      <button
+                        type="button"
+                        class="bg-white border border-black px-8 py-2 rounded-md focus:outline-none text-black hover:bg-themeColor hover:text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..."
+                      >
+                        View Details
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="order-item bg-white drop-shadow-md rounded-md px-6 py-8 mt-4"
+                >
+                  <div class="flex items-start justify-between">
+                    <div class="order-id">
+                      <h5 class="text-black font-medium text-lg">
+                        Order ID# <span class="text-primaryColor">1876254</span>
+                      </h5>
+                      <p class="text-gray-500 text-base font-normal pt-1">
+                        12 February 2022
+                      </p>
+                    </div>
+                    <div class="delete-icon">
+                      <svg
+                        width="15"
+                        height="18"
+                        viewBox="0 0 15 18"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1.04586 5.16004C0.817466 5.15792 0.596053 5.08142 0.415049 4.94211C0.234045 4.8028 0.103234 4.60829 0.042716 4.38805C0.0130616 4.29832 -0.000929221 4.2042 0.000918319 4.10971C0.000918319 3.7421 0.000918319 3.37974 0.000918319 3.01212C-0.00502678 2.8726 0.0179349 2.73337 0.0686152 2.60325C0.119296 2.47312 0.196554 2.35495 0.295297 2.2562C0.39404 2.15746 0.512121 2.0803 0.642244 2.02962C0.772367 1.97894 0.911729 1.95585 1.05125 1.96179H3.7504C3.7504 1.70446 3.7504 1.46813 3.7504 1.23181C3.73879 1.06789 3.76259 0.903396 3.8199 0.749387C3.87721 0.595377 3.96679 0.455435 4.08274 0.33899C4.19868 0.222545 4.33823 0.132294 4.49199 0.0743245C4.64576 0.0163547 4.81011 -0.00799076 4.97408 0.00292539C6.35001 0.0344352 7.73638 0.00292539 9.11231 0.00292539C9.26401 -0.00825308 9.41646 0.0126841 9.55952 0.0643719C9.70258 0.11606 9.8331 0.197339 9.94262 0.302898C10.0521 0.408456 10.1383 0.535919 10.1952 0.676978C10.2521 0.818036 10.2785 0.969518 10.2729 1.12153C10.2729 1.38411 10.2729 1.64668 10.2729 1.95128H12.8987C13.0478 1.93894 13.1978 1.95959 13.338 2.01175C13.4782 2.06391 13.6053 2.1463 13.7101 2.25308C13.8148 2.35985 13.8947 2.48839 13.9442 2.62956C13.9937 2.77073 14.0116 2.92106 13.9965 3.06988V3.99943C14.0204 4.26997 13.9384 4.53925 13.768 4.75075C13.5976 4.96225 13.352 5.09953 13.0826 5.13379L12.9513 5.16004V16.3513C12.9607 16.6868 12.8517 17.0149 12.6433 17.278C12.4349 17.5412 12.1405 17.7225 11.8117 17.7902C11.7184 17.8094 11.6233 17.8182 11.5281 17.8165H2.47955C2.29074 17.82 2.10317 17.7855 1.92797 17.7151C1.75277 17.6446 1.59351 17.5396 1.45974 17.4063C1.32596 17.2731 1.22031 17.1142 1.1492 16.9393C1.07809 16.7643 1.04301 16.5769 1.04586 16.3881C1.04586 12.7434 1.04586 9.10052 1.04586 5.45939V5.16004ZM1.71283 5.16004V16.2515C1.6953 16.3749 1.70671 16.5007 1.74617 16.6189C1.78562 16.7371 1.85215 16.8446 1.94028 16.9327C2.02841 17.0208 2.13567 17.0872 2.25389 17.1267C2.37212 17.1661 2.49796 17.1776 2.62135 17.16H11.3812C11.5041 17.1774 11.6293 17.166 11.7471 17.1268C11.8649 17.0877 11.9719 17.0217 12.0599 16.9342C12.148 16.8467 12.2145 16.74 12.2543 16.6225C12.2942 16.5049 12.3063 16.3798 12.2897 16.2568V5.16004H1.71283ZM7.01165 2.634H1.151C0.793885 2.634 0.66763 2.76003 0.66763 3.11714V3.83138C0.66763 4.3933 0.736127 4.46682 1.2928 4.46682H12.8882C13.2033 4.46682 13.3346 4.33028 13.3346 4.01519C13.3346 3.70009 13.3346 3.44275 13.3346 3.15917C13.3346 2.74954 13.2191 2.634 12.8095 2.634H7.01165ZM9.57978 1.95128V1.12153C9.58531 1.0599 9.57737 0.997818 9.55644 0.939592C9.53551 0.881366 9.50224 0.828405 9.45874 0.784405C9.41524 0.740405 9.36261 0.706423 9.30463 0.684831C9.24665 0.663239 9.18451 0.654549 9.12282 0.65938H4.95305C4.65371 0.65938 4.42789 0.780165 4.42789 1.00073C4.42789 1.30533 4.42789 1.61519 4.42789 1.93028L9.57978 1.95128Z"
+                          fill="url(#paint0_linear_1244_930)"
+                        />
+                        <path
+                          d="M3.74 11.1574V7.94866C3.74 7.86463 3.74 7.78586 3.74 7.70709C3.74068 7.66502 3.74967 7.62349 3.76641 7.58489C3.78314 7.54628 3.80746 7.51135 3.83769 7.48209C3.86793 7.45283 3.90344 7.4298 3.94257 7.41434C3.98171 7.39889 4.02359 7.39129 4.06566 7.39199C4.10981 7.38987 4.15408 7.39648 4.19567 7.41144C4.23726 7.42641 4.2753 7.44942 4.30798 7.47917C4.34067 7.50893 4.36715 7.54484 4.38594 7.58485C4.40472 7.62486 4.41546 7.66818 4.41748 7.71233C4.42011 7.75956 4.42011 7.80691 4.41748 7.85413C4.41748 10.0668 4.41748 12.2795 4.41748 14.4922C4.41748 14.697 4.38084 14.8756 4.14977 14.9386C4.09984 14.9529 4.0471 14.9551 3.99617 14.9449C3.94524 14.9348 3.89753 14.9126 3.85693 14.8802C3.81632 14.8478 3.78406 14.8062 3.76282 14.7588C3.74158 14.7114 3.73202 14.6596 3.73487 14.6077C3.73487 14.3452 3.73487 14.0826 3.73487 13.8252L3.74 11.1574Z"
+                          fill="url(#paint1_linear_1244_930)"
+                        />
+                        <path
+                          d="M10.2623 11.1514V14.3654C10.2675 14.4528 10.2675 14.5405 10.2623 14.6279C10.2582 14.7078 10.223 14.7829 10.1641 14.8369C10.1051 14.891 10.0273 14.9196 9.94741 14.9168C9.90559 14.9211 9.86327 14.917 9.82304 14.9048C9.78282 14.8925 9.74534 14.8723 9.71304 14.8454C9.68074 14.8185 9.65413 14.7854 9.63483 14.7481C9.61552 14.7107 9.604 14.6699 9.60072 14.6279C9.59012 14.5495 9.59012 14.47 9.60072 14.3916V7.89534C9.59547 7.82542 9.59547 7.7552 9.60072 7.68528C9.60134 7.64114 9.61095 7.59758 9.62893 7.55726C9.64691 7.51694 9.67292 7.48071 9.70534 7.45075C9.73776 7.42078 9.77579 7.39772 9.8174 7.38297C9.85901 7.36822 9.90336 7.36209 9.94741 7.36494C9.98948 7.36424 10.0311 7.37184 10.0702 7.3873C10.1094 7.40276 10.1451 7.42578 10.1754 7.45504C10.2056 7.4843 10.2299 7.51923 10.2467 7.55784C10.2634 7.59644 10.2721 7.63795 10.2728 7.68002C10.2728 7.7588 10.2728 7.83758 10.2728 7.91635L10.2623 11.1514Z"
+                          fill="url(#paint2_linear_1244_930)"
+                        />
+                        <path
+                          d="M7.33787 11.1364V14.4187C7.33787 14.781 7.24865 14.9176 7.00708 14.9176C6.7655 14.9176 6.6709 14.781 6.6709 14.4344V7.84361C6.6709 7.52326 6.77599 7.36572 6.99656 7.36047C7.21713 7.35522 7.33787 7.52327 7.33787 7.85413V11.1364Z"
+                          fill="url(#paint3_linear_1244_930)"
+                        />
+                        <defs>
+                          <linearGradient
+                            id="paint0_linear_1244_930"
+                            x1="7.00085"
+                            y1="0"
+                            x2="7.00085"
+                            y2="17.8167"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#253477" />
+                            <stop offset="1" stop-color="#C8102E" />
+                          </linearGradient>
+                          <linearGradient
+                            id="paint1_linear_1244_930"
+                            x1="4.07691"
+                            y1="7.3916"
+                            x2="4.07691"
+                            y2="14.9512"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#253477" />
+                            <stop offset="1" stop-color="#C8102E" />
+                          </linearGradient>
+                          <linearGradient
+                            id="paint2_linear_1244_930"
+                            x1="9.9328"
+                            y1="7.36426"
+                            x2="9.9328"
+                            y2="14.9185"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#253477" />
+                            <stop offset="1" stop-color="#C8102E" />
+                          </linearGradient>
+                          <linearGradient
+                            id="paint3_linear_1244_930"
+                            x1="7.00438"
+                            y1="7.36035"
+                            x2="7.00438"
+                            y2="14.9176"
+                            gradientUnits="userSpaceOnUse"
+                          >
+                            <stop stop-color="#253477" />
+                            <stop offset="1" stop-color="#C8102E" />
+                          </linearGradient>
+                        </defs>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="md:flex justify-between mt-4">
+                    <div class="md:flex items-start">
+                      <div class="thumb">
+                        <img src="../public/images/history/01.webp" alt="" />
+                      </div>
+                      <div class="text md:pl-3">
+                        <h4 class="text-black text-base">
+                          Basmati Kacchi - Half
+                        </h4>
+                        <p class="text-green-400 text-base font-normal">
+                          Delivered
+                        </p>
+                        <span class="text-black text-base"
+                          >Price: <strong>£400</strong></span
+                        >
+                      </div>
+                    </div>
+                    <div class="order-status pt-5 md:pt-0 md:text-right">
+                      <button
+                        type="button"
+                        class="bg-white border border-black px-8 py-2 rounded-md focus:outline-none text-black hover:bg-themeColor hover:text-white transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300 ..."
+                      >
+                        View Details
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -723,6 +1129,286 @@
       </div>
     </section>
     <!-- order history area ends  -->
+
+    <!-- quick-footer links start -->
+    <footer class="bg-white text-gray-600 body-font border-t">
+      <div class="container py-16">
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-5">
+          <div class="foot-item">
+            <img class="pb-4" src="../public/images/logo/footer.png" alt="" />
+            <nav class="list-none">
+              <li class="mb-2">
+                <p class="text-gray-600 hover:text-indigo-800">
+                  Got Question? Call us 24/7
+                </p>
+              </li>
+              <li class="mb-2">
+                <p class="font-medium text-sm text-black">012-345678900</p>
+              </li>
+              <li class="mb-2">
+                <a class="text-gray-600 hover:text-indigo-800 cursor-pointer"
+                  >admin@britishmarketplace.co.uk</a
+                >
+              </li>
+              <li class="mb-2">
+                <p class="text-gray-600 text-sm max-w-step-text">
+                  218-220 Whitechapel Road, Post Code: E1 1BJ, London, United
+                  Kingdom
+                </p>
+              </li>
+            </nav>
+          </div>
+          <div class="foot-item">
+            <h2
+              class="title-font font-bold text-gray-900 tracking-widest md:text-lg mb-3"
+            >
+              Discover
+            </h2>
+            <nav class="list-none">
+              <li class="mb-2">
+                <a class="text-gray-600 hover:text-indigo-800 cursor-pointer"
+                  >About us</a
+                >
+              </li>
+              <li class="mb-2">
+                <a class="text-gray-600 hover:text-indigo-800 cursor-pointer"
+                  >Restaurant signup</a
+                >
+              </li>
+              <li class="mb-2">
+                <a class="text-gray-600 hover:text-indigo-800 cursor-pointer"
+                  >Become a rider</a
+                >
+              </li>
+              <li class="mb-2">
+                <a class="text-gray-600 hover:text-indigo-800 cursor-pointer"
+                  >Term and Conditions</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#0"
+                  class="text-gray-600 hover:text-indigo-800 cursor-pointer"
+                >
+                  Newsletter
+                </a>
+              </li>
+            </nav>
+          </div>
+          <div class="foot-item">
+            <h2
+              class="title-font font-bold text-gray-900 tracking-widest md:text-lg mb-3"
+            >
+              My Account
+            </h2>
+            <nav class="list-none">
+              <li class="mb-2">
+                <a class="text-gray-600 hover:text-indigo-800 cursor-pointer"
+                  >Track My Order</a
+                >
+              </li>
+              <li class="mb-2">
+                <a class="text-gray-600 hover:text-indigo-800 cursor-pointer"
+                  >View Cart</a
+                >
+              </li>
+              <li class="mb-2">
+                <a class="text-gray-600 hover:text-indigo-800 cursor-pointer"
+                  >Sign In</a
+                >
+              </li>
+              <li class="mb-2">
+                <a class="text-gray-600 hover:text-indigo-800 cursor-pointer"
+                  >Privacy Policy</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#0"
+                  class="text-gray-600 hover:text-indigo-800 cursor-pointer"
+                >
+                  My Wishlist
+                </a>
+              </li>
+            </nav>
+          </div>
+          <div class="foot-item">
+            <h2
+              class="title-font font-bold text-gray-900 tracking-widest md:text-lg mb-3"
+            >
+              Help
+            </h2>
+            <nav class="list-none">
+              <li class="mb-2">
+                <a class="text-gray-600 hover:text-indigo-800 cursor-pointer"
+                  >Order History</a
+                >
+              </li>
+              <li class="mb-2">
+                <a class="text-gray-600 hover:text-indigo-800 cursor-pointer"
+                  >Contact</a
+                >
+              </li>
+              <li class="mb-2">
+                <a class="text-gray-600 hover:text-indigo-800 cursor-pointer"
+                  >FAQs</a
+                >
+              </li>
+              <li class="mb-2">
+                <a class="text-gray-600 hover:text-indigo-800 cursor-pointer"
+                  >Payment Methods</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="#0"
+                  class="text-gray-600 hover:text-indigo-800 cursor-pointer"
+                >
+                  Site Map
+                </a>
+              </li>
+            </nav>
+          </div>
+        </div>
+        <div class="hidden">
+          <div class="tab w-full overflow-hidden border-t">
+            <input
+              class="absolute opacity-0"
+              id="tab-single-one"
+              type="radio"
+              name="tabs2"
+            />
+            <label
+              class="block p-5 leading-normal cursor-pointer"
+              for="tab-single-one"
+              >Customer Service</label
+            >
+            <div
+              class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal"
+            >
+              <p class="p-5">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Tenetur, architecto, explicabo perferendis nostrum, maxime
+                impedit atque odit sunt pariatur illo obcaecati soluta molestias
+                iure facere dolorum adipisci eum? Saepe, itaque.
+              </p>
+            </div>
+          </div>
+          <div class="tab w-full overflow-hidden border-t">
+            <input
+              class="absolute opacity-0"
+              id="tab-single-two"
+              type="radio"
+              name="tabs2"
+            />
+            <label
+              class="block p-5 leading-normal cursor-pointer"
+              for="tab-single-two"
+              >Cuisines</label
+            >
+            <div
+              class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal"
+            >
+              <p class="p-5">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Tenetur, architecto, explicabo perferendis nostrum, maxime
+                impedit atque odit sunt pariatur illo obcaecati soluta molestias
+                iure facere dolorum adipisci eum? Saepe, itaque.
+              </p>
+            </div>
+          </div>
+          <div class="tab w-full overflow-hidden border-t">
+            <input
+              class="absolute opacity-0"
+              id="tab-single-three"
+              type="radio"
+              name="tabs2"
+            />
+            <label
+              class="block p-5 leading-normal cursor-pointer"
+              for="tab-single-three"
+              >Locations</label
+            >
+            <div
+              class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal"
+            >
+              <p class="p-5">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Tenetur, architecto, explicabo perferendis nostrum, maxime
+                impedit atque odit sunt pariatur illo obcaecati soluta molestias
+                iure facere dolorum adipisci eum? Saepe, itaque.
+              </p>
+            </div>
+          </div>
+          <div class="tab w-full overflow-hidden border-t">
+            <input
+              class="absolute opacity-0"
+              id="tab-single-four"
+              type="radio"
+              name="tabs2"
+            />
+            <label
+              class="block p-5 leading-normal cursor-pointer"
+              for="tab-single-four"
+              >Brands</label
+            >
+            <div
+              class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal"
+            >
+              <p class="p-5">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Tenetur, architecto, explicabo perferendis nostrum, maxime
+                impedit atque odit sunt pariatur illo obcaecati soluta molestias
+                iure facere dolorum adipisci eum? Saepe, itaque.
+              </p>
+            </div>
+          </div>
+          <div class="tab w-full overflow-hidden border-t">
+            <input
+              class="absolute opacity-0"
+              id="tab-single-five"
+              type="radio"
+              name="tabs2"
+            />
+            <label
+              class="block p-5 leading-normal cursor-pointer"
+              for="tab-single-five"
+              >A bit more about us</label
+            >
+            <div
+              class="tab-content overflow-hidden border-l-2 bg-gray-100 border-indigo-500 leading-normal"
+            >
+              <p class="p-5">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Tenetur, architecto, explicabo perferendis nostrum, maxime
+                impedit atque odit sunt pariatur illo obcaecati soluta molestias
+                iure facere dolorum adipisci eum? Saepe, itaque.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-white relative">
+        <div
+          class="absolute -top-1/4 left-1/2 transform -translate-x-1/2 bg-white px-8"
+        >
+          <img src="../public/images/logo/footer_logo.png" alt="" />
+        </div>
+        <div class="container py-8 px-5 text-center border-t">
+          <p class="text-gray-500 text-sm text-center">
+            Copyright © 2021 @britishmarketplace —
+            <a
+              href="https://twitter.com/knyttneve"
+              rel="noopener noreferrer"
+              class="text-gray-600 ml-1"
+              target="_blank"
+              >All rights reserved.</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- quick-footer links ends  -->
 
     <!-- optional js -->
     <script src="../src/js/swiper-bundle.min.js"></script>
