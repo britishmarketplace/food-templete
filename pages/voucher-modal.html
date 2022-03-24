@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link
+      rel="shortcut icon"
+      href="../public/images/logo/fave.png"
+      type="image/x-icon"
+    />
+    <!-- swiper css -->
+    <link rel="stylesheet" href="../src/css/swiper-bundle.min.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="../public/output.css" />
+
+    <title>BMP-Food</title>
+  </head>
+  <body class="font-body">
+    <!-- fast ourder modal start -->
+    <div class="h-screen flex justify-center items-center">
+      <div
+        class="order-modal-content voucher-modal bg-white drop-shadow-md px-8 pb-10 rounded-md"
+      >
+        <div class="modal-header text-right pt-4">
+          <span
+            class="inline-block h-6 w-6 leading-6 rounded-full border border-gray-800"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-4 w-4 mx-auto mt-1"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 18L18 6M6 6l12 12"
+              />
+            </svg>
+          </span>
+        </div>
+        <div class="modal-body text-center">
+          <div class="delete-thumb">
+            <img
+              class="mx-auto"
+              src="../public/images/payment/voucher.png"
+              alt=""
+            />
+          </div>
+          <div class="delete-text">
+            <h4 class="font-semibold text-base text-black my-6">
+              Add voucher code / gift card
+            </h4>
+            <div class="input-group block text-left">
+              <label class="text-sm my-3 block">
+                Voucher code / Gift card
+              </label>
+              <input
+                type="text"
+                class="h-9 border rounded-md ring-blue-200 focus:outline-none p-2 w-full"
+              />
+            </div>
+            <div class="flex items-center justify-start gap-3 mt-6">
+              <button
+                type="button"
+                class="bg-gradient-to-l from-themeColor to-violet-600 px-6 py-1 rounded-md text-white"
+              >
+                Submit
+              </button>
+              <button
+                type="button"
+                class="bg-transparent border border-gray-500 px-6 py-1 rounded-md text-black"
+              >
+                Cancle
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- fast ourder modal ends  -->
+
+    <!-- optional js -->
+    <script src="../src/js/swiper-bundle.min.js"></script>
+    <script src="../src/js/function.js"></script>
+  </body>
+</html>

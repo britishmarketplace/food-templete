@@ -21,6 +21,7 @@ body {
 .text-style {
   position: relative;
 }
+
 .text-style::after {
   position: absolute;
   content: "";
@@ -30,12 +31,15 @@ body {
   transform: translateY(-50%);
   background: #253477;
 }
+
 .text-style.style-one::after {
   left: -25px;
 }
+
 .food-menu .card-thumb {
   position: relative;
 }
+
 .food-menu .card-thumb::after {
   position: absolute;
   content: "";
@@ -48,40 +52,47 @@ body {
   background: #f0bec7;
   transform: rotate3d(2, 2, 2, 7deg);
 }
+
 .food-menuSlider .swiper-wrapper {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
 }
+
 .food-menuSlider .swiper-pagination {
   bottom: 0;
 }
+
 .food-menuSlider .swiper-pagination span.swiper-pagination-bullet {
   width: 30px;
   border-radius: 25px;
 }
-.food-menuSlider
-  .swiper-pagination
-  span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+
+.food-menuSlider .swiper-pagination span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: linear-gradient(90deg, #ed1c24 0%, #a6214b 100%);
 }
+
 .text-style.style-two::after {
   right: -25px;
 }
+
 .menuCloseButton {
   cursor: pointer;
   display: flex;
   justify-content: end;
 }
+
 .menuCloseButton {
   margin-right: 20px;
   margin-top: 40px;
 }
+
 .menuCloseButton:hover,
 .menuCloseButton:focus {
   text-decoration: underline;
 }
+
 .menu-hamburger,
 .menu-Close {
   background: transparent no-repeat right center scroll;
@@ -102,6 +113,7 @@ body {
   z-index: 100;
   width: 300px;
 }
+
 #side-menu .mainMenu {
   margin-top: 15px;
   display: block;
@@ -110,6 +122,7 @@ body {
   width: 300px;
   margin-left: -10px;
 }
+
 .main-side-nav {
   position: absolute;
   background-color: #000;
@@ -119,10 +132,12 @@ body {
   z-index: 100000;
   transition: left 0.4s ease;
 }
+
 .open-side-nav {
   left: 0 !important;
   transition: left 0.5s ease !important;
 }
+
 #overlay {
   position: fixed;
   background: rgba(0, 0, 0, 0.5);
@@ -134,21 +149,25 @@ body {
   top: 0;
   transition: left 0.5s ease;
 }
+
 .overlay {
   left: 0 !important;
   transition: left 0.5s ease !important;
 }
-.mainMenu > li {
+
+.mainMenu>li {
   margin-bottom: 10px;
 }
-.mainMenu > li > a {
+
+.mainMenu>li>a {
   display: flex;
   font-size: 16px;
   color: #fff;
   padding: 10px 25px;
 }
-.mainMenu > li > a:hover,
-.mainMenu > li > a:focus > a {
+
+.mainMenu>li>a:hover,
+.mainMenu>li>a:focus>a {
   color: #fff;
   background: #3730a3;
 }
@@ -159,20 +178,29 @@ body {
   -o-transition: max-height 0.35s;
   transition: max-height 0.35s;
 }
+
 /* :checked - resize to full height */
-.tab input:checked ~ .tab-content {
+.tab input:checked~.tab-content {
   max-height: 100vh;
 }
+
 /* Label formatting when open */
-.tab input:checked + label {
+.tab input:checked+label {
   /*@apply text-xl p-5 border-l-2 border-indigo-500 bg-gray-100 text-indigo*/
-  font-size: 1.25rem; /*.text-xl*/
-  padding: 1.25rem; /*.p-5*/
-  border-left-width: 2px; /*.border-l-2*/
-  border-color: #6574cd; /*.border-indigo*/
-  background-color: #f8fafc; /*.bg-gray-100 */
-  color: #6574cd; /*.text-indigo*/
+  font-size: 1.25rem;
+  /*.text-xl*/
+  padding: 1.25rem;
+  /*.p-5*/
+  border-left-width: 2px;
+  /*.border-l-2*/
+  border-color: #6574cd;
+  /*.border-indigo*/
+  background-color: #f8fafc;
+  /*.bg-gray-100 */
+  color: #6574cd;
+  /*.text-indigo*/
 }
+
 /* Icon */
 .tab label::after {
   float: right;
@@ -188,31 +216,47 @@ body {
   -o-transition: all 0.35s;
   transition: all 0.35s;
 }
+
 /* Icon formatting - closed */
-.tab input[type="checkbox"] + label::after {
+.tab input[type="checkbox"]+label::after {
   content: "+";
-  font-weight: bold; /*.font-bold*/
-  border-width: 1px; /*.border*/
-  border-radius: 9999px; /*.rounded-full */
-  border-color: #b8c2cc; /*.border-grey*/
+  font-weight: bold;
+  /*.font-bold*/
+  border-width: 1px;
+  /*.border*/
+  border-radius: 9999px;
+  /*.rounded-full */
+  border-color: #b8c2cc;
+  /*.border-grey*/
 }
-.tab input[type="radio"] + label::after {
+
+.tab input[type="radio"]+label::after {
   content: "\25BE";
-  font-weight: bold; /*.font-bold*/
-  border-width: 1px; /*.border*/
-  border-radius: 9999px; /*.rounded-full */
-  border-color: #b8c2cc; /*.border-grey*/
+  font-weight: bold;
+  /*.font-bold*/
+  border-width: 1px;
+  /*.border*/
+  border-radius: 9999px;
+  /*.rounded-full */
+  border-color: #b8c2cc;
+  /*.border-grey*/
 }
+
 /* Icon formatting - open */
-.tab input[type="checkbox"]:checked + label::after {
+.tab input[type="checkbox"]:checked+label::after {
   transform: rotate(315deg);
-  background-color: #6574cd; /*.bg-indigo*/
-  color: #f8fafc; /*.text-grey-lightest*/
+  background-color: #6574cd;
+  /*.bg-indigo*/
+  color: #f8fafc;
+  /*.text-grey-lightest*/
 }
-.tab input[type="radio"]:checked + label::after {
+
+.tab input[type="radio"]:checked+label::after {
   transform: rotateX(180deg);
-  background-color: #6574cd; /*.bg-indigo*/
-  color: #f8fafc; /*.text-grey-lightest*/
+  background-color: #6574cd;
+  /*.bg-indigo*/
+  color: #f8fafc;
+  /*.text-grey-lightest*/
 }
 
 /* == dropdown css == */
@@ -257,11 +301,13 @@ body {
   background-position: center;
   background-image: url(../public/images/banner/delivery_bg.png);
 }
+
 @media (min-width: 992px) {
   .delivery-man::after {
     height: 70%;
   }
 }
+
 /* === delivery-man css start === */
 
 /* === bmp-app css start === */
@@ -277,17 +323,20 @@ body {
   background-position: center;
   background-image: url(../public/images/banner/app_bg.png);
 }
+
 @media (min-width: 1100px) {
   .bmp-app::after {
     width: 88%;
   }
 }
+
 /* === bmp-app css ends  === */
 
 /* === item checkout css start === */
 .order-history.active {
   right: 0;
 }
+
 @media (max-width: 991px) {
   .order-history {
     position: fixed;
@@ -302,21 +351,21 @@ body {
 }
 
 /* === checkout page css start === */
-input[type="radio"] + label span {
+input[type="radio"]+label span {
   transition: background 0.2s, transform 0.2s;
 }
 
-input[type="radio"] + label span:hover,
-input[type="radio"] + label:hover span {
+input[type="radio"]+label span:hover,
+input[type="radio"]+label:hover span {
   transform: scale(1.2);
 }
 
-input[type="radio"]:checked + label span {
+input[type="radio"]:checked+label span {
   background-color: #076faf;
   box-shadow: 0px 0px 0px 2px white inset;
 }
 
-input[type="radio"]:checked + label {
+input[type="radio"]:checked+label {
   color: #076faf;
 }
 
@@ -360,6 +409,7 @@ input[type="radio"]:checked + label {
 .modal-content {
   width: 250px;
 }
+
 @media (min-width: 400px) {
   .modal-content {
     width: 300px;
@@ -391,11 +441,13 @@ input[type="radio"]:checked + label {
 .address-content .tab-content {
   max-height: 100%;
 }
+
 .address-content .tab-content .tab-pane {
   opacity: 0;
   display: none;
   transition: all 0.3s ease-in-out;
 }
+
 .address-content .tab-content .tab-pane.active {
   opacity: 1;
   display: block;
@@ -424,14 +476,17 @@ input[type="radio"]:checked + label {
   background-position: 0;
   transition: background-position 0.15s ease-in-out;
 }
+
 .form-switch .form-check-input:checked {
   background-position: 100%;
   background-image: url(../public/images/checkout/download.svg);
 }
+
 .form-check-input:checked {
   background-color: #0d6efd;
   border-color: #0d6efd;
 }
+
 /* modal part end */
 
 /* animation part */
@@ -440,11 +495,13 @@ input[type="radio"]:checked + label {
     top: -300px;
     opacity: 0;
   }
+
   to {
     top: 50%;
     opacity: 1;
   }
 }
+
 /* animation part end */
 
 .checkout-area .order-summery {
@@ -478,9 +535,11 @@ input[type="radio"]:checked + label {
 .card-list button {
   min-width: 120px;
 }
+
 .payment-wrapper .card-content {
   position: relative;
 }
+
 .payment-wrapper .card-content::after {
   position: absolute;
   content: "";
@@ -493,10 +552,12 @@ input[type="radio"]:checked + label {
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
 }
+
 .payment-wrapper .card-content.style-one::after {
   left: auto;
   right: 50px;
 }
+
 /* === payment page  css ends   === */
 
 /* === resturant details modal css === */
@@ -504,6 +565,7 @@ input[type="radio"]:checked + label {
   min-height: 300px;
   overflow-y: auto;
 }
+
 :root {
   --shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   --ring-offset-shadow: 0 0 #0000;
@@ -527,6 +589,7 @@ input[type="radio"]:checked + label {
       var(--ring-shadow, 0 0 #0000), var(--shadow);
   }
 }
+
 /* === resturant details modal css === */
 
 /* === my order css ends === */
@@ -552,6 +615,7 @@ input[type="radio"]:checked + label {
   border-radius: 3px;
   border: 0.25px solid #076faf;
 }
+
 .my-order .section-wrapper .history-content .tab-content .tab-pane {
   opacity: 0;
   display: none;
@@ -561,6 +625,7 @@ input[type="radio"]:checked + label {
   opacity: 1;
   display: block;
 }
+
 /* === my order css ends  === */
 
 /* === traking order css satart === */
@@ -568,13 +633,16 @@ input[type="radio"]:checked + label {
   margin: 0 auto;
   max-width: 600px;
 }
+
 .traker-area .traking-content ul.traking-list li {
   position: relative;
 }
+
 .traker-area .traking-content ul.traking-list li:nth-child(1) img {
   margin-right: 0;
   margin-left: auto;
 }
+
 .traker-area .traking-content ul.traking-list li:nth-child(1) .progress1 {
   position: absolute;
   top: 50%;
@@ -582,12 +650,14 @@ input[type="radio"]:checked + label {
   z-index: -1;
   transform: rotate(-4deg);
 }
+
 .traker-area .traking-content ul.traking-list li:nth-child(2) .progress1 {
   position: absolute;
   top: 50%;
   left: -12%;
   z-index: -1;
 }
+
 .traker-area .traking-content ul.traking-list li:nth-child(3) img {
   padding-top: 40px;
   margin-right: 0;
@@ -610,6 +680,7 @@ input[type="radio"]:checked + label {
   .traker-area .traking-content ul.traking-list {
     max-width: 400px;
   }
+
   .traker-area .traking-content ul.traking-list li:nth-child(1) .progress1 {
     position: absolute;
     top: 62%;
@@ -618,6 +689,7 @@ input[type="radio"]:checked + label {
     transform: rotate(-8deg);
   }
 }
+
 /* === traking order css ends   === */
 
 /* === order delete modal css === */
@@ -625,3 +697,27 @@ input[type="radio"]:checked + label {
   margin: 0 auto;
   max-width: 550px;
 }
+
+/* === order delete modal css === */
+
+/* === voucher modal css === */
+.voucher-modal {
+  margin: 0 auto;
+  min-width: 300px;
+}
+
+@media (min-width: 768px) {
+  .voucher-modal {
+    margin: 0 auto;
+    min-width: 400px;
+  }
+}
+
+@media (min-width: 992px) {
+  .voucher-modal {
+    margin: 0 auto;
+    min-width: 600px;
+  }
+}
+
+/* === voucher modal css === */
