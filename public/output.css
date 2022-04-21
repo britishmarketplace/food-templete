@@ -809,6 +809,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0.25rem;
 }
 
+.-mt-24{
+  margin-top: -6rem;
+}
+
+.-mt-12{
+  margin-top: -3rem;
+}
+
+.-mt-14{
+  margin-top: -3.5rem;
+}
+
 .block{
   display: block;
 }
@@ -899,6 +911,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-3{
   height: 0.75rem;
+}
+
+.h-20{
+  height: 5rem;
 }
 
 .max-h-full{
@@ -1135,6 +1151,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 0.75rem;
 }
 
+.gap-7{
+  gap: 1.75rem;
+}
+
+.gap-8{
+  gap: 2rem;
+}
+
 .space-x-14 > :not([hidden]) ~ :not([hidden]){
   --tw-space-x-reverse: 0;
   margin-right: calc(3.5rem * var(--tw-space-x-reverse));
@@ -1231,6 +1255,30 @@ Ensure the default browser behavior of the `hidden` attribute.
 .rounded-t-lg{
   border-top-left-radius: 0.5rem;
   border-top-right-radius: 0.5rem;
+}
+
+.rounded-b-3xl{
+  border-bottom-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+}
+
+.rounded-l-3xl{
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+}
+
+.rounded-r-3xl{
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+
+.rounded-b-2xl{
+  border-bottom-right-radius: 1rem;
+  border-bottom-left-radius: 1rem;
+}
+
+.rounded-br-3xl{
+  border-bottom-right-radius: 1.5rem;
 }
 
 .border{
@@ -1434,6 +1482,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
 }
 
+.bg-yellow-400{
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 204 21 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-50{
   --tw-bg-opacity: 0.5;
 }
@@ -1555,6 +1608,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 0.5rem;
 }
 
+.p-1{
+  padding: 0.25rem;
+}
+
 .px-5{
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -1670,6 +1727,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 3.5rem;
 }
 
+.py-12{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
 .pl-12{
   padding-left: 3rem;
 }
@@ -1772,6 +1834,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .pt-0{
   padding-top: 0px;
+}
+
+.pt-11{
+  padding-top: 2.75rem;
+}
+
+.pt-16{
+  padding-top: 4rem;
 }
 
 .text-left{
