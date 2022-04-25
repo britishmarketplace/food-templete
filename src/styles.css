@@ -767,3 +767,19 @@ input[type="radio"]:checked+label {
 }
 
 /* === voucher modal css === */
+
+/* === contact page css start === */
+.contact-query .form-menu li.active a {
+  color: #fff;
+  background: #89E488;
+}
+.contact-query .tab-contents {
+  display: none;
+}
+.contact-query .tab-contents.active {
+  display: block;
+}
+.custom-label input:checked + svg {
+  display: block !important;
+}
+/* === contact page css ends  === */

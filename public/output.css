@@ -522,6 +522,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.pointer-events-none{
+  pointer-events: none;
+}
+
 .fixed{
   position: fixed;
 }
@@ -645,6 +649,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin: auto;
 }
 
+.-m-2{
+  margin: -0.5rem;
+}
+
 .m-7{
   margin: 1.75rem;
 }
@@ -765,6 +773,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 0.25rem;
 }
 
+.mb-12{
+  margin-bottom: 3rem;
+}
+
 .mb-2{
   margin-bottom: 0.5rem;
 }
@@ -865,12 +877,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 3rem;
 }
 
-.h-bg-height{
-  height: 550px;
-}
-
 .h-32{
   height: 8rem;
+}
+
+.h-bg-height{
+  height: 550px;
 }
 
 .h-40{
@@ -969,6 +981,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 8rem;
 }
 
+.w-1\/2{
+  width: 50%;
+}
+
 .w-40{
   width: 10rem;
 }
@@ -995,10 +1011,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-3{
   width: 0.75rem;
-}
-
-.w-\[-40px\]{
-  width: -40px;
 }
 
 .max-w-cart-max{
@@ -1059,6 +1071,17 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .cursor-pointer{
   cursor: pointer;
+}
+
+.select-none{
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.resize-none{
+  resize: none;
 }
 
 .list-none{
@@ -1356,6 +1379,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
 
+.border-yellow-200{
+  --tw-border-opacity: 1;
+  border-color: rgb(254 240 138 / var(--tw-border-opacity));
+}
+
+.border-yellow-500{
+  --tw-border-opacity: 1;
+  border-color: rgb(234 179 8 / var(--tw-border-opacity));
+}
+
 .bg-indigo-700{
   --tw-bg-opacity: 1;
   background-color: rgb(67 56 202 / var(--tw-bg-opacity));
@@ -1394,6 +1427,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-gray-100{
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#E6E6E6\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(230 230 230 / var(--tw-bg-opacity));
 }
 
 .bg-primaryColor{
@@ -1576,6 +1614,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 0.5rem;
 }
 
+.p-1{
+  padding: 0.25rem;
+}
+
 .px-5{
   padding-left: 1.25rem;
   padding-right: 1.25rem;
@@ -1748,6 +1790,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1.5rem;
 }
 
+.pb-8{
+  padding-bottom: 2rem;
+}
+
 .pl-2{
   padding-left: 0.5rem;
 }
@@ -1804,10 +1850,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 4rem;
 }
 
-.pb-8{
-  padding-bottom: 2rem;
-}
-
 .text-left{
   text-align: left;
 }
@@ -1836,12 +1878,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-family: Poppins;
 }
 
-.font-serif{
-  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-}
-
 .font-mono{
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+.font-serif{
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
 }
 
 .text-lg{
@@ -1874,14 +1916,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.75rem;
 }
 
-.text-4xl{
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
 .text-3xl{
   font-size: 1.875rem;
   line-height: 2.25rem;
+}
+
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
 }
 
 .font-semibold{
@@ -1920,12 +1962,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 1.25;
 }
 
-.leading-normal{
-  line-height: 1.5;
-}
-
 .leading-6{
   line-height: 1.5rem;
+}
+
+.leading-normal{
+  line-height: 1.5;
 }
 
 .leading-8{
@@ -1938,6 +1980,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .leading-4{
   line-height: 1rem;
+}
+
+.leading-7{
+  line-height: 1.75rem;
 }
 
 .tracking-widest{
@@ -2155,16 +2201,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow-themeShadow{
+  --tw-shadow: 0px 1px 7px rgba(46, 49, 146, 0.13);
+  --tw-shadow-colored: 0px 1px 7px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .shadow{
   --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
-.shadow-themeShadow{
-  --tw-shadow: 0px 1px 7px rgba(46, 49, 146, 0.13);
-  --tw-shadow-colored: 0px 1px 7px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+.outline-none{
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 .ring-1{
@@ -2216,16 +2267,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-duration: 150ms;
 }
 
-.transition-opacity{
-  transition-property: opacity;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
 .transition-colors{
   transition-property: color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-opacity{
+  transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -2242,6 +2293,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .duration-150{
   transition-duration: 150ms;
+}
+
+.duration-200{
+  transition-duration: 200ms;
 }
 
 .duration-300{
@@ -3051,6 +3106,42 @@ input[type="radio"]:checked+label {
 
 /* === voucher modal css === */
 
+/* === contact page css start === */
+
+.contact-query .form-menu li.active a {
+  color: #fff;
+  background: #89E488;
+}
+
+.contact-query .tab-contents {
+  display: none;
+}
+
+.contact-query .tab-contents.active {
+  display: block;
+}
+
+.custom-label input:checked + svg {
+  display: block !important;
+}
+
+/* === contact page css ends  === */
+
+.placeholder\:text-gray-700::-moz-placeholder{
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-gray-700:-ms-input-placeholder{
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-gray-700::placeholder{
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
 .placeholder\:text-black::-moz-placeholder{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -3064,6 +3155,21 @@ input[type="radio"]:checked+label {
 .placeholder\:text-black::placeholder{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-gray-800::-moz-placeholder{
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-gray-800:-ms-input-placeholder{
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-gray-800::placeholder{
+  --tw-text-opacity: 1;
+  color: rgb(31 41 55 / var(--tw-text-opacity));
 }
 
 .hover\:-translate-y-1:hover{
@@ -3092,6 +3198,11 @@ input[type="radio"]:checked+label {
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
 }
 
+.hover\:bg-themeColor:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 52 119 / var(--tw-bg-opacity));
+}
+
 .hover\:bg-gray-50:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(249 250 251 / var(--tw-bg-opacity));
@@ -3105,11 +3216,6 @@ input[type="radio"]:checked+label {
 .hover\:bg-indigo-700:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(67 56 202 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-themeColor:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(37 52 119 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-green-500:hover{
@@ -3169,6 +3275,11 @@ input[type="radio"]:checked+label {
   border-color: rgb(99 102 241 / var(--tw-border-opacity));
 }
 
+.focus\:bg-white:focus{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .focus\:outline-none:focus{
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -3200,6 +3311,11 @@ input[type="radio"]:checked+label {
 .focus\:ring-indigo-500:focus{
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(99 102 241 / var(--tw-ring-opacity));
+}
+
+.focus\:ring-indigo-200:focus{
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(199 210 254 / var(--tw-ring-opacity));
 }
 
 .focus\:ring-offset-2:focus{
@@ -3341,6 +3457,11 @@ input[type="radio"]:checked+label {
     font-size: 0.875rem;
     line-height: 1.25rem;
   }
+
+  .sm\:text-3xl{
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+  }
 }
 
 @media (min-width: 768px){
@@ -3407,6 +3528,10 @@ input[type="radio"]:checked+label {
 
   .md\:w-80{
     width: 20rem;
+  }
+
+  .md\:w-2\/3{
+    width: 66.666667%;
   }
 
   .md\:w-card-width{
@@ -3500,6 +3625,10 @@ input[type="radio"]:checked+label {
     padding-left: 1.25rem;
   }
 
+  .md\:pb-0{
+    padding-bottom: 0px;
+  }
+
   .md\:text-left{
     text-align: left;
   }
@@ -3567,6 +3696,10 @@ input[type="radio"]:checked+label {
 
   .lg\:w-3\/12{
     width: 25%;
+  }
+
+  .lg\:w-1\/2{
+    width: 50%;
   }
 
   .lg\:w-5\/12{
