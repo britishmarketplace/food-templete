@@ -27,7 +27,9 @@ module.exports = {
         "login-bg": "url('../public/images/login/login_bg.jpg')",
         "details-bg": "url('../public/images/details/01.jpg')",
         "cart-bg": "url('../public/images/banner/cart_bg.png')",
+        "cart-bgs": "url('../public/images/banner/cart_bg.png')",
         "order-bg": "url('../public/images/history/bg.jpg')",
+        "privacy-camp" : "url('../public/images/banner/privacy-cam.png')",
       },
       height: {
         "bg-height": "550px",
