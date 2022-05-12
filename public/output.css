@@ -526,6 +526,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   pointer-events: none;
 }
 
+.static{
+  position: static;
+}
+
 .fixed{
   position: fixed;
 }
@@ -536,6 +540,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .relative{
   position: relative;
+}
+
+.sticky{
+  position: -webkit-sticky;
+  position: sticky;
 }
 
 .inset-0{
@@ -613,6 +622,30 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: 0.625rem;
 }
 
+.top-2{
+  top: 0.5rem;
+}
+
+.-right-2{
+  right: -0.5rem;
+}
+
+.-top-4{
+  top: -1rem;
+}
+
+.-right-4{
+  right: -1rem;
+}
+
+.-top-3{
+  top: -0.75rem;
+}
+
+.-right-3{
+  right: -0.75rem;
+}
+
 .z-10{
   z-index: 10;
 }
@@ -635,10 +668,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .col-span-3{
   grid-column: span 3 / span 3;
-}
-
-.col-span-7{
-  grid-column: span 7 / span 7;
 }
 
 .float-left{
@@ -829,6 +858,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: -3.5rem;
 }
 
+.-mt-5{
+  margin-top: -1.25rem;
+}
+
+.ml-4{
+  margin-left: 1rem;
+}
+
 .block{
   display: block;
 }
@@ -919,14 +956,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-3{
   height: 0.75rem;
-}
-
-.h-20{
-  height: 5rem;
-}
-
-.h-14{
-  height: 3.5rem;
 }
 
 .max-h-full{
@@ -1061,16 +1090,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   max-width: 500px;
 }
 
+.max-w-\[570px\]{
+  max-width: 570px;
+}
+
+.max-w-\[300px\]{
+  max-width: 300px;
+}
+
+.max-w-\[400px\]{
+  max-width: 400px;
+}
+
 .flex-shrink-0{
   flex-shrink: 0;
 }
 
 .grow{
   flex-grow: 1;
-}
-
-.basis-1\/5{
-  flex-basis: 20%;
 }
 
 .origin-top-right{
@@ -1148,14 +1185,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .grid-cols-6{
   grid-template-columns: repeat(6, minmax(0, 1fr));
-}
-
-.grid-cols-7{
-  grid-template-columns: repeat(7, minmax(0, 1fr));
-}
-
-.flex-row{
-  flex-direction: row;
 }
 
 .flex-col{
@@ -1259,8 +1288,20 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(243 244 246 / var(--tw-divide-opacity));
 }
 
+.overflow-auto{
+  overflow: auto;
+}
+
 .overflow-hidden{
   overflow: hidden;
+}
+
+.overflow-clip{
+  overflow: clip;
+}
+
+.overflow-visible{
+  overflow: visible;
 }
 
 .overflow-y-auto{
@@ -1347,8 +1388,45 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-top-right-radius: 0.5rem;
 }
 
+.rounded-l-\[25px\]{
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.rounded-l-\[20px\]{
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+
+.rounded-l-\[10px\]{
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.rounded-l-\[8px\]{
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.rounded-l-\[12px\]{
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
 .rounded-br-3xl{
   border-bottom-right-radius: 1.5rem;
+}
+
+.rounded-bl-\[12px\]{
+  border-bottom-left-radius: 12px;
+}
+
+.rounded-bl-\[15px\]{
+  border-bottom-left-radius: 15px;
+}
+
+.rounded-bl-\[20px\]{
+  border-bottom-left-radius: 20px;
 }
 
 .border{
@@ -2252,6 +2330,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-indigo-600{
   --tw-text-opacity: 1;
   color: rgb(79 70 229 / var(--tw-text-opacity));
+}
+
+.text-\[\#FFCB00\]{
+  --tw-text-opacity: 1;
+  color: rgb(255 203 0 / var(--tw-text-opacity));
 }
 
 .placeholder-gray-500::-moz-placeholder{
@@ -3504,6 +3587,10 @@ input[type="radio"]:checked+label {
     width: auto;
   }
 
+  .sm\:min-w-\[400px\]{
+    min-width: 400px;
+  }
+
   .sm\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -3685,6 +3772,10 @@ input[type="radio"]:checked+label {
     width: 50%;
   }
 
+  .md\:min-w-\[500px\]{
+    min-width: 500px;
+  }
+
   .md\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -3722,6 +3813,16 @@ input[type="radio"]:checked+label {
   .md\:px-10{
     padding-left: 2.5rem;
     padding-right: 2.5rem;
+  }
+
+  .md\:px-16{
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .md\:px-24{
+    padding-left: 6rem;
+    padding-right: 6rem;
   }
 
   .md\:pb-0{
@@ -3857,6 +3958,10 @@ input[type="radio"]:checked+label {
     min-width: 500px;
   }
 
+  .lg\:min-w-\[570px\]{
+    min-width: 570px;
+  }
+
   .lg\:flex-grow{
     flex-grow: 1;
   }
@@ -3875,10 +3980,6 @@ input[type="radio"]:checked+label {
 
   .lg\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .lg\:grid-cols-7{
-    grid-template-columns: repeat(7, minmax(0, 1fr));
   }
 
   .lg\:flex-nowrap{

@@ -126,6 +126,27 @@ var swiper = new Swiper(".foodMenu-slider", {
     },
 });
 
+// food offer slider
+var swiper = new Swiper(".food_offer-slider", {
+    slidesPerView: 3.8,
+    spaceBetween: 30,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints : {
+        575 : {
+            slidesPerView : 1.5,
+        },
+        768 : {
+            slidesPerView : 2.5,
+        },
+        992: {
+            slidesPerView : 3.8
+        }
+    }
+});
+
 // food menu onScrool js
 var navbar = document.getElementById("foodNavbar");
 var sticky = navbar.offsetTop;
