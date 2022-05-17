@@ -625,6 +625,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 50;
 }
 
+.z-20{
+  z-index: 20;
+}
+
 .col-span-6{
   grid-column: span 6 / span 6;
 }
@@ -929,6 +933,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 0.75rem;
 }
 
+.h-60{
+  height: 15rem;
+}
+
 .max-h-full{
   max-height: 100%;
 }
@@ -1029,36 +1037,28 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 0.75rem;
 }
 
-.w-\[200px\]{
-  width: 200px;
-}
-
-.w-10\/12{
-  width: 83.333333%;
-}
-
-.w-1\/4{
-  width: 25%;
-}
-
 .w-0{
   width: 0px;
+}
+
+.w-60{
+  width: 15rem;
 }
 
 .min-w-\[300px\]{
   min-width: 300px;
 }
 
-.min-w-\[100px\]{
-  min-width: 100px;
-}
-
-.min-w-\[200px\]{
-  min-width: 200px;
-}
-
 .min-w-\[150px\]{
   min-width: 150px;
+}
+
+.min-w-\[500px\]{
+  min-width: 500px;
+}
+
+.min-w-\[400px\]{
+  min-width: 400px;
 }
 
 .max-w-step-text{
@@ -1503,6 +1503,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .border-gray-200{
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
+}
+
+.border-gray-400{
+  --tw-border-opacity: 1;
+  border-color: rgb(156 163 175 / var(--tw-border-opacity));
 }
 
 .bg-indigo-700{
@@ -2411,6 +2416,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-ring-color: rgb(191 219 254 / var(--tw-ring-opacity));
 }
 
+.ring-yellow-500{
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(234 179 8 / var(--tw-ring-opacity));
+}
+
 .ring-opacity-5{
   --tw-ring-opacity: 0.05;
 }
@@ -3304,6 +3314,36 @@ input[type="radio"]:checked+label {
 
 /* === contact page css ends  === */
 
+.placeholder\:text-sm::-moz-placeholder{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.placeholder\:text-sm:-ms-input-placeholder{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.placeholder\:text-sm::placeholder{
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.placeholder\:text-lg::-moz-placeholder{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.placeholder\:text-lg:-ms-input-placeholder{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.placeholder\:text-lg::placeholder{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
 .placeholder\:text-gray-700::-moz-placeholder{
   --tw-text-opacity: 1;
   color: rgb(55 65 81 / var(--tw-text-opacity));
@@ -3347,6 +3387,21 @@ input[type="radio"]:checked+label {
 .placeholder\:text-black::placeholder{
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-white::-moz-placeholder{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-white:-ms-input-placeholder{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-white::placeholder{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .hover\:-translate-y-1:hover{
@@ -3480,6 +3535,12 @@ input[type="radio"]:checked+label {
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
 }
 
+.focus\:ring-1:focus{
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
 .focus\:ring-blue-300:focus{
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(147 197 253 / var(--tw-ring-opacity));
@@ -3493,6 +3554,11 @@ input[type="radio"]:checked+label {
 .focus\:ring-indigo-200:focus{
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(199 210 254 / var(--tw-ring-opacity));
+}
+
+.focus\:ring-yellow-500:focus{
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(234 179 8 / var(--tw-ring-opacity));
 }
 
 .focus\:ring-offset-2:focus{
