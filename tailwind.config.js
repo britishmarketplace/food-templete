@@ -23,7 +23,7 @@ module.exports = {
         body: ["Poppins"],
       },
       backgroundImage: {
-        "banner-bg": "url('../public/images/banner/bg_banner.png')",
+        "banner-bg": "url('../public/images/banner/bg_banner.jpg')",
         "login-bg": "url('../public/images/login/login_bg.jpg')",
         "details-bg": "url('../public/images/details/01.jpg')",
         "cart-bg": "url('../public/images/banner/cart_bg.png')",
