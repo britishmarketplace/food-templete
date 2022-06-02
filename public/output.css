@@ -621,6 +621,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   right: -0.5rem;
 }
 
+.left-2{
+  left: 0.5rem;
+}
+
 .z-10{
   z-index: 10;
 }
@@ -1129,6 +1133,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.translate-y-1\/2{
+  --tw-translate-y: 50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
@@ -1280,6 +1289,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-divide-y-reverse: 0;
   border-top-width: calc(2px * calc(1 - var(--tw-divide-y-reverse)));
   border-bottom-width: calc(2px * var(--tw-divide-y-reverse));
+}
+
+.divide-x > :not([hidden]) ~ :not([hidden]){
+  --tw-divide-x-reverse: 0;
+  border-right-width: calc(1px * var(--tw-divide-x-reverse));
+  border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
 }
 
 .divide-gray-100 > :not([hidden]) ~ :not([hidden]){
@@ -2016,6 +2031,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-top: 4rem;
 }
 
+.pl-0{
+  padding-left: 0px;
+}
+
 .text-left{
   text-align: left;
 }
@@ -2335,6 +2354,26 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(250 204 21 / var(--tw-text-opacity));
 }
 
+.text-\[\#464956\]{
+  --tw-text-opacity: 1;
+  color: rgb(70 73 86 / var(--tw-text-opacity));
+}
+
+.text-\[\#464646\]{
+  --tw-text-opacity: 1;
+  color: rgb(70 70 70 / var(--tw-text-opacity));
+}
+
+.text-\[\#FF953A\]{
+  --tw-text-opacity: 1;
+  color: rgb(255 149 58 / var(--tw-text-opacity));
+}
+
+.text-\[\#a0a0a0\]{
+  --tw-text-opacity: 1;
+  color: rgb(160 160 160 / var(--tw-text-opacity));
+}
+
 .placeholder-gray-500::-moz-placeholder{
   --tw-placeholder-opacity: 1;
   color: rgb(107 114 128 / var(--tw-placeholder-opacity));
@@ -2501,6 +2540,13 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .ease-in-out{
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.line-clamp-2{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 
 body {
@@ -3391,6 +3437,21 @@ input[type="radio"]:checked+label {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.placeholder\:text-\[\#464956\]::-moz-placeholder{
+  --tw-text-opacity: 1;
+  color: rgb(70 73 86 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-\[\#464956\]:-ms-input-placeholder{
+  --tw-text-opacity: 1;
+  color: rgb(70 73 86 / var(--tw-text-opacity));
+}
+
+.placeholder\:text-\[\#464956\]::placeholder{
+  --tw-text-opacity: 1;
+  color: rgb(70 73 86 / var(--tw-text-opacity));
+}
+
 .hover\:-translate-y-1:hover{
   --tw-translate-y: -0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -3440,6 +3501,11 @@ input[type="radio"]:checked+label {
 .hover\:bg-green-500:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(34 197 94 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-\[\#E6E6E6\]:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(230 230 230 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-opacity-5:hover{
@@ -4061,6 +4127,11 @@ input[type="radio"]:checked+label {
   .lg\:text-2xl{
     font-size: 1.5rem;
     line-height: 2rem;
+  }
+
+  .lg\:text-base{
+    font-size: 1rem;
+    line-height: 1.5rem;
   }
 }
 
