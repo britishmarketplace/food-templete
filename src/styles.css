@@ -304,7 +304,7 @@ body {
 /* === delivery-man css start === */
 
 /* === bmp-app css start === */
-.bmp-app::after {
+/* .bmp-app::after {
   position: absolute;
   content: "";
   width: 100%;
@@ -321,7 +321,7 @@ body {
   .bmp-app::after {
     width: 88%;
   }
-}
+} */
 
 /* === bmp-app css ends  === */
 

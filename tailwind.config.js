@@ -57,7 +57,7 @@ module.exports = {
       "restItem-h": "125px",
       "details-h": "150px",
       "cart-h": "300px",
-      "food-app": "600px",
+      "food-app": "316px",
     },
   },
   content: ["./pages/**/*.{html,js}", "./components/**/*.{html,js}"],
