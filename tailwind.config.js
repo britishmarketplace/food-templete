@@ -42,6 +42,9 @@ module.exports = {
       boxShadow: {
         themeShadow: "0px 1px 7px rgba(46, 49, 146, 0.13)",
       },
+      outlineWidth: {
+        search_outline: '.5px',
+      }
     },
     maxWidth: {
       "drop-max": "250px",

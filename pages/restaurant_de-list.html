@@ -21,7 +21,7 @@
     <!-- header area start -->
     <header class="bg-white">
       <div class="container mx-auto">
-        <div class="flex justify-between items-center px-5 py-5">
+        <div class="flex justify-between items-center py-5">
           <div class="drawer-menu">
             <div class="toggle-button">
               <button type="button" id="menuButton">
@@ -123,14 +123,14 @@
             </ul>
           </div>
           <div class="relative">
-            <div class="resturant-search min-w-[400px] relative">
+            <div class="resturant-search xl:min-w-[600px] lg:min-w-[500px] md:min-w-[400px] relative md:block hidden">
               <input
                 type="text"
                 name="res-search"
-                class="bg-transparent w-full px-8 py-2 rounded-md border border-yellow-500 placeholder:text-[#464956] placeholder:text-sm"
+                class="bg-transparent w-full px-12 py-2 rounded-md border border-yellow-500 placeholder:text-[#464956] placeholder:text-sm focus-visible:outline-[#89E488] focus-visible:outline-search_outline"
                 placeholder="Write some things"
               />
-              <span class="absolute top-1/2 left-2 -translate-y-1/2">
+              <span class="absolute top-1/2 left-5 -translate-y-1/2">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   class="h-5 w-5 text-[#464956]"
@@ -148,84 +148,86 @@
               </span>
             </div>
             <div
-              class="res-search-result absolute bg-white rounded-md mt-3 p-3 top-full left-0 w-full shadow-themeShadow z-50"
+              class="res-search-result absolute bg-white rounded-md mt-3 py-3 top-full left-0 w-full shadow-themeShadow z-50 md:block hidden max-h-[80vh] overflow-y-auto"
             >
-              <h4 class="text-black lg:text-base text-sm font-medium pb-3">
-                Top Seatches
-              </h4>
-              <ul class="flex flex-wrap items-center gap-2">
-                <li>
-                  <button
-                    type="button"
-                    class="border border-black px-2 py-1 rounded text-black text-xs"
-                  >
-                    Dessert
-                  </button>
-                </li>
-                <li>
-                  <button
-                    type="button"
-                    class="border border-black px-2 py-1 rounded text-black text-xs"
-                  >
-                    Sushi
-                  </button>
-                </li>
-                <li>
-                  <button
-                    type="button"
-                    class="border border-black px-2 py-1 rounded text-black text-xs"
-                  >
-                    Burger
-                  </button>
-                </li>
-                <li>
-                  <button
-                    type="button"
-                    class="border border-black px-2 py-1 rounded text-black text-xs"
-                  >
-                    Pizza
-                  </button>
-                </li>
-                <li>
-                  <button
-                    type="button"
-                    class="border border-black px-2 py-1 rounded text-black text-xs"
-                  >
-                    KFC
-                  </button>
-                </li>
-                <li>
-                  <button
-                    type="button"
-                    class="border border-black px-2 py-1 rounded text-black text-xs"
-                  >
-                    BFC
-                  </button>
-                </li>
-                <li>
-                  <button
-                    type="button"
-                    class="border border-black px-2 py-1 rounded text-black text-xs"
-                  >
-                    Burger Chicken burger
-                  </button>
-                </li>
-                <li>
-                  <button
-                    type="button"
-                    class="border border-black px-2 py-1 rounded text-black text-xs"
-                  >
-                    Helty Food
-                  </button>
-                </li>
-              </ul>
+              <div class="px-3">
+                <h4 class="text-black lg:text-base text-sm font-medium pb-3">
+                  Top Seatches
+                </h4>
+                <ul class="flex flex-wrap items-center gap-2">
+                  <li>
+                    <button
+                      type="button"
+                      class="border border-black px-2 py-1 rounded text-black text-xs hover:border-[#89E488] hover:text-[#89E488] transition-all ease-in-out"
+                    >
+                      Dessert
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      type="button"
+                      class="border border-black px-2 py-1 rounded text-black text-xs"
+                    >
+                      Sushi
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      type="button"
+                      class="border border-black px-2 py-1 rounded text-black text-xs"
+                    >
+                      Burger
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      type="button"
+                      class="border border-black px-2 py-1 rounded text-black text-xs"
+                    >
+                      Pizza
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      type="button"
+                      class="border border-black px-2 py-1 rounded text-black text-xs"
+                    >
+                      KFC
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      type="button"
+                      class="border border-black px-2 py-1 rounded text-black text-xs"
+                    >
+                      BFC
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      type="button"
+                      class="border border-black px-2 py-1 rounded text-black text-xs"
+                    >
+                      Burger Chicken burger
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      type="button"
+                      class="border border-black px-2 py-1 rounded text-black text-xs"
+                    >
+                      Helty Food
+                    </button>
+                  </li>
+                </ul>
+              </div>
               <div class="">
-                <h4 class="text-black lg:text-base text-sm font-medium pt-4">
+                <h4 class="text-black lg:text-base text-sm font-medium pt-4 px-3">
                   Trending Restaurants
                 </h4>
                 <ul class="mt-4">
                   <li class="border-t border-gray-300 py-3">
-                    <div class="flex flex-wrap gap-4">
+                    <div class="flex flex-wrap gap-4 px-3">
                       <div class="pr-thumb">
                         <img src="../public/images/food-card/04.png" alt="" />
                       </div>
@@ -255,7 +257,7 @@
                     </div>
                   </li>
                   <li class="border-t border-gray-300 py-3">
-                    <div class="flex flex-wrap gap-4">
+                    <div class="flex flex-wrap gap-4 px-3">
                       <div class="pr-thumb">
                         <img src="../public/images/food-card/04.png" alt="" />
                       </div>
@@ -285,7 +287,7 @@
                     </div>
                   </li>
                   <li class="border-t border-gray-300 py-3">
-                    <div class="flex flex-wrap gap-4">
+                    <div class="flex flex-wrap gap-4 px-3">
                       <div class="pr-thumb">
                         <img src="../public/images/food-card/04.png" alt="" />
                       </div>
@@ -317,11 +319,11 @@
                 </ul>
               </div>
               <div class="">
-                <h4 class="text-black lg:text-base text-sm font-medium">
+                <h4 class="text-black lg:text-base text-sm font-medium px-3">
                   Items
                 </h4>
                 <ul class="mt-2">
-                  <li class="border-gray-300 py-3 px-2 group hover:bg-[#E6E6E6]">
+                  <li class="border-gray-300 py-3 px-3 group hover:bg-[#EEFFEE]">
                     <div class="flex flex-wrap gap-4">
                       <div class="pr-thumb">
                         <img src="../public/images/food-card/04.png" alt="" />
@@ -339,7 +341,7 @@
                       </div>
                     </div>
                   </li>
-                  <li class="border-gray-300 py-3 px-2">
+                  <li class="border-gray-300 py-3 px-3">
                     <div class="flex flex-wrap gap-4">
                       <div class="pr-thumb">
                         <img src="../public/images/food-card/04.png" alt="" />
@@ -357,7 +359,7 @@
                       </div>
                     </div>
                   </li>
-                  <li class="border-gray-300 py-3 px-2">
+                  <li class="border-gray-300 py-3 px-3">
                     <div class="flex flex-wrap gap-4">
                       <div class="pr-thumb">
                         <img src="../public/images/food-card/04.png" alt="" />
@@ -457,7 +459,7 @@
 
     <!-- page header start -->
     <div class="page-header py-5 border-b">
-      <div class="container">
+      <div class="container mx-auto">
         <div class="flex items-center gap-2">
           <a href="index.html" class="font-semibold text-black">Home</a>
           <span>
@@ -486,7 +488,7 @@
 
     <!-- restaurant list start -->
     <div class="res-list bg-gray-50 py-14">
-      <div class="w-full lg:px-16 md:px-10 px-5">
+      <div class="container mx-auto">
         <div class="text-gray-600 overflow-hidden">
           <div class="-my-8 divide-y-2 divide-gray-100">
             <div class="py-8 flex flex-wrap lg:flex-nowrap">

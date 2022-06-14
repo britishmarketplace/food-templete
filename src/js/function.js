@@ -125,7 +125,7 @@ var swiper = new Swiper(".foodMenu-slider", {
 
 // food offer slider
 var swiper = new Swiper(".food_offer-slider", {
-  slidesPerView: 3.8,
+  slidesPerView: 1.5,
   spaceBetween: 30,
   pagination: {
     el: ".swiper-pagination",
