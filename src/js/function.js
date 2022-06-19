@@ -139,7 +139,7 @@ var swiper = new Swiper(".food_offer-slider", {
       slidesPerView: 2.5,
     },
     992: {
-      slidesPerView: 3.8,
+      slidesPerView: 3.2,
     },
   },
 });
