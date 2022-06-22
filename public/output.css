@@ -794,6 +794,10 @@ select{
   right: -0.5rem;
 }
 
+.top-3{
+  top: 0.75rem;
+}
+
 .z-10{
   z-index: 10;
 }
@@ -1576,6 +1580,38 @@ select{
   border-bottom-right-radius: 25px;
 }
 
+.rounded-tl-\[50px\]{
+  border-top-left-radius: 50px;
+}
+
+.rounded-br-\[50px\]{
+  border-bottom-right-radius: 50px;
+}
+
+.rounded-br-\[100px\]{
+  border-bottom-right-radius: 100px;
+}
+
+.rounded-br-\[80px\]{
+  border-bottom-right-radius: 80px;
+}
+
+.rounded-tl-\[100px\]{
+  border-top-left-radius: 100px;
+}
+
+.rounded-tl-\[80px\]{
+  border-top-left-radius: 80px;
+}
+
+.rounded-br-xl{
+  border-bottom-right-radius: 0.75rem;
+}
+
+.rounded-br-2xl{
+  border-bottom-right-radius: 1rem;
+}
+
 .border{
   border-width: 1px;
 }
@@ -1606,6 +1642,10 @@ select{
 
 .border-dashed{
   border-style: dashed;
+}
+
+.border-none{
+  border-style: none;
 }
 
 .border-indigo-500{
@@ -1815,6 +1855,11 @@ select{
 .bg-\[\#E64A19\]{
   --tw-bg-opacity: 1;
   background-color: rgb(230 74 25 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#FBD336\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(251 211 54 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-50{
@@ -2543,6 +2588,16 @@ select{
   color: rgb(250 204 21 / var(--tw-text-opacity));
 }
 
+.text-\[\#848587\]{
+  --tw-text-opacity: 1;
+  color: rgb(132 133 135 / var(--tw-text-opacity));
+}
+
+.text-\[\#CFCFCF\]{
+  --tw-text-opacity: 1;
+  color: rgb(207 207 207 / var(--tw-text-opacity));
+}
+
 .placeholder-gray-500::-moz-placeholder{
   --tw-placeholder-opacity: 1;
   color: rgb(107 114 128 / var(--tw-placeholder-opacity));
@@ -2713,6 +2768,13 @@ select{
 
 .ease-out{
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+
+.line-clamp-2{
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 
 body {
@@ -3798,10 +3860,6 @@ input[type="radio"]:checked+label {
   --tw-ring-offset-width: 2px;
 }
 
-.focus\:ring-offset-0:focus{
-  --tw-ring-offset-width: 0px;
-}
-
 .focus\:ring-offset-gray-100:focus{
   --tw-ring-offset-color: #f3f4f6;
 }
@@ -4238,6 +4296,10 @@ input[type="radio"]:checked+label {
     grid-column: span 1 / span 1;
   }
 
+  .lg\:col-span-3{
+    grid-column: span 3 / span 3;
+  }
+
   .lg\:m-0{
     margin: 0px;
   }
@@ -4308,6 +4370,10 @@ input[type="radio"]:checked+label {
 
   .lg\:w-4\/5{
     width: 80%;
+  }
+
+  .lg\:w-\[30\%\]{
+    width: 30%;
   }
 
   .lg\:min-w-\[500px\]{
@@ -4426,6 +4492,10 @@ input[type="radio"]:checked+label {
 
   .xl\:w-4\/12{
     width: 33.333333%;
+  }
+
+  .xl\:w-\[30\%\]{
+    width: 30%;
   }
 
   .xl\:min-w-\[600px\]{
