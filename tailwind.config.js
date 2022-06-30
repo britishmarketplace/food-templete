@@ -44,6 +44,9 @@ module.exports = {
       },
       outlineWidth: {
         search_outline: '.5px',
+      },
+      backgroundPosition : {
+        'right-top' : 'right top 1rem'
       }
     },
     maxWidth: {
